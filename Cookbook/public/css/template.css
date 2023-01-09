@@ -1,0 +1,134 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-2'); 
+
+/* footer  */
+body,html,footer{
+    margin:0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    background-color:#0D0D0D;
+}
+
+#footer-line{
+    border: 1px solid #FF9F0D;
+    width: 810px;
+    margin:80px auto;
+    
+}
+.footer-row {
+    display: table;
+    }
+.Column {
+    display: table-cell;
+    padding-left: 120px;
+}
+.Column p{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px; 
+    margin: 20px 0;
+}
+.Column h1{
+    color: white;font-weight: 700;
+    font-size: 18px;
+    line-height: 28px; margin-bottom: 20px;
+}
+.footer-socials i{
+    color: #FF9F0D;  
+    margin-right: 30px;
+}
+.footer-navbar{
+    width: 320px; 
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+}
+.footer-navbar ul{
+    padding: 0; 
+    margin: 0; 
+    column-count:2; 
+    display: inline-block; 
+    column-gap: 30px;
+}
+.footer-navbar  li{
+    list-style: none; 
+    padding-bottom: 10px;
+}
+.footer-navbar  li a {
+    text-decoration: none; 
+    color:white
+}
+.footer-navbar  li a i {
+    padding-right: 10px; padding-left: 5px; color: #FF9F0D;
+}
+#footer-contact {
+    padding-left: 40px !important;
+}
+#footer-rec{
+    position: relative;
+    height: 70px;
+    width: 100%;
+    background-color: #FF9F0D;
+    margin-top: 60px;
+}
+#footer-rec img{
+    position: absolute;
+    right: 0; 
+    height: 300px; 
+    bottom: 0;
+}
+/* Menu */
+.menu {
+    display: table;
+    background-color: #0D0D0D;
+   
+}
+.menu-titles{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    display: table-cell;
+    padding-left: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    vertical-align: center;
+}
+.menu-titles a{
+    text-decoration: none;
+    color: white;
+    padding: 0 7px;
+    display: inline-block;
+   
+}
+.menu-titles a:hover{
+  
+    color: #FF9F0D;
+   
+}
+
+.menu img {
+    width:110px;
+    margin-left: 150px;
+    
+}
+.menu button {
+    background-color: inherit;
+    color: #FF9F0D;
+    border: none;
+    font-family:  'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    padding-right: 141px;
+    padding-left: 170px;
+}
+.menu button i {
+    margin-top: 6px;
+}
+.menu button:hover{
+    color: white;
+}
