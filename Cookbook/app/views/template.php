@@ -10,7 +10,6 @@ public function main(){
 public function entete_page(){?>
     <head>
     <link rel="stylesheet" href="../../public/css/template.css"/>
-    <link rel="stylesheet" href="../../public/css/home.css"/>
     <meta http-equiv="Pragma" content="no-cache">
     <title>Cookbook</title>
         <meta name="Cookbook" content="Recipes Website"/>

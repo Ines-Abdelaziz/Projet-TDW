@@ -1,0 +1,133 @@
+.r-title{
+    padding-top: 50px;
+    padding-left: 100px;
+    font-family: 'Helvetica';
+    font-weight: 700;
+    font-size: 44px;
+    color: #fff;
+}
+.r-steps-title{
+    padding-left: 50px;
+    color: #FF9F0D;
+    font-family: 'Great Vibes';
+    font-size: 32px;
+    
+}
+.r-steps-wrap{
+    padding-left: 50px;
+    font-family: 'Inter';
+    color: #c4c4c4;
+    font-size: 16px;
+    font-weight: 400;
+    width: 500px;
+}
+.r-step{
+    display: flex;
+    padding: 10px 0;
+}
+.r-step-number {
+    color: #FF9F0D;
+    font-weight: 800;
+    padding-right: 20px;
+}
+.r-ingr-title{
+    padding-left: 100px;
+    color: #FF9F0D;
+    font-family: 'Great Vibes';
+    font-size: 32px;
+    
+}
+.r-ingr-wrap{
+    padding-left: 100px;
+    font-family: 'Inter';
+    color: #c4c4c4;
+    font-size: 16px;
+    font-weight: 400;
+    width: 150px;
+}
+.r-ingr{
+    padding: 5px 0;
+}
+.recipe-wrap{
+    display: table;
+    padding-top: 50px;
+}
+.steps{
+    display: table-cell;
+}
+.ingredients{
+    display: table-cell;
+}
+.r-img{
+    display: table-cell;
+    vertical-align:top;
+    margin-top: 50px;
+    padding-top: 50px;
+    margin-right: 100px;
+    padding-left: 100px;
+}
+.r-img img{
+    height: 350px;
+    width: 350px; 
+    object-fit: cover;
+}
+.info{
+    padding-top: 10px;
+    padding-left: 100px;
+    display: table;
+    font-family: 'Inter', sans-serif;
+    line-height: 24px;
+    font-size: 18px;
+
+    font-weight: 400;
+    color:#c4c4c4 ;
+
+}
+.calories{
+    display: table-cell;
+    padding-right: 30px;
+
+}
+.calories i{
+    padding-right: 5px;
+    color: #FF9F0D;
+}
+.time{
+    display: table-cell;
+   
+    padding-right: 30px;
+}
+.time i{
+    padding-right: 5px;
+    color: #FF9F0D;
+}
+.level{
+    display: table-cell;
+    padding-right: 30px;
+
+}
+.level i{
+    padding-right: 5px;
+    color: #FF9F0D;
+}
+.r-detail-title{
+    padding-top: 20px;
+    color: #FF9F0D;
+    font-family: 'Great Vibes';
+    font-size: 32px;
+}
+.time-wrap{
+    padding: 5px 0;
+}
+.time-wrap span {
+    color: #FF9F0D;
+    font-weight: 600;
+}
+#video{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.category-title a{
+    text-decoration: none;
+    color: #FF9F0D;
+}

@@ -297,3 +297,151 @@ Stack trace:
 #1 {main}
   thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\CategoryController.php on line 3
 [09-Jan-2023 20:51:50 UTC] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\CategoryView.php on line 36
+[10-Jan-2023 11:32:54 UTC] PHP Warning:  Undefined array key "" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[10-Jan-2023 11:32:54 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(34): dispatch('')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[10-Jan-2023 15:45:44 UTC] PHP Warning:  Undefined array key "Sour%20Cream%20And%20Onion%20Mozzarella%20Sticks" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[10-Jan-2023 15:45:44 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(34): dispatch('Sour%20Cream%20...')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[10-Jan-2023 16:03:32 UTC] PHP Warning:  Undefined array key "Sour-Cream-And-Onion-Mozzarella-Sticks" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[10-Jan-2023 16:03:32 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(38): dispatch('Sour-Cream-And-...')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[10-Jan-2023 16:04:03 UTC] PHP Warning:  Undefined array key "recipe/Sour-Cream-And-Onion-Mozzarella-Sticks" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[10-Jan-2023 16:04:03 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(38): dispatch('recipe/Sour-Cre...')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[10-Jan-2023 16:08:17 UTC] PHP Warning:  Undefined array key "recipe/Sour-Cream-And-Onion-Mozzarella-Sticks" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[10-Jan-2023 16:08:17 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(41): dispatch('recipe/Sour-Cre...')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[10-Jan-2023 16:37:15 UTC] PHP Parse error:  Unclosed '{' on line 31 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php on line 37
+[10-Jan-2023 16:38:26 UTC] PHP Parse error:  Unclosed '{' on line 31 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php on line 37
+[10-Jan-2023 16:38:30 UTC] PHP Parse error:  Unclosed '{' on line 31 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php on line 37
+[10-Jan-2023 16:38:49 UTC] PHP Parse error:  Unclosed '{' on line 31 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php on line 37
+[10-Jan-2023 16:40:31 UTC] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php on line 32
+[10-Jan-2023 16:43:41 UTC] PHP Parse error:  Unclosed '{' on line 31 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php on line 37
+[10-Jan-2023 17:18:03 UTC] PHP Warning:  Undefined array key "qauntity" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php on line 48
+[10-Jan-2023 17:18:03 UTC] PHP Deprecated:  strrev(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php on line 63
+[10-Jan-2023 17:18:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function gmp_intval() in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php:75
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(46): RecipeModel->decimalToFraction(NULL)
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(48): RecipeController->decimalToFraction(NULL)
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(19): RecipeView->Recipe('Sour Cream And ...')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(10): RecipeView->corps_page('Sour Cream And ...')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(11): RecipeView->index('Sour Cream And ...')
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(47): RecipeController->index('Sour Cream And ...')
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(51): dispatch('recipe')
+#8 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php on line 75
+[10-Jan-2023 17:20:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function gmp_intval() in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php:75
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(46): RecipeModel->decimalToFraction('2.00')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(48): RecipeController->decimalToFraction('2.00')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(19): RecipeView->Recipe('Sour Cream And ...')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(10): RecipeView->corps_page('Sour Cream And ...')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(11): RecipeView->index('Sour Cream And ...')
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(47): RecipeController->index('Sour Cream And ...')
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(51): dispatch('recipe')
+#8 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php on line 75
+[10-Jan-2023 17:22:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function gmp_intval() in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php:75
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(46): RecipeModel->decimalToFraction('2.00')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(48): RecipeController->decimalToFraction('2.00')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(19): RecipeView->Recipe('Sour Cream And ...')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(10): RecipeView->corps_page('Sour Cream And ...')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(11): RecipeView->index('Sour Cream And ...')
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(47): RecipeController->index('Sour Cream And ...')
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(51): dispatch('recipe')
+#8 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php on line 75
+[10-Jan-2023 17:23:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function gmp_intval() in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php:75
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(46): RecipeModel->decimalToFraction('2.00')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(48): RecipeController->decimalToFraction('2.00')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(19): RecipeView->Recipe('Sour Cream And ...')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(10): RecipeView->corps_page('Sour Cream And ...')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(11): RecipeView->index('Sour Cream And ...')
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(47): RecipeController->index('Sour Cream And ...')
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(51): dispatch('recipe')
+#8 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php on line 75
+[10-Jan-2023 17:26:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function gmp_intval() in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php:75
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(46): RecipeModel->decimalToFraction('2.00')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(48): RecipeController->decimalToFraction('2.00')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(19): RecipeView->Recipe('Sour Cream And ...')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(10): RecipeView->corps_page('Sour Cream And ...')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(11): RecipeView->index('Sour Cream And ...')
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(47): RecipeController->index('Sour Cream And ...')
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(51): dispatch('recipe')
+#8 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php on line 75
+[10-Jan-2023 17:26:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function gmp_intval() in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php:75
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(46): RecipeModel->decimalToFraction('2.00')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(48): RecipeController->decimalToFraction('2.00')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(19): RecipeView->Recipe('Sour Cream And ...')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(10): RecipeView->corps_page('Sour Cream And ...')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(11): RecipeView->index('Sour Cream And ...')
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(47): RecipeController->index('Sour Cream And ...')
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(51): dispatch('recipe')
+#8 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php on line 75
+[10-Jan-2023 18:02:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function gmp_intval() in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php:75
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(46): RecipeModel->decimalToFraction('2.00')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(48): RecipeController->decimalToFraction('2.00')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(19): RecipeView->Recipe('Sour Cream And ...')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(10): RecipeView->corps_page('Sour Cream And ...')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(11): RecipeView->index('Sour Cream And ...')
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(47): RecipeController->index('Sour Cream And ...')
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(51): dispatch('recipe')
+#8 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php on line 75
+[10-Jan-2023 18:07:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function gmp_intval() in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php:75
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(46): RecipeModel->decimalToFraction('2.00')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(48): RecipeController->decimalToFraction('2.00')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(19): RecipeView->Recipe('Sour Cream And ...')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(10): RecipeView->corps_page('Sour Cream And ...')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(11): RecipeView->index('Sour Cream And ...')
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(47): RecipeController->index('Sour Cream And ...')
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(51): dispatch('recipe')
+#8 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\RecipeModel.php on line 75
+[10-Jan-2023 18:46:12 UTC] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php on line 40
+[10-Jan-2023 21:13:01 UTC] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php:87
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(22): RecipeView->Recipe('Sour Cream And ...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php(11): RecipeView->corps_page('Sour Cream And ...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\RecipeController.php(11): RecipeView->index('Sour Cream And ...')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(47): RecipeController->index('Sour Cream And ...')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(51): dispatch('recipe')
+#6 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php on line 87
+[10-Jan-2023 23:10:25 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "," or ";" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php on line 90
+[11-Jan-2023 00:50:59 UTC] PHP Warning:  Undefined variable $Chocolate Fondu in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php on line 31
+[11-Jan-2023 00:50:59 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php on line 31

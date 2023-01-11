@@ -15,6 +15,7 @@ public function index(){
 public function corps_page(){
   ?>
   <body>
+  <link rel="stylesheet" href="../../public/css/home.css">
     <div class="home_section">
     <div class="layer">
       
@@ -127,7 +128,7 @@ public  function diaporama()
     {?>
     <div class="slider-item">
     <div class="text-wrap">
-    <div class="category"><a href="/appetizers">Appetizers</a></div>
+    <div class="category"><a href="/Appetizers">Appetizers</a></div>
     <div class="title"><?php echo $row['name'] ?></div>
     <div class="description"><?php echo $row['description'] ?></div>
     <div class="info">
@@ -144,7 +145,9 @@ public  function diaporama()
     echo "Advanced";}?>
   </div>
     </div>
-    <button class="readmore">Read More</button>
+    <button class="readmore" onclick="location.href='/recipe/<?php 
+    $title = str_replace(' ', '_', $row['name']);
+    echo $title ;?>';">Read More</button>
     </div>
     <div class="img">
     <?php 
@@ -177,7 +180,7 @@ public function Mains()
     {?>
     <div class="slider1-item">
     <div class="text-wrap">
-    <div class="category"><a href="/mains">Mains</a></div>
+    <div class="category"><a href="/Mains">Mains</a></div>
     <div class="title"><?php echo $row['name'] ?></div>
     <div class="description"><?php echo $row['description'] ?></div>
     <div class="info">
@@ -194,7 +197,9 @@ public function Mains()
     echo "Advanced";}?>
   </div>
     </div>
-    <button class="readmore">Read More</button>
+    <button class="readmore" onclick="location.href='/recipe/<?php 
+    $title = str_replace(' ', '_', $row['name']);
+    echo $title ;?>';">Read More</button>
     </div>
     <div class="img">
     <?php
@@ -226,7 +231,7 @@ public function Desserts()
     {?>
     <div class="slider2-item">
     <div class="text-wrap">
-    <div class="category"><a href="desserts">Desserts</a></div>
+    <div class="category"><a href="/Desserts">Desserts</a></div>
     <div class="title"><?php echo $row['name'] ?></div>
     <div class="description"><?php echo $row['description'] ?></div>
     <div class="info">
@@ -243,7 +248,9 @@ public function Desserts()
     echo "Advanced";}?>
   </div>
     </div>
-    <button class="readmore">Read More</button>
+    <button class="readmore" onclick="location.href='/recipe/<?php 
+    $title = str_replace(' ', '_', $row['name']);
+    echo $title ;?>';">Read More</button>
     </div>
     <div class="img">
     <?php 
@@ -275,7 +282,7 @@ public function Drinks()
     {?>
     <div class="slider3-item">
     <div class="text-wrap">
-    <div class="category"><a href="/beverages">Beverages</a></div>
+    <div class="category"><a href="/Beverages">Beverages</a></div>
     <div class="title"><?php echo $row['name'] ?></div>
     <div class="description"><?php echo $row['description'] ?></div>
     <div class="info">
@@ -292,7 +299,9 @@ public function Drinks()
     echo "Advanced";}?>
   </div>
     </div>
-    <button class="readmore">Read More</button>
+    <button class="readmore" onclick="location.href='/recipe/<?php 
+    $title = str_replace(' ', '_', $row['name']);
+    echo $title ;?>';">Read More</button>
     </div>
     <div class="img">
     <?php 
