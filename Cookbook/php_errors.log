@@ -445,3 +445,20 @@ Stack trace:
 [10-Jan-2023 23:10:25 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "," or ";" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php on line 90
 [11-Jan-2023 00:50:59 UTC] PHP Warning:  Undefined variable $Chocolate Fondu in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php on line 31
 [11-Jan-2023 00:50:59 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\RecipeView.php on line 31
+[11-Jan-2023 08:38:06 UTC] PHP Warning:  require(./app/views/NewsPageView.php): Failed to open stream: No such file or directory in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\NewsPageController.php on line 4
+[11-Jan-2023 08:38:06 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './app/views/NewsPageView.php' (include_path='.;C:\php\pear') in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\NewsPageController.php:4
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(6): require_once()
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\NewsPageController.php on line 4
+[11-Jan-2023 09:27:06 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\NewsPageView.php on line 61
+[11-Jan-2023 09:27:06 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\NewsPageView.php on line 61
+[11-Jan-2023 09:27:06 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\NewsPageView.php on line 61
+[11-Jan-2023 09:27:06 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\NewsPageView.php on line 61
+[11-Jan-2023 09:28:14 UTC] PHP Warning:  Undefined array key "title" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\NewsPageView.php on line 61
+[11-Jan-2023 09:28:14 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\NewsPageView.php on line 61
+[11-Jan-2023 09:28:14 UTC] PHP Warning:  Undefined array key "title" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\NewsPageView.php on line 61
+[11-Jan-2023 09:28:14 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\NewsPageView.php on line 61
+[11-Jan-2023 09:49:57 UTC] PHP Warning:  Undefined variable $news in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php on line 17
+[11-Jan-2023 09:49:57 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php on line 17
+[11-Jan-2023 09:59:19 UTC] PHP Parse error:  Unmatched '}' in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\NewsView.php on line 51

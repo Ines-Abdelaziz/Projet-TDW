@@ -1,0 +1,180 @@
+.slider0-wrap{
+    height: 500px;
+    display: table-cell;
+    position: relative;
+}
+.slider0{
+    display: table;
+}
+.slider0-item{
+    padding-left: 150px;
+
+}
+.text-wrap{
+    display: table-cell;
+    padding: 20px 80px;
+    vertical-align:top;
+}
+.text-wrap0{
+    display: table-cell;
+    vertical-align:top;
+    padding-left: 10px;
+}
+.category{
+    padding-top: 50px;
+    padding-left: 20px;
+    font-family: 'Great Vibes';
+    font-size: 48px;
+    line-height: 40px;
+    color: #FF9F0D;
+}
+.category a{
+    text-decoration: none;
+    color: #FF9F0D;
+}
+.slogan{
+    padding-top: 50px;
+    padding-left: 20px;
+    font-family: 'Great Vibes';
+    font-size: 36px;
+    line-height: 40px;
+    color: #FF9F0D;
+}
+.title{
+    font-family: 'Helvetica';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+    width: 380px;
+    display: inline-block;
+    color:#fff;
+    padding: 20px;
+    
+}
+.description{
+    padding-left: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    width: 400px;
+    font-size: 14px;
+    line-height: 24px;
+    color:#FFF ;
+
+}
+.info{
+    padding-top: 20px;
+    padding-left: 20px;
+    display: table;
+    font-size: 14px;
+    line-height: 24px;
+    color:#FFF ;
+
+}
+.calories{
+    display: table-cell;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color:#FFF ;
+    font-weight: 300;
+    padding-right: 30px;
+
+}
+.calories i{
+    color: #FF9F0D;
+    padding-right: 10px;
+}
+.time{
+    display: table-cell;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color:#FFF ;
+    font-weight: 300;
+    padding-right: 30px;
+}
+.time i{
+    color: #FF9F0D;
+    padding-right: 10px;
+}
+.level{
+    display: table-cell;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color:#FFF ;
+    font-weight: 300;
+
+}
+.level i{
+    color: #FF9F0D;
+    padding-right: 10px;
+}
+.readmore{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    background: #FF9F0D;
+    border-radius: 30px;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    text-align: center;
+}
+.readmore:hover{
+    background:#FAF7F2;
+    color: #FF9F0D;
+    font-weight: 700;
+}
+.img{
+    display: table-cell;
+    vertical-align:baseline;
+    margin-top: 70px;
+    padding-top: 70px;
+    margin-right: 100px;
+}
+.img1{
+    display: table-cell;
+    vertical-align:top;
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-left: 100px;
+    padding-left: 100px;
+    
+}
+.img1 img{
+    height: 350px;
+    width: 450px; 
+    object-fit: cover;
+}
+.img img{
+    object-fit: cover;
+    height: 350px;
+    width: 400px;
+}
+.category-header img{
+    width: 100%;
+   }
+   .category-header{
+       position: relative;
+       text-align: center;
+       color: #FF9F0D;
+       font-family: 'Great Vibes';
+   }
+   .category-title{
+       position: absolute;
+       font-size: 48px;
+       top: 50%;
+       left: 15%;
+       transform: translate(-50%, -50%);
+   }
+   .category-slogan{
+       text-align: center;
+       padding: 50px 0;
+       color: #FF9F0D;
+       font-family: 'Great Vibes';
+       font-size: 46px;
+   }

@@ -3,12 +3,21 @@ require_once "route.php";
 require_once './app/controllers/HomeController.php';
 require_once './app/controllers/CategoryController.php';
 require_once './app/controllers/RecipeController.php';
+require_once './app/controllers/NewsPageController.php';
+require_once './app/controllers/NewsController.php';
+
 $action = $_SERVER['REQUEST_URI'];
 if (str_starts_with($action,'/recipe/')){
  $recipetitle=trim($action,'/recipe/');
  $recipetitle=str_replace('_',' ',$recipetitle);
  $action='/recipe';
 }
+
+if (str_starts_with($action,'/news/article/')){
+    $newstitle=ltrim($action,'/news/article/');
+    $newstitle=str_replace('_',' ',$newstitle);
+    $action='/news/article';
+   }
 //home
 route('/', function () {
     $c = new HomeController();
@@ -45,6 +54,15 @@ route('/recipe', function () {
     global $recipetitle;
     $c = new RecipeController();
     $c->index($recipetitle);
+});
+route('/news', function () {
+    $c = new NewsPageController();
+    $c->index();
+});
+route('/news/article', function () {
+    global $newstitle;
+    $c = new NewsController();
+    $c->index($newstitle);
 });
 
 

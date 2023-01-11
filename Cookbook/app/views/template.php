@@ -32,7 +32,7 @@ public  function menu(){
       <img src="../../public/images/Logo.png" >
       <div class="menu-titles">
        <a id="home-menu" href="/home">Home</a>
-       <a id="news-menu" href="#">News</a>
+       <a id="news-menu" href="/news">News</a>
        <a id="recipes-menu" href="#">Recipes</a>
        <a id="healthy-menu"href="#">Healthy</a>
        <a id="seasons-menu" href="#">Seasons</a>
@@ -66,8 +66,8 @@ public  function footer(){
             <h1>Explore</h1>
             <div  class="footer-navbar">
               <ul>
-                <li><a href="#"><i  class="fa-solid fa-chevron-right fa-xs"></i> Home</a></li>
-                <li><a href="#"><i  class="fa-solid fa-chevron-right fa-xs"></i> News</a></li>
+                <li><a href="/home"><i  class="fa-solid fa-chevron-right fa-xs"></i> Home</a></li>
+                <li><a href="/news"><i  class="fa-solid fa-chevron-right fa-xs"></i> News</a></li>
                 <li><a href="#"><i  class="fa-solid fa-chevron-right fa-xs"></i> Recipes</a></li>
 
                 <li><a href="#"><i  class="fa-solid fa-chevron-right fa-xs"></i> Healthy</a></li>

@@ -32,7 +32,6 @@ public function Recipe($recipetitle)
   $cntr=new RecipeController();
   $q=$cntr->getRecipe($recipetitle);
   foreach($q as $r){
-    echo "fuck";
     $cntr1=new CategoryController();
     $q1=$cntr1->getCategory($r['category_id']);
     foreach($q1 as $c){
