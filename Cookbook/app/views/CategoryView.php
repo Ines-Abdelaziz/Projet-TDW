@@ -81,7 +81,7 @@ public function recipes($category){
             <div class="image-box"> <a href="<?php $title = str_replace(' ', '_', $r['name']); echo "/recipe/$title" ; ?>">
                 <?php  $image = $cntr->getImage($r['id']);
                     foreach ($image as $i){
-                        echo '<img src="data:image/jpeg;base64,'.base64_encode($i['imageurl']).'"/>';}?>?></a>
+                        echo '<img src="data:image/jpeg;base64,'.base64_encode($i['imageurl']).'"/>';}?></a>
             </div>
             <div class="c-recipe-content">
                <div class="c-container"> <div class="c-recipe-title"><?php echo $r['name'] ?></div> <div class="c-save"><button><i  class="fa-regular fa-bookmark fa-2xl "></i></button></div> </div>

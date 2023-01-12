@@ -1,11 +1,17 @@
 .category-card{
     max-width: 320px;
+    min-width: 320px;
 	padding: 24px;
-    display: table-cell;
+    display: inline-block;
+    column-count: 3;
     
 }
 .category-recipe{
     display: flex;
+    min-height: 400px;
+    max-height: 420px;
+    max-width: 320px;
+    min-width: 320px;
 	flex-wrap: wrap;
 	align-items: center;
 	border-radius: 40px;
@@ -23,9 +29,7 @@
 .image-box img{
     max-width: 100%;
 	min-height: 100%;
-	width: auto;
-	height: auto;
-	object-fit: cover;
+	object-fit: contain;
 	object-position: 50% 50%;
 }
 .c-recipe-content{
@@ -154,9 +158,8 @@ display: table;
     padding: 10px;
 }
 .c-cards-wrap{
-    display: table;
     padding-left: 126px;
-
+    display: table;
 }
 .category-header img{
  width: 100%;
