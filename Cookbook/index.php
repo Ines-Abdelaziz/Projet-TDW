@@ -5,7 +5,7 @@ require_once './app/controllers/CategoryController.php';
 require_once './app/controllers/RecipeController.php';
 require_once './app/controllers/NewsPageController.php';
 require_once './app/controllers/NewsController.php';
-
+require_once './app/controllers/FestivalsController.php';
 $action = $_SERVER['REQUEST_URI'];
 if (str_starts_with($action,'/recipe/')){
  $recipetitle=trim($action,'/recipe/');
@@ -64,6 +64,9 @@ route('/news/article', function () {
     $c = new NewsController();
     $c->index($newstitle);
 });
-
+route('/Festivals', function () {
+    $c = new FestivalsController();
+    $c->index();
+});
 
 dispatch($action);

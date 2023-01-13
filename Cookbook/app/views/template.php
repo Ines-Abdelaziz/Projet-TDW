@@ -36,7 +36,7 @@ public  function menu(){
        <a id="recipes-menu" href="#">Recipes</a>
        <a id="healthy-menu"href="#">Healthy</a>
        <a id="seasons-menu" href="#">Seasons</a>
-       <a id="festivals-menu" href="#">Festivals</a>
+       <a id="festivals-menu" href="/Festivals">Festivals</a>
        <a id="nutrition-menu" href="#">Nutrition</a>
        <a id="contact-menu" href="#">Contact</a>
       </div>
@@ -72,7 +72,7 @@ public  function footer(){
 
                 <li><a href="#"><i  class="fa-solid fa-chevron-right fa-xs"></i> Healthy</a></li>
                 <li><a href="#"><i  class="fa-solid fa-chevron-right fa-xs"></i> Seasons</a></li>
-                <li><a href="#"><i  class="fa-solid fa-chevron-right fa-xs"></i> Festivals</a></li>
+                <li><a href="/Festivals"><i  class="fa-solid fa-chevron-right fa-xs"></i> Festivals</a></li>
                 <li><a href="#"><i  class="fa-solid fa-chevron-right fa-xs"></i> Nutrition</a></li>
               </ul>
            

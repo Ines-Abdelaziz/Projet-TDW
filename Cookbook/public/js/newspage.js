@@ -1,3 +1,5 @@
+document.getElementById("news-menu").style.color = '#FF9F0D';
+document.getElementById("news-menu").style.fontWeight = '600';
 const divs = document.querySelectorAll('.title');
 
 divs.forEach(div => {

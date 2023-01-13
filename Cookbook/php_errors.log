@@ -462,3 +462,175 @@ Stack trace:
 [11-Jan-2023 09:49:57 UTC] PHP Warning:  Undefined variable $news in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php on line 17
 [11-Jan-2023 09:49:57 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php on line 17
 [11-Jan-2023 09:59:19 UTC] PHP Parse error:  Unmatched '}' in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\NewsView.php on line 51
+[13-Jan-2023 09:49:21 UTC] PHP Warning:  Undefined array key "festivals" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[13-Jan-2023 09:49:21 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(72): dispatch('festivals')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[13-Jan-2023 09:49:38 UTC] PHP Warning:  Undefined variable $category in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 73
+[13-Jan-2023 09:49:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT * FROM `...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\FestivalsModel.php(11): Model->requete(Object(PDO), 'SELECT * FROM `...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\FestivalsController.php(17): FestivalsModel->filterBy(NULL)
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(73): FestivalsController->filterBy(NULL, 'calories ASC')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(21): FestivalsView->recipes()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(10): FestivalsView->corps_page()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\FestivalsController.php(11): FestivalsView->index()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(69): FestivalsController->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(72): dispatch('Festivals')
+#10 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:41 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 72
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "description" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 73
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "calories" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 75
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "preparation_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "cooking_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "rest_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "difficulty" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 77
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:41 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 72
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "description" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 73
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "calories" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 75
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "preparation_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "cooking_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "rest_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "difficulty" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 77
+[13-Jan-2023 09:57:41 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:41 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 72
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "description" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 73
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "calories" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 75
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "preparation_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "cooking_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "rest_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "difficulty" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 77
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:42 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 72
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "description" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 73
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "calories" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 75
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "preparation_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "cooking_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "rest_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "difficulty" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 77
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:42 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 72
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "description" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 73
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "calories" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 75
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "preparation_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "cooking_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "rest_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "difficulty" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 77
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:42 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 72
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "description" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 73
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "calories" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 75
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "preparation_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "cooking_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "rest_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "difficulty" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 77
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:42 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 72
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "description" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 73
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "calories" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 75
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "preparation_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "cooking_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "rest_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "difficulty" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 77
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:42 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 72
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "description" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 73
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "calories" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 75
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "preparation_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "cooking_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "rest_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "difficulty" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 77
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:42 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 66
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 72
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "description" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 73
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "calories" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 75
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "preparation_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "cooking_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "rest_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 76
+[13-Jan-2023 09:57:42 UTC] PHP Warning:  Undefined array key "difficulty" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php on line 77
+[13-Jan-2023 10:02:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'aid' in 'where clause' in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT * FROM `...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\FestivalsModel.php(11): Model->requete(Object(PDO), 'SELECT * FROM `...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\FestivalsController.php(17): FestivalsModel->filterBy('aid')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(60): FestivalsController->filterBy('aid')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(21): FestivalsView->recipes()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(10): FestivalsView->corps_page()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\FestivalsController.php(11): FestivalsView->index()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(69): FestivalsController->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(72): dispatch('Festivals')
+#10 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[13-Jan-2023 10:02:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ramadan' in 'where clause' in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT * FROM `...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\FestivalsModel.php(11): Model->requete(Object(PDO), 'SELECT * FROM `...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\FestivalsController.php(17): FestivalsModel->filterBy('ramadan')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(60): FestivalsController->filterBy('ramadan')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(21): FestivalsView->recipes()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(10): FestivalsView->corps_page()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\FestivalsController.php(11): FestivalsView->index()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(69): FestivalsController->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(72): dispatch('Festivals')
+#10 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[13-Jan-2023 10:02:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'achoura' in 'where clause' in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT * FROM `...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\FestivalsModel.php(11): Model->requete(Object(PDO), 'SELECT * FROM `...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\FestivalsController.php(17): FestivalsModel->filterBy('achoura')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(60): FestivalsController->filterBy('achoura')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(21): FestivalsView->recipes()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(10): FestivalsView->corps_page()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\FestivalsController.php(11): FestivalsView->index()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(69): FestivalsController->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(72): dispatch('Festivals')
+#10 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[13-Jan-2023 10:02:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'achoura' in 'where clause' in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT * FROM `...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\FestivalsModel.php(11): Model->requete(Object(PDO), 'SELECT * FROM `...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\FestivalsController.php(17): FestivalsModel->filterBy('achoura')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(60): FestivalsController->filterBy('achoura')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(21): FestivalsView->recipes()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(10): FestivalsView->corps_page()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\FestivalsController.php(11): FestivalsView->index()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(69): FestivalsController->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(72): dispatch('Festivals')
+#10 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[13-Jan-2023 10:05:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ramadan' in 'where clause' in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT * FROM `...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\FestivalsModel.php(11): Model->requete(Object(PDO), 'SELECT * FROM `...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\FestivalsController.php(17): FestivalsModel->filterBy('ramadan')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(72): FestivalsController->filterBy('ramadan')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(21): FestivalsView->recipes()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\FestivalsView.php(10): FestivalsView->corps_page()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\FestivalsController.php(11): FestivalsView->index()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(69): FestivalsController->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(72): dispatch('Festivals')
+#10 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
