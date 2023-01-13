@@ -634,3 +634,272 @@ Stack trace:
 #9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(72): dispatch('Festivals')
 #10 {main}
   thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[13-Jan-2023 11:12:55 UTC] PHP Fatal error:  Uncaught Error: Class "SignUpController" not found in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php:72
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(76): dispatch('SignUp')
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php on line 72
+[13-Jan-2023 11:13:27 UTC] PHP Warning:  require_once(./app/controllers/SignUpController.php): Failed to open stream: No such file or directory in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php on line 9
+[13-Jan-2023 11:13:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './app/controllers/SignUpController.php' (include_path='.;C:\php\pear') in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php on line 9
+[13-Jan-2023 14:31:30 UTC] PHP Warning:  Undefined array key "first_name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 28
+[13-Jan-2023 14:31:30 UTC] PHP Warning:  Undefined array key "last_name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 29
+[13-Jan-2023 14:31:30 UTC] PHP Warning:  Undefined array key "sexe" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 30
+[13-Jan-2023 14:31:30 UTC] PHP Warning:  Undefined array key "date" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 31
+[13-Jan-2023 14:31:30 UTC] PHP Warning:  Undefined array key "email" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 32
+[13-Jan-2023 14:31:30 UTC] PHP Warning:  Undefined array key "password" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 33
+[13-Jan-2023 14:31:30 UTC] PHP Warning:  Undefined array key "confirm_password" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 34
+[13-Jan-2023 14:31:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT count(*)...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\SignUpModel.php(10): Model->requete(Object(PDO), 'SELECT count(*)...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(17): SignUpModel->checkUser(NULL)
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(36): SignUpController->checkUser(NULL)
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(51): SignUpController->SignUp()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(24): SignUpView->SignUpFrom()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(10): SignUpView->corps_page()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(11): SignUpView->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(74): SignUpController->index()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#10 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('SignUp')
+#11 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[13-Jan-2023 14:35:17 UTC] PHP Warning:  Undefined array key "first_name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 51
+[13-Jan-2023 14:35:17 UTC] PHP Warning:  Undefined array key "last_name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 52
+[13-Jan-2023 14:35:17 UTC] PHP Warning:  Undefined array key "sexe" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 53
+[13-Jan-2023 14:35:17 UTC] PHP Warning:  Undefined array key "date" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 54
+[13-Jan-2023 14:35:17 UTC] PHP Warning:  Undefined array key "email" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 55
+[13-Jan-2023 14:35:17 UTC] PHP Warning:  Undefined array key "password" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 56
+[13-Jan-2023 14:35:17 UTC] PHP Warning:  Undefined array key "confirm_password" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 57
+[13-Jan-2023 14:35:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT count(*)...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\SignUpModel.php(10): Model->requete(Object(PDO), 'SELECT count(*)...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(17): SignUpModel->checkUser(NULL)
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(59): SignUpController->checkUser(NULL)
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(24): SignUpView->SignUpFrom()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(10): SignUpView->corps_page()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(11): SignUpView->index()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(74): SignUpController->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('SignUp')
+#10 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[13-Jan-2023 14:36:11 UTC] PHP Warning:  Undefined array key "first_name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 105
+[13-Jan-2023 14:36:11 UTC] PHP Warning:  Undefined array key "last_name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 106
+[13-Jan-2023 14:36:11 UTC] PHP Warning:  Undefined array key "sexe" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 107
+[13-Jan-2023 14:36:11 UTC] PHP Warning:  Undefined array key "date" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 108
+[13-Jan-2023 14:36:11 UTC] PHP Warning:  Undefined array key "email" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 109
+[13-Jan-2023 14:36:11 UTC] PHP Warning:  Undefined array key "password" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 110
+[13-Jan-2023 14:36:11 UTC] PHP Warning:  Undefined array key "confirm_password" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 111
+[13-Jan-2023 14:36:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT count(*)...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\SignUpModel.php(10): Model->requete(Object(PDO), 'SELECT count(*)...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(17): SignUpModel->checkUser(NULL)
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(113): SignUpController->checkUser(NULL)
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(24): SignUpView->SignUpFrom()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(10): SignUpView->corps_page()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(11): SignUpView->index()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(74): SignUpController->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('SignUp')
+#10 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[13-Jan-2023 14:38:45 UTC] PHP Warning:  Undefined array key "first_name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 28
+[13-Jan-2023 14:38:45 UTC] PHP Warning:  Undefined array key "last_name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 29
+[13-Jan-2023 14:38:45 UTC] PHP Warning:  Undefined array key "sexe" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 30
+[13-Jan-2023 14:38:45 UTC] PHP Warning:  Undefined array key "date" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 31
+[13-Jan-2023 14:38:45 UTC] PHP Warning:  Undefined array key "email" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 32
+[13-Jan-2023 14:38:45 UTC] PHP Warning:  Undefined array key "password" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 33
+[13-Jan-2023 14:38:45 UTC] PHP Warning:  Undefined array key "confirm_password" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 34
+[13-Jan-2023 14:38:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT count(*)...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\SignUpModel.php(10): Model->requete(Object(PDO), 'SELECT count(*)...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(17): SignUpModel->checkUser(NULL)
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(36): SignUpController->checkUser(NULL)
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(51): SignUpController->SignUp()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(24): SignUpView->SignUpFrom()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(10): SignUpView->corps_page()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(11): SignUpView->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(74): SignUpController->index()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#10 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('SignUp')
+#11 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[13-Jan-2023 14:44:38 UTC] PHP Warning:  Undefined array key "not%20same%20password" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[13-Jan-2023 14:44:38 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('not%20same%20pa...')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[13-Jan-2023 14:45:30 UTC] PHP Warning:  Undefined array key "not%20same%20password" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[13-Jan-2023 14:45:30 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('not%20same%20pa...')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[13-Jan-2023 14:45:47 UTC] PHP Warning:  Undefined array key "not%20same%20password" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[13-Jan-2023 14:45:47 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('not%20same%20pa...')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[13-Jan-2023 14:46:33 UTC] PHP Warning:  Undefined array key "not%20same%20password" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[13-Jan-2023 14:46:33 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('not%20same%20pa...')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[13-Jan-2023 14:52:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT count(*)...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\SignUpModel.php(10): Model->requete(Object(PDO), 'SELECT count(*)...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(17): SignUpModel->checkUser('ines.nossa.abde...')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(38): SignUpController->checkUser('ines.nossa.abde...')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(51): SignUpController->SignUp()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(24): SignUpView->SignUpFrom()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(10): SignUpView->corps_page()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(11): SignUpView->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(74): SignUpController->index()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#10 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('SignUp')
+#11 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[13-Jan-2023 14:53:14 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT count(*)...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\SignUpModel.php(10): Model->requete(Object(PDO), 'SELECT count(*)...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(17): SignUpModel->checkUser('ines.nossa.abde...')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(38): SignUpController->checkUser('ines.nossa.abde...')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(51): SignUpController->SignUp()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(24): SignUpView->SignUpFrom()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(10): SignUpView->corps_page()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(11): SignUpView->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(74): SignUpController->index()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#10 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('SignUp')
+#11 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[13-Jan-2023 14:53:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT count(*)...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\SignUpModel.php(10): Model->requete(Object(PDO), 'SELECT count(*)...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(17): SignUpModel->checkUser('ines.nossa.abde...')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(38): SignUpController->checkUser('ines.nossa.abde...')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(51): SignUpController->SignUp()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(24): SignUpView->SignUpFrom()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(10): SignUpView->corps_page()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(11): SignUpView->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(74): SignUpController->index()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#10 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('SignUp')
+#11 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[13-Jan-2023 14:54:38 UTC] PHP Warning:  Undefined array key "sexe" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 32
+[13-Jan-2023 14:55:26 UTC] PHP Warning:  Undefined array key "shit" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[13-Jan-2023 14:55:26 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('shit')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[13-Jan-2023 14:55:48 UTC] PHP Warning:  Undefined array key "shit" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[13-Jan-2023 14:55:48 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('shit')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[13-Jan-2023 14:56:02 UTC] PHP Warning:  Undefined array key "shit" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[13-Jan-2023 14:56:02 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('shit')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[13-Jan-2023 14:56:22 UTC] PHP Warning:  Undefined array key "sexe" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 31
+[13-Jan-2023 14:56:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT count(*)...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\SignUpModel.php(10): Model->requete(Object(PDO), 'SELECT count(*)...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(17): SignUpModel->checkUser('ines.nossa.abde...')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(38): SignUpController->checkUser('ines.nossa.abde...')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(51): SignUpController->SignUp()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(24): SignUpView->SignUpFrom()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(10): SignUpView->corps_page()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(11): SignUpView->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(74): SignUpController->index()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#10 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('SignUp')
+#11 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[13-Jan-2023 14:59:31 UTC] PHP Warning:  Undefined array key "sexe" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 31
+[13-Jan-2023 14:59:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '11/27/2001,ines.nossa.abdelaziz@gmail.com,a,0)' at line 2 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO use...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\SignUpModel.php(18): Model->requete(Object(PDO), 'INSERT INTO use...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(23): SignUpModel->insertUser('Ines', 'Abdelaziz', NULL, '11/27/2001', 'ines.nossa.abde...', 'a')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(42): SignUpController->insertUser('Ines', 'Abdelaziz', NULL, '11/27/2001', 'ines.nossa.abde...', 'a')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(51): SignUpController->SignUp()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(24): SignUpView->SignUpFrom()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(10): SignUpView->corps_page()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(11): SignUpView->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(74): SignUpController->index()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#10 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('SignUp')
+#11 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[13-Jan-2023 15:00:49 UTC] PHP Warning:  Undefined array key "sexe" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 31
+[13-Jan-2023 15:00:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '11/27/2001,'ines.nossa.abdelaziz@gmail.com','a',0)' at line 2 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO use...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\SignUpModel.php(18): Model->requete(Object(PDO), 'INSERT INTO use...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(23): SignUpModel->insertUser('Ines', 'Abdelaziz', NULL, '11/27/2001', 'ines.nossa.abde...', 'a')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(42): SignUpController->insertUser('Ines', 'Abdelaziz', NULL, '11/27/2001', 'ines.nossa.abde...', 'a')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(51): SignUpController->SignUp()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(24): SignUpView->SignUpFrom()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(10): SignUpView->corps_page()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(11): SignUpView->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(74): SignUpController->index()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#10 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('SignUp')
+#11 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[13-Jan-2023 15:16:38 UTC] PHP Warning:  Undefined array key "11/03/20012001-11-03" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[13-Jan-2023 15:16:38 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('11/03/20012001-...')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[13-Jan-2023 15:21:15 UTC] PHP Warning:  Undefined array key "This%20User%20Already%20Exists" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[13-Jan-2023 15:21:15 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('This%20User%20A...')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[13-Jan-2023 15:21:33 UTC] PHP Warning:  Undefined array key "This%20User%20Already%20Exists" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[13-Jan-2023 15:21:33 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('This%20User%20A...')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[13-Jan-2023 15:30:16 UTC] PHP Warning:  Undefined array key "2001-03-11" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[13-Jan-2023 15:30:16 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('2001-03-11')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[13-Jan-2023 15:31:08 UTC] PHP Warning:  Undefined array key "2001-03-11" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[13-Jan-2023 15:31:08 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('2001-03-11')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[13-Jan-2023 15:31:22 UTC] PHP Warning:  Undefined array key "This%20User%20Already%20Exists" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[13-Jan-2023 15:31:22 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('This%20User%20A...')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33

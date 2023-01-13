@@ -40,7 +40,7 @@ public  function menu(){
        <a id="nutrition-menu" href="#">Nutrition</a>
        <a id="contact-menu" href="#">Contact</a>
       </div>
-      <button>Sign Up <i class="fa-solid fa-arrow-right-long"></i></button>
+      <button onclick="location.href='/SignUp'">Sign Up <i class="fa-solid fa-arrow-right-long"></i></button>
     </div>
 <?php
 }
