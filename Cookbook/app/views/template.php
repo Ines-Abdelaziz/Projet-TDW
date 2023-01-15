@@ -1,5 +1,5 @@
 <?php
-
+require_once('./app/controllers/SignInController.php');
 Class template{
 
 public function main(){
@@ -18,6 +18,7 @@ public function entete_page(){?>
         <link rel="preconnect" href="https://rsms.me/">
             <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
             <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'> 
+            <script src="../../public/js/jquery-3.3.1.min.js"></script>
             
     </head>
     <?php
@@ -40,9 +41,24 @@ public  function menu(){
        <a id="nutrition-menu" href="#">Nutrition</a>
        <a id="contact-menu" href="#">Contact</a>
       </div>
-      <button onclick="location.href='/SignUp'">Sign Up <i class="fa-solid fa-arrow-right-long"></i></button>
+      <?php if (isset($_SESSION['loggedIn'])){if ($_SESSION['loggedIn']==true){
+      ?> 
+      <button onclick="">Profile<i style="padding-left: 10px;" class="fa-solid fa-user"></i></button>
+      <form method="post"><button name="logout">Log Out</button></form>
+      <?php
+      }}else{?>
+      <button onclick="location.href='/SignIn'">Sign In <i class="fa-solid fa-arrow-right-long"></i></button>
+   <?php } 
+     if (isset($_POST['logout'])){
+        $cntr= new SignInController();
+        $r=$cntr->Logout();
+     }
+   
+   
+   ?>
     </div>
 <?php
+
 }
 
 

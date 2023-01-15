@@ -47,8 +47,17 @@ Class RecipeController{
         $r=$model->decimalToFraction($decimal);
         return $r;
     }
+    public function ifFavorite($user,$recipeId){
+        $model=new RecipeModel();
+        $r=$model->ifFavorite($user,$recipeId);
+        return $r;
+    }
 
-
+    public function getRrating($recpeId){
+        $model=new RecipeModel();
+        $r=$model->getRating($recpeId);
+        return $r;
+    }
     
    
 }

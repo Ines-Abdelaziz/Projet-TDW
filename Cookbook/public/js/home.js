@@ -1,3 +1,4 @@
+
 document.getElementById("home-menu").style.color = '#FF9F0D';
 document.getElementById("home-menu").style.fontWeight = '600';
 const divs = document.querySelectorAll('.title');

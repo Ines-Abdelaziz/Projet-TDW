@@ -48,7 +48,7 @@ public  function SignUpFrom()
 ?>
  <div class="form-wrap">
  <div class="signup-form">
-    <form action="<?php $cntr->SignUp()?>" method="post">
+    <form action='' method="post">
 		<h2>Sign Up</h2>
         <div class="form-group">
 			<div class="row">
@@ -76,18 +76,22 @@ public  function SignUpFrom()
       <div class="col-sm-10 col-sm-offset-2">
        <div class="input-group">
         
-        <input class="form-control" id="date" name="date" placeholder="Birthday " type="text"/>
+        <input class="form-control" id="date" name="date" placeholder="Birthday " type="text" required/>
        </div>
       </div>
      </div>
         <div class="form-group">
-        	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
+        	<input id="email" type="email" class="form-control" name="email" placeholder="Email" required="required" >
+            <div id="user-exist" hidden >
+                Email Already Used
+            </div>
         </div>
 		<div class="form-group">
-            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+            <input id="pwd" type="password" class="form-control" name="password" placeholder="Password" required="required">
         </div>
 		<div class="form-group">
-            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+            <input id='cpwd' type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+            <div id="pswdm" hidden> Password doesn't match</div>
         </div>        
         <div class="form-group">
 			<label class="checkbox-inline"><input class="form-check-input" type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
@@ -100,7 +104,24 @@ public  function SignUpFrom()
 </div>
  </div>
 <?php
+if($_SERVER['REQUEST_METHOD'] == "POST"){
+    $fname=$_POST['first_name'];
+    $lname=$_POST['last_name'];
+    $sex=$_POST['sexe'];
+    $bd=$_POST['date'];
+    $bd=str_replace('/','-',$bd);
+    $bd=date("Y-m-d", strtotime($bd));
+    $email=$_POST['email'];
+    $pswd=$_POST['password'];
 
+    $count=$cntr->checkUser($email);
+    if($count > 0){
+        echo '<script>document.getElementById("user-exist").hidden = false;</script>';
+    }else{
+        $cntr->insertUser($fname,$lname,$sex,$bd,$email,$pswd);
+        echo"<script type='text/javascript'>location.href = '/home';</script>";
+      
+    }}
 
 
 }

@@ -903,3 +903,65 @@ Stack trace:
 #0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('This%20User%20A...')
 #1 {main}
   thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[13-Jan-2023 21:44:21 UTC] PHP Warning:  Undefined array key "sexe" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php on line 31
+[13-Jan-2023 23:12:09 UTC] PHP Warning:  Undefined array key "sexe" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 110
+[13-Jan-2023 23:12:09 UTC] PHP Fatal error:  Uncaught Error: Method name must be a string in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php:121
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(24): SignUpView->SignUpFrom()
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(10): SignUpView->corps_page()
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(11): SignUpView->index()
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(74): SignUpController->index()
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('SignUp')
+#6 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 121
+[13-Jan-2023 23:15:03 UTC] PHP Fatal error:  Uncaught Error: Method name must be a string in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php:121
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(24): SignUpView->SignUpFrom()
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(10): SignUpView->corps_page()
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(11): SignUpView->index()
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(74): SignUpController->index()
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(77): dispatch('SignUp')
+#6 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 121
+[13-Jan-2023 23:15:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php:49) in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php on line 122
+[14-Jan-2023 10:26:52 UTC] PHP Fatal error:  Uncaught Error: Class "SignInController" not found in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php:78
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(81): dispatch('SignIn')
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php on line 78
+[14-Jan-2023 10:27:23 UTC] PHP Warning:  require_once(./app/controllers/SignInConroller.php): Failed to open stream: No such file or directory in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php on line 10
+[14-Jan-2023 10:27:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './app/controllers/SignInConroller.php' (include_path='.;C:\php\pear') in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php:10
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php on line 10
+[14-Jan-2023 15:54:50 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 37
+[14-Jan-2023 15:56:00 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 37
+[14-Jan-2023 17:13:28 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 37
+[14-Jan-2023 17:15:11 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 37
+[14-Jan-2023 17:15:14 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 37
+[14-Jan-2023 17:15:14 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 37
+[15-Jan-2023 13:25:22 UTC] PHP Warning:  Undefined array key "phpmyadmin" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[15-Jan-2023 13:25:22 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(82): dispatch('phpmyadmin')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[15-Jan-2023 13:27:37 UTC] PHP Warning:  Undefined array key "phpmyadmin" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[15-Jan-2023 13:27:37 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php:33
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(82): dispatch('phpmyadmin')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[15-Jan-2023 14:58:10 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[15-Jan-2023 14:58:40 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[15-Jan-2023 14:58:50 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[15-Jan-2023 15:11:08 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[15-Jan-2023 15:30:35 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[15-Jan-2023 16:22:34 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[15-Jan-2023 17:23:18 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[15-Jan-2023 17:25:38 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[15-Jan-2023 21:02:38 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[15-Jan-2023 21:25:48 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38

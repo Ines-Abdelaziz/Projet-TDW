@@ -51,14 +51,29 @@ public function getIngredient($ingredientId){
     return $r;
   }
 public function getUnit($unitId){
-  $conn=$this->connexion("cookbook","localhost:3307","root","");
+    $conn=$this->connexion("cookbook","localhost:3307","root","");
     $q= "SELECT * FROM `unit` WHERE id='$unitId'";
     $r= $this->requete($conn,$q);
     $this->deconnexion($conn);
     return $r;
 }
 
-
+public  function ifFavorite($user,$recipeId)
+{
+    $conn=$this->connexion("cookbook","localhost:3307","root","");
+    $q= "SELECT count(*) FROM user_favorite WHERE user_id='$user' AND recipe_id='$recipeId'";
+    $r= $this->requete($conn,$q);
+    $this->deconnexion($conn);
+    return $r->fetchColumn();
+}
+  //get recipe rating
+  public function getRating($recipeId){
+    $conn=$this->connexion("cookbook","localhost:3307","root","");
+    $q= "SELECT rating FROM `recipe` WHERE id='$recipeId'";
+    $r= $this->requete($conn,$q);
+    $this->deconnexion($conn);
+    return $r->fetchColumn();
+  }
 function decimalToFraction($decimal) 
 {
     // Determine decimal precision and extrapolate multiplier required to convert to integer

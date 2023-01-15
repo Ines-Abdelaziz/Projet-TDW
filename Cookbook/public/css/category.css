@@ -69,26 +69,7 @@
     padding-right: 30px;
    
 }
-.c-save{
-    /* display: table-cell;  */
 
-    padding-right: 20px;
-    
-    flex: auto;
-    margin-left: auto;
-  
-
-}
-.c-save button{
-    border: none;
-    background: none;
-    vertical-align:top;
-    cursor: pointer;
-}
-.c-save button i{
-    color: #FF9F0D;
-    font-weight: 100;
-}
 .c-info{
     display: table;
     padding-top: 20px;
@@ -121,10 +102,7 @@
     display: table-cell;
     padding-right: 20px;
 }
-.c-save:hover button i::before{
- content: '\f02e';
- font-weight: 900;
-}
+
 .c-sort-form{
 padding-left: 150px;
 color: #C4C4C4;

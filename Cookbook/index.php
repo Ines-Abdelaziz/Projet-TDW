@@ -7,6 +7,8 @@ require_once './app/controllers/NewsPageController.php';
 require_once './app/controllers/NewsController.php';
 require_once './app/controllers/FestivalsController.php';
 require_once './app/controllers/SignUpConroller.php';
+require_once './app/controllers/SignInController.php';
+session_start();  
 $action = $_SERVER['REQUEST_URI'];
 if (str_starts_with($action,'/recipe/')){
  $recipetitle=trim($action,'/recipe/');
@@ -73,5 +75,8 @@ route('/SignUp', function () {
     $c = new SignUpController();
     $c->index();
 });
-
+route('/SignIn', function () {
+    $c = new SignInController();
+    $c->index();
+});
 dispatch($action);

@@ -1,5 +1,5 @@
 .r-title{
-    padding-top: 50px;
+    padding-top: 10px;
     padding-left: 100px;
     font-family: 'Helvetica';
     font-weight: 700;
@@ -131,3 +131,43 @@
     text-decoration: none;
     color: #FF9F0D;
 }
+.c-save{
+    /* display: table-cell;  */
+
+    padding-right: 20px;
+    margin-right: 100px;
+    padding-top: 10px;
+    margin-left: auto;
+
+}
+.c-save button{
+    border: none;
+    background: none;
+    vertical-align:top;
+    cursor: pointer;
+}
+.c-save button i{
+    color: #FF9F0D;
+    font-weight: 100;
+}
+.c-save:hover button i::before{
+    content: '\f02e';
+    font-weight: 900;
+   }
+
+   .rating {
+    font-size: 10px;
+    padding-left:100px;
+    padding-top: 80px;
+    vertical-align: top;
+  }
+  
+  .rating i {
+    color: #c4c4c4;
+    font-size: 2em;
+  }
+  
+  .rating i.active {
+    color: #FF9F0D;
+  }
+  

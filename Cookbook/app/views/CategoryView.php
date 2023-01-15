@@ -84,7 +84,7 @@ public function recipes($category){
                         echo '<img src="data:image/jpeg;base64,'.base64_encode($i['imageurl']).'"/>';}?></a>
             </div>
             <div class="c-recipe-content">
-               <div class="c-container"> <div class="c-recipe-title"><?php echo $r['name'] ?></div> <div class="c-save"><button><i  class="fa-regular fa-bookmark fa-2xl "></i></button></div> </div>
+               <div class="c-container"> <div class="c-recipe-title"><?php echo $r['name'] ?></div></div>
                 <div class="c-recipe-desc"><?php echo $r['description'] ?></div>
                 <div class="c-info">
                     <div class="c-calories"><i class="fa-solid fa-fire-flame-curved  fa-sm"></i><?php echo $r['calories']?> CAL</div>

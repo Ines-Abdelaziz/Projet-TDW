@@ -23,6 +23,10 @@ public function corps_page($recipetitle){
       $this->footer();
     ?>
    <script src="../../public/js/recipe.js"></script>
+   <?php   if(isset($_SESSION['loggedIn'])){
+        echo "<script src='../../public/js/rating.js'></script>";
+      }
+       ?>
   </body>
   <?php
 }
@@ -43,7 +47,51 @@ public function Recipe($recipetitle)
 
 <?php  }
     ?>
-    <div class="r-title"><?php echo $r['name'] ;?></div>
+     <div class="rating" id="rating<?= $r['id'] ?>" data-rating="<?php echo $cntr->getRrating($r['id']) ?>" data-id="<?php echo $r['id'] ?>">
+      <i class="fa fa-star" data-index="1"></i>
+      <i class="fa fa-star" data-index="2"></i>
+      <i class="fa fa-star" data-index="3"></i>
+      <i class="fa fa-star" data-index="4"></i>
+      <i class="fa fa-star" data-index="5"></i> <span style="color:#fff !important; font-size:18px; padding-left:5px; font-family:'Inter' !important; font-weight:600!important;"><?php echo $cntr->getRrating($r['id']); ?></span>
+      <span style="color:#C4C4C4 !important; font-size:16px; padding-left:5px; font-family:'Inter' !important;">(<?php echo $r['nb_raters'] ?> Reviews)</span>
+    </div>
+    
+     <div style="display: flex;">
+     <div class="r-title"><?php echo $r['name'] ;?> </div>
+     <?php if (isset($_SESSION['loggedIn'])){
+       $recipe=$r['id'];
+       $user=$_SESSION['user'] ;
+       echo"<script> var user=$user;</script>";
+      if ($cntr->ifFavorite($_SESSION['user'],$r['id'])==0){
+       
+     ?>
+      <div class="c-save" data-id="<?php echo $user;?>" data-recipe="<?php echo $recipe;?>"><button><i  class="fa-regular fa-bookmark fa-4x "></i></button></div> </div>
+      <?php }else{?>   
+        <div class="c-save" data-id="<?php echo $user ?>" data-recipe="<?php echo $recipe ?>"><button><i style="font-weight: 900;" class="fa-solid fa-bookmark fa-4x"></i></button></div> </div>
+
+        <?php }?>
+      <script type="text/javascript">
+         $('.c-save i').on('click', function(){
+          var recipe = $('.c-save').data('recipe');
+          var id = $('.c-save').data('id');
+        
+        
+          $.ajax({
+            type: 'POST',
+            url: '../app/controllers/favorite.php',
+            data: { recipe: recipe, id: id},
+            success: function(response){
+              console.log(response);
+            }
+          });
+          window.location.reload();
+        });
+      </script>
+      
+      <?php
+     } ?>
+    </div>
+    
     <div class="info">
     <div class="calories"><i class="fa-solid fa-fire-flame-curved  "></i><?php echo $r['calories']?> CAL</div>
     <div class="time"><i class="fa-solid fa-clock  "></i>

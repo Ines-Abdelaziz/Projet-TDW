@@ -14,8 +14,11 @@ public function index(){
 //corps de la page
 public function corps_page(){
   ?>
-  <body>
+  <body style="background: #0D0D0D !important;">
   <link rel="stylesheet" href="../../public/css/home.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <div class="home_section">
     <div class="layer">
       
@@ -32,6 +35,7 @@ public function corps_page(){
       $this->Drinks();
       $this->footer();
     ?>
+  <script type="text/javascript"> var user= "<?php echo $_SESSION['user']; ?>"</script>
   <script src="../../public/js/home.js"></script>
   </body>
   <?php
@@ -129,6 +133,7 @@ public  function diaporama()
     <div class="slider-item">
     <div class="text-wrap">
     <div class="category"><a href="/Appetizers">Appetizers</a></div>
+  
     <div class="title"><?php echo $row['name'] ?></div>
     <div class="description"><?php echo $row['description'] ?></div>
     <div class="info">

@@ -21,6 +21,15 @@ class HomeModel extends Model{
     $this->deconnexion($conn);
     return $r;
   }
+  //update recipe rating
+  public function updateRating($recipeId,$rating){
+    $conn=$this->connexion("cookbook","localhost:3307","root","");
+    $q= "UPDATE recipe SET rating=$rating WHERE id='$recipeId'";
+    $r= $this->requete($conn,$q);
+    $this->deconnexion($conn);
+    return true;
+  }
+
   //get news
   public function getNews($newsId){
     $conn=$this->connexion("cookbook","localhost:3307","root","");

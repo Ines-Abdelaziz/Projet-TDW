@@ -1,0 +1,179 @@
+[14-Jan-2023 14:52:20 UTC] PHP Warning:  require_once(./app/models/HomeModel.php): Failed to open stream: No such file or directory in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 2
+[14-Jan-2023 14:52:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './app/models/HomeModel.php' (include_path='.;C:\php\pear') in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:2
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 2
+[14-Jan-2023 14:53:54 UTC] PHP Fatal error:  Uncaught Error: Class "HomeModel" not found in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:2
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 2
+[14-Jan-2023 14:54:31 UTC] PHP Warning:  require_once(./app/models/HomeModel.php): Failed to open stream: No such file or directory in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 2
+[14-Jan-2023 14:54:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './app/models/HomeModel.php' (include_path='.;C:\php\pear') in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:2
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 2
+[14-Jan-2023 14:55:30 UTC] PHP Warning:  require_once(./app/models/Model.php): Failed to open stream: No such file or directory in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\HomeModel.php on line 3
+[14-Jan-2023 14:55:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './app/models/Model.php' (include_path='.;C:\php\pear') in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\HomeModel.php:3
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php(2): require_once()
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\HomeModel.php on line 3
+[14-Jan-2023 15:02:44 UTC] PHP Warning:  Undefined variable $cntr in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 5
+[14-Jan-2023 15:02:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function updateRating() on null in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 5
+[14-Jan-2023 15:04:58 UTC] PHP Warning:  require(./app/controller/HomeController.php): Failed to open stream: No such file or directory in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 2
+[14-Jan-2023 15:04:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './app/controller/HomeController.php' (include_path='.;C:\php\pear') in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:2
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 2
+[14-Jan-2023 15:09:29 UTC] PHP Warning:  require_once(./app/models/HomeModel.php): Failed to open stream: No such file or directory in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\HomeController.php on line 3
+[14-Jan-2023 15:09:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './app/models/HomeModel.php' (include_path='.;C:\php\pear') in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\HomeController.php:3
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\HomeController.php on line 3
+[14-Jan-2023 15:11:50 UTC] PHP Warning:  require_once(./app/models/HomeModel.php): Failed to open stream: No such file or directory in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\HomeController.php on line 3
+[14-Jan-2023 15:11:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './app/models/HomeModel.php' (include_path='.;C:\php\pear') in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\HomeController.php:3
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\HomeController.php on line 3
+[14-Jan-2023 15:12:17 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 5
+[14-Jan-2023 15:15:19 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 9
+[14-Jan-2023 15:44:36 UTC] PHP Warning:  Undefined global variable $_SESSION in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 7
+[14-Jan-2023 15:44:36 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 7
+[14-Jan-2023 15:44:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '6,5) ON DUPLICATE KEY UPDATE    
+    rating=5' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO use...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php(11): Model->requete(Object(PDO), 'INSERT INTO use...')
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[14-Jan-2023 15:49:22 UTC] PHP Warning:  Undefined global variable $_SESSION in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 7
+[14-Jan-2023 15:49:22 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 7
+[14-Jan-2023 15:49:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '6,3) ON DUPLICATE KEY UPDATE    
+    rating=3' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO use...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php(11): Model->requete(Object(PDO), 'INSERT INTO use...')
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[14-Jan-2023 15:50:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '<?php echo $_SESSION["user"]; ?>,6,3) ON DUPLICATE KEY UPDATE    
+    rating=3' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO use...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php(12): Model->requete(Object(PDO), 'INSERT INTO use...')
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[14-Jan-2023 15:51:12 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '<?php echo $_SESSION['user']; ?>,6,3) ON DUPLICATE KEY UPDATE    
+    rating=3' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO use...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php(12): Model->requete(Object(PDO), 'INSERT INTO use...')
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[15-Jan-2023 16:25:04 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\favorite.php on line 4
+[15-Jan-2023 16:25:04 UTC] PHP Warning:  Undefined array key "recipe" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\favorite.php on line 5
+[15-Jan-2023 16:25:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO use...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\favorite.php(16): Model->requete(Object(PDO), 'INSERT INTO use...')
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[15-Jan-2023 16:27:08 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\favorite.php on line 4
+[15-Jan-2023 16:27:08 UTC] PHP Warning:  Undefined array key "recipe" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\favorite.php on line 5
+[15-Jan-2023 16:27:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO use...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\favorite.php(16): Model->requete(Object(PDO), 'INSERT INTO use...')
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[15-Jan-2023 16:27:51 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\favorite.php on line 4
+[15-Jan-2023 16:27:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id'] ?>'' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT count(*)...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\favorite.php(8): Model->requete(Object(PDO), 'SELECT count(*)...')
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[15-Jan-2023 16:30:07 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\favorite.php on line 4
+[15-Jan-2023 16:30:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO use...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\favorite.php(16): Model->requete(Object(PDO), 'INSERT INTO use...')
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[15-Jan-2023 16:30:38 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\favorite.php on line 4
+[15-Jan-2023 16:30:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '6)' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO use...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\favorite.php(16): Model->requete(Object(PDO), 'INSERT INTO use...')
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[15-Jan-2023 16:32:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'user'] ?>' AND recipe_id='<? $r['id'] ?>'' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT count(*)...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\favorite.php(8): Model->requete(Object(PDO), 'SELECT count(*)...')
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[15-Jan-2023 21:11:48 UTC] PHP Warning:  Undefined variable $newrating in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 21
+[15-Jan-2023 21:11:48 UTC] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:21
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 21
+[15-Jan-2023 21:11:53 UTC] PHP Warning:  Undefined variable $newrating in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 21
+[15-Jan-2023 21:11:53 UTC] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:21
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 21
+[15-Jan-2023 21:12:09 UTC] PHP Warning:  Undefined variable $newrating in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 21
+[15-Jan-2023 21:12:09 UTC] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:21
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 21
+[15-Jan-2023 21:13:28 UTC] PHP Warning:  Undefined variable $newrating in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 21
+[15-Jan-2023 21:13:28 UTC] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:21
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 21
+[15-Jan-2023 21:13:31 UTC] PHP Warning:  Undefined variable $newrating in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 21
+[15-Jan-2023 21:13:31 UTC] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:21
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 21
+[15-Jan-2023 21:17:37 UTC] PHP Warning:  Undefined variable $newrating in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 22
+[15-Jan-2023 21:17:37 UTC] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:22
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 22
+[15-Jan-2023 21:18:07 UTC] PHP Warning:  Undefined variable $newrating in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 22
+[15-Jan-2023 21:18:07 UTC] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:22
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 22
+[15-Jan-2023 21:18:47 UTC] PHP Warning:  Undefined variable $newrating in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 22
+[15-Jan-2023 21:18:47 UTC] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:22
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 22
+[15-Jan-2023 21:20:04 UTC] PHP Warning:  Undefined variable $newrating in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 24
+[15-Jan-2023 21:20:04 UTC] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:24
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 24
+[15-Jan-2023 21:22:27 UTC] PHP Warning:  Undefined variable $newrating in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 24
+[15-Jan-2023 21:22:27 UTC] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:24
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 24
+[15-Jan-2023 21:22:27 UTC] PHP Warning:  Undefined variable $newrating in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 24
+[15-Jan-2023 21:22:27 UTC] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php:24
+Stack trace:
+#0 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 24
+[15-Jan-2023 21:23:53 UTC] PHP Warning:  Undefined variable $newrating in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\update_rating.php on line 25

@@ -9,7 +9,7 @@ class Model {
   protected $password = ""; 
 
   //Se connecter à la bdd
-  protected function connexion($database, $host,$username,$password){ 
+  public function connexion($database, $host,$username,$password){ 
       try{
         $conn=new PDO("mysql:host=$host;dbname=$database",$username,$password);
       }
@@ -21,11 +21,11 @@ class Model {
   }  
 
   //fermer la connexion
-  protected function deconnexion(&$conn){  
+  public function deconnexion(&$conn){  
       $conn=null;  
   } 
 
-  protected function requete($conn,$r){
+  public function requete($conn,$r){
     return $conn->query($r);
   }
 

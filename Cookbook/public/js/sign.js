@@ -8,3 +8,26 @@ $(document).ready(function(){
         autoclose: true,
     })
 })
+$(document).ready(function () {
+    $("#pwd, #cpwd").on("keyup", function () {
+      
+      var PasswordValue = $("#pwd").val();
+      var confirmPasswordValue = $("#cpwd").val();
+  
+  
+      if (PasswordValue.length > 0 && confirmPasswordValue.length > 0) {
+        if (confirmPasswordValue !== PasswordValue) {
+          $("#pswdm").removeAttr("hidden");
+          $("#submit").attr("disabled", true);
+          document.getElementById("pwd").style.borderColor = 'red';
+          document.getElementById("cpwd").style.borderColor = 'red';
+
+        }
+        if (confirmPasswordValue === PasswordValue) {
+          $("#submit").removeAttr("disabled");
+          $("#pswdm").attr("hidden", true);
+          document.getElementById("pwd").style.borderColor = '#C4C4C4';
+          document.getElementById("cpwd").style.borderColor = '#C4C4C4';
+        }
+      }
+    });});

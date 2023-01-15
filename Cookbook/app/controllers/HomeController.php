@@ -4,7 +4,9 @@
     require './app/views/HomeView.php';   
 
 Class HomeController{
-  
+    
+    
+
     public function index()
     {
        
@@ -59,5 +61,13 @@ Class HomeController{
         $r=$homemodel->getRecipe($recpeId);
         return $r;
     }
+   
+    public function updateRating($recpeId,$rating){
+        $homemodel=new HomeModel();
+        $r=$homemodel->updateRating($recpeId,$rating);
+        return $r;
+    }
+
+   
    
 }

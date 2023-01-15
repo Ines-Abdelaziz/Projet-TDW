@@ -128,3 +128,15 @@ flex:auto
 .form-wrap{
     margin-top: 50px;
 }
+#pswdm{
+font-size: 14px;
+color: red;
+}
+#user-exist{
+font-size: 14px;
+color: red;
+}
+#wrong{
+    font-size: 14px;
+    color: red; 
+}
