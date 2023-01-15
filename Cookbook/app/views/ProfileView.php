@@ -1,9 +1,9 @@
 <?php
-require_once ('./app/controllers/FestivalsController.php');
+require_once ('./app/controllers/ProfileController.php');
 require_once ('./app/views/template.php');
 
 
-Class FestivalsView extends template{
+Class ProfileView extends template{
 
 public function index(){
     $this->main();
@@ -16,12 +16,13 @@ public function corps_page(){
   ?>
   <body>
   <link rel="stylesheet" href="../../public/css/category.css">
+  <link rel="stylesheet" href="../../public/css/profile.css">
     <?php
       $this->header();
+      $this->user();
       $this->recipes();
       $this->footer();
     ?>
-    <script src="../../public/js/festivals.js"></script>
   </body>
   <?php
 }
@@ -31,46 +32,28 @@ public  function header()
 {
     ?>
 <div class="category-header">
-  <img src="../../public/images/festivals.jpg" alt="">
-  <div class="category-title">Festivals</div>  
+  <img src="../../public/images/news.jpg" alt="">
+  <div class="category-title">Profile</div>  
 </div>
-<div class="category-slogan">Food is the best part of Festivals</div>
 <?php    
+}
+public function user(){
+    $cntr=new ProfileController();
+    $user=$cntr->getUser($_SESSION['user']);
+    $user=$user->fetch();
+    ?>
+     <div class="user">Hello <span><?php echo $user['first_name'];echo" " ;echo $user['last_name'];?></span></div>
+    <?php
 }
 
 public function recipes(){
-  $cntr=new FestivalsController();
-  $sort = isset($_POST['sort']) ? $_POST['sort'] : '1=1';
+  $cntr=new ProfileController();
   ?>
-  <form action="" method="post" class="c-sort-form"> 
-     <label class="c-sort-label"  for="sort">Filter by : </label>
-     <div class="c-select-wrap">
-        <select onchange="this.form.submit()" name="sort" id="sort">
-        <option selected disabled hidden>Choose a Festival</option>
-            <option <?= ($sort ==='achoura') ? 'selected="selected"' : ''?> value="achoura">Achoura</option>
-            <option <?= ($sort ==='aid') ? 'selected="selected"' : ''?> value="aid">Aid</option>
-            <option <?= ($sort ==='ramadan') ? 'selected="selected"' : ''?> value="ramadan">Ramadan</option>
-            <option <?= ($sort ==='weddings') ? 'selected="selected"' : ''?> value="weddings">Weddings</option>
-        </select>
-     </div>
-  </form>
+  <div class="favorite-title">My Favorite Recipes</div>
   <div class="c-cards-wrap">
   <?php
- 
- switch($sort) {
-    case 'achoura':
-        $sort = 'festival_id=1' ;
-        break;
-    case 'weddings':
-        $sort = 'festival_id=2';
-        break;
-    case 'aid':
-        $sort = 'festival_id=3';
-        break;
-    case 'ramadan':
-        $sort = 'festival_id=4';
-  }
-  $q=$cntr->filterBy($sort);
+
+  $q=$cntr->getFavorites($_SESSION['user']);
   foreach($q as $r1){
     $q1=$cntr->getRecipe($r1['recipe_id']);
     foreach($q1 as $r){

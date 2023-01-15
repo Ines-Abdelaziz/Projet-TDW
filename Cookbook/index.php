@@ -8,6 +8,7 @@ require_once './app/controllers/NewsController.php';
 require_once './app/controllers/FestivalsController.php';
 require_once './app/controllers/SignUpConroller.php';
 require_once './app/controllers/SignInController.php';
+require_once './app/controllers/ProfileController.php';
 session_start();  
 $action = $_SERVER['REQUEST_URI'];
 if (str_starts_with($action,'/recipe/')){
@@ -77,6 +78,10 @@ route('/SignUp', function () {
 });
 route('/SignIn', function () {
     $c = new SignInController();
+    $c->index();
+});
+route('/Profile', function () {
+    $c = new ProfileController();
     $c->index();
 });
 dispatch($action);

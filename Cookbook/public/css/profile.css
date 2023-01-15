@@ -1,0 +1,18 @@
+.favorite-title{
+    font-family: 'Great Vibes';
+    font-size: 45px;
+    color:#FF9F0D;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+.user{
+    font-family: 'Helvetica';
+    color: #fff;
+    padding-top: 50px;
+    padding-left: 150px;
+    font-size:40px ;
+    font-weight: 700;
+}
+.user span{
+    color: #FF9F0D;
+}

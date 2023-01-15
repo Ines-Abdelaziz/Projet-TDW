@@ -43,7 +43,7 @@ public  function menu(){
       </div>
       <?php if (isset($_SESSION['loggedIn'])){if ($_SESSION['loggedIn']==true){
       ?> 
-      <button onclick="">Profile<i style="padding-left: 10px;" class="fa-solid fa-user"></i></button>
+      <button onclick="location.href='/Profile'">Profile<i style="padding-left: 10px;" class="fa-solid fa-user"></i></button>
       <form method="post"><button name="logout">Log Out</button></form>
       <?php
       }}else{?>

@@ -965,3 +965,19 @@ Stack trace:
 [15-Jan-2023 17:25:38 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
 [15-Jan-2023 21:02:38 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
 [15-Jan-2023 21:25:48 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[15-Jan-2023 21:50:30 UTC] PHP Fatal error:  Uncaught Error: Class "ProfileController" not found in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php:83
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(86): dispatch('Profile')
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php on line 83
+[15-Jan-2023 22:06:48 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type PDOStatement as array in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\ProfileView.php:44
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\ProfileView.php(22): ProfileView->user()
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\ProfileView.php(10): ProfileView->corps_page()
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\ProfileController.php(11): ProfileView->index()
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(85): ProfileController->index()
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(33): {closure}()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(87): dispatch('Profile')
+#6 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\ProfileView.php on line 44
