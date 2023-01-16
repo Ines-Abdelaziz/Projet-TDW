@@ -16,3 +16,27 @@
 .user span{
     color: #FF9F0D;
 }
+.logoutwrap{
+    padding-top: 50px;  
+    padding-right: 100px;
+}
+.logout{     
+     
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background: #FF9F0D;
+    border: none;
+    width: 140px;
+    color:#fff ;
+    font-family: 'Helvetica';
+    border-radius: 8px;
+    height: 45px;
+    justify-content: space-between;
+}
+.logout i{
+    padding-bottom: 5px;
+}
+.logout:hover{
+    cursor: pointer;
+}

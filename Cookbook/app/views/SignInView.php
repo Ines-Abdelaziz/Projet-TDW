@@ -63,7 +63,7 @@ public  function SignInFrom()
             <button type="submit"  name='submit' class="signup">Sign In</button>
         </div>
     </form>
-	<div class="hint-text">Don't have an account? <a href="#">Sign Up here</a></div>
+	<div class="hint-text">Don't have an account? <a href="/SignUp">Sign Up here</a></div>
 </div>
  </div>
 <?php
@@ -79,9 +79,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         $_SESSION["user"]=$cntr->getUserId($email);
         if ($cntr->ifAdmin($email,$pswd)==1){
             $_SESSION["role"]="admin";
-        }
+            echo"<script type='text/javascript'>location.href = '/AdminHome';</script>";
+        }else{
 		$_SESSION["role"]="user";
-		echo"<script type='text/javascript'>location.href = '/home';</script>";
+		echo"<script type='text/javascript'>location.href = '/home';</script>";}
         
     }else{
         echo '<script>document.getElementById("wrong").hidden = false;</script>';

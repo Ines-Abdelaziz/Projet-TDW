@@ -29,6 +29,9 @@ function dispatch($action)
 {
     global $routes;
     $action = trim($action, '/');
+    if(!array_key_exists($action,$routes)){
+        $action="404Error";
+    }
     $callback = $routes[$action];
     echo call_user_func($callback);
 }

@@ -42,20 +42,22 @@ public  function menu(){
        <a id="contact-menu" href="#">Contact</a>
       </div>
       <?php if (isset($_SESSION['loggedIn'])){if ($_SESSION['loggedIn']==true){
+        if ($_SESSION['role']=='admin'){
+        ?>
+        <form method="post"><button name="logout">Log Out <i class="fa-solid fa-right-from-bracket"></i></button></form> 
+        <?php
+          if (isset($_POST['logout'])){
+            $cntr= new SignInController();
+            $r=$cntr->Logout();
+         }
+        }else{
       ?> 
       <button onclick="location.href='/Profile'">Profile<i style="padding-left: 10px;" class="fa-solid fa-user"></i></button>
-      <form method="post"><button name="logout">Log Out</button></form>
+      
       <?php
-      }}else{?>
+      }}}else{?>
       <button onclick="location.href='/SignIn'">Sign In <i class="fa-solid fa-arrow-right-long"></i></button>
-   <?php } 
-     if (isset($_POST['logout'])){
-        $cntr= new SignInController();
-        $r=$cntr->Logout();
-     }
-   
-   
-   ?>
+   <?php }  ?>
     </div>
 <?php
 

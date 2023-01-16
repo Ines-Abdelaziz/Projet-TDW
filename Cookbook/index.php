@@ -9,12 +9,27 @@ require_once './app/controllers/FestivalsController.php';
 require_once './app/controllers/SignUpConroller.php';
 require_once './app/controllers/SignInController.php';
 require_once './app/controllers/ProfileController.php';
+require_once './app/controllers/E404Controller.php';
+require_once './app/controllers/AdminHomeController.php';
+require_once './app/controllers/AdminUserController.php';
+
 session_start();  
+if (isset($_SESSION['role'])){
+    $role=$_SESSION['role'];
+}else{
+    $role='';
+}
 $action = $_SERVER['REQUEST_URI'];
 if (str_starts_with($action,'/recipe/')){
  $recipetitle=trim($action,'/recipe/');
  $recipetitle=str_replace('_',' ',$recipetitle);
  $action='/recipe';
+}
+if (($action=='/AdminHome') and($role!='admin')){
+    $action='/404Error';
+}
+if (($action=='/AdminUsers') and($role!='admin')){
+    $action='/404Error';
 }
 
 if (str_starts_with($action,'/news/article/')){
@@ -82,6 +97,18 @@ route('/SignIn', function () {
 });
 route('/Profile', function () {
     $c = new ProfileController();
+    $c->index();
+});
+route('/404Error', function () {
+    $c = new E404Controller();
+    $c->index();
+});
+route('/AdminHome', function () {
+    $c = new AdminHomeController();
+    $c->index();
+});
+route('/AdminUsers', function () {
+    $c = new AdminUserController();
     $c->index();
 });
 dispatch($action);

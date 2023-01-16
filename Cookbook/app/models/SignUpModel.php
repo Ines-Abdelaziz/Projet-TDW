@@ -13,8 +13,8 @@ class SignUpModel extends Model{
     }
     public function insertUser($Fname,$Lname,$sex,$Bdate,$email,$password){
         $conn=$this->connexion("cookbook","localhost:3307","root","");
-        $q= "INSERT INTO user (first_name, last_name, sexe, birth_date, email, password, is_admin)
-        VALUES ('$Fname','$Lname',$sex,'$Bdate','$email','$password',0);";
+        $q= "INSERT INTO user_temp (first_name, last_name, sexe, birth_date, email, password)
+        VALUES ('$Fname','$Lname',$sex,'$Bdate','$email','$password');";
         $r= $this->requete($conn,$q);
         $this->deconnexion($conn);
         return $r->fetchColumn(); 

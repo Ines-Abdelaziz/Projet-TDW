@@ -981,3 +981,53 @@ Stack trace:
 #5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(87): dispatch('Profile')
 #6 {main}
   thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\ProfileView.php on line 44
+[15-Jan-2023 22:59:57 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[15-Jan-2023 23:00:45 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[15-Jan-2023 23:31:05 UTC] PHP Warning:  Undefined array key 404 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 32
+[15-Jan-2023 23:31:05 UTC] PHP Warning:  Undefined array key 404 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php on line 33
+[15-Jan-2023 23:51:30 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[15-Jan-2023 23:59:12 UTC] PHP Warning:  Undefined array key "role" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php on line 21
+[16-Jan-2023 00:00:08 UTC] PHP Warning:  Undefined array key "role" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php on line 21
+[16-Jan-2023 00:03:55 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[16-Jan-2023 14:34:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`cookbook`.`user_favorite`, CONSTRAINT `user_favorite_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)) in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('DELETE FROM `us...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\AdminUserModel.php(26): Model->requete(Object(PDO), 'DELETE FROM `us...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AdminUserController.php(28): AdminUserModel->deleteUser('18')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminUserView.php(138): AdminUserController->deleteUser('18')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminUserView.php(26): AdminUserView->users()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminUserView.php(10): AdminUserView->corps_page()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AdminUserController.php(11): AdminUserView->index()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(112): AdminUserController->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(36): {closure}()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(114): dispatch('AdminUsers')
+#10 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[16-Jan-2023 15:20:45 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[16-Jan-2023 15:22:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'is_admin' in 'field list' in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO use...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\SignUpModel.php(18): Model->requete(Object(PDO), 'INSERT INTO use...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(23): SignUpModel->insertUser('lyna', 'chikouche', '0', '2002-04-14', 'jl_chikouche@es...', 'azer')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(121): SignUpController->insertUser('lyna', 'chikouche', '0', '2002-04-14', 'jl_chikouche@es...', 'azer')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(24): SignUpView->SignUpFrom()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\SignUpView.php(10): SignUpView->corps_page()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SignUpConroller.php(11): SignUpView->index()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(92): SignUpController->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(36): {closure}()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(114): dispatch('SignUp')
+#10 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[16-Jan-2023 15:25:56 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[16-Jan-2023 15:29:53 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[16-Jan-2023 15:33:38 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[16-Jan-2023 15:53:34 UTC] PHP Warning:  Undefined array key "userid" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\ProfileView.php on line 45
+[16-Jan-2023 15:53:34 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\ProfileView.php on line 55
+[16-Jan-2023 15:53:34 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\ProfileView.php on line 55
+[16-Jan-2023 15:53:34 UTC] PHP Warning:  Undefined array key "userid" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\ProfileView.php on line 73
+[16-Jan-2023 16:23:06 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[16-Jan-2023 16:24:10 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[16-Jan-2023 16:24:47 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[16-Jan-2023 16:45:29 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[16-Jan-2023 16:45:43 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[16-Jan-2023 16:46:50 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38

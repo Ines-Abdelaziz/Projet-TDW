@@ -1,5 +1,6 @@
 <?php
 require_once ('./app/controllers/ProfileController.php');
+require_once ('./app/controllers/SignInController.php');
 require_once ('./app/views/template.php');
 
 
@@ -39,11 +40,34 @@ public  function header()
 }
 public function user(){
     $cntr=new ProfileController();
-    $user=$cntr->getUser($_SESSION['user']);
+    if (isset($_SESSION['role'])){
+        if ($_SESSION['role']=="admin"){
+            $userId=$_SESSION['userid'];
+            }else{
+            $userId=$_SESSION['user'];
+            }
+        }
+    
+    $user=$cntr->getUser($userId);
     $user=$user->fetch();
     ?>
+     <div style="display: flex; justify-content: space-between;">
      <div class="user">Hello <span><?php echo $user['first_name'];echo" " ;echo $user['last_name'];?></span></div>
+     <?php if(isset($_SESSION['role'])){
+        if ($_SESSION['role']=='user'  ) {
+            ?>
+      <div class="logoutwrap" ><form method="post"><button class="logout" name="logout">Log Out <i class="fa-solid fa-right-from-bracket"></i></button></form> </div>
+
+            <?php
+        }
+     }  ?>
+    
+    </div>
     <?php
+      if (isset($_POST['logout'])){
+        $cntr= new SignInController();
+        $r=$cntr->Logout();
+     }
 }
 
 public function recipes(){
@@ -52,8 +76,14 @@ public function recipes(){
   <div class="favorite-title">My Favorite Recipes</div>
   <div class="c-cards-wrap">
   <?php
-
-  $q=$cntr->getFavorites($_SESSION['user']);
+   if (isset($_SESSION['role'])){
+    if ($_SESSION['role']=="admin"){
+        $userId=$_SESSION['userid'];
+        }else{
+        $userId=$_SESSION['user'];
+        }
+    }
+  $q=$cntr->getFavorites($userId);
   foreach($q as $r1){
     $q1=$cntr->getRecipe($r1['recipe_id']);
     foreach($q1 as $r){
