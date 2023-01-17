@@ -1168,3 +1168,5 @@ Stack trace:
 [17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
 [17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
 [17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 15:40:06 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[17-Jan-2023 16:05:46 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38

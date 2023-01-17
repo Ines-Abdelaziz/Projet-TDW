@@ -24,6 +24,7 @@ public function corps_page(){
     <?php
       $this->header();
       $this->recipes();
+      $this->recipesOnHold();
       $this->footer();
     ?>
   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
@@ -48,10 +49,6 @@ public function recipes(){
     ?>
     <div class="category-slogan">Recipes</div>
     <div class="container">
-
-
-
-
     <table id="table" 
 			 data-toggle="table"
 			 data-search="true"
@@ -108,6 +105,65 @@ public function recipes(){
    
 
 }
-     
+public function recipesOnHold(){
+    ?>
+    <div class="category-slogan">Recipes On Hold</div>
+    <div class="container">
+    <table id="table" 
+			 data-toggle="table"
+			 data-search="true"
+			 data-filter-control="true" 
+			 data-click-to-select="true"
+			 data-toolbar="#toolbar"
+       class="table-responsive">
+	<thead>
+		<tr>
+        <th data-field="id" data-filter-control="input" data-sortable="true">Id</th>
+			<th   data-field="name" data-filter-control="input" data-sortable="true">Name </th>
+            <th  data-field="desc" data-filter-control="input" data-sortable="true">Description</th>
+            <th  data-field="ptime" data-filter-control="input" data-sortable="true">Preparation Time</th>
+            <th  data-field="ctime" data-filter-control="input" data-sortable="true">Cooking Time</th>
+            <th  data-field="rtime" data-filter-control="input" data-sortable="true">Rest Time</th>
+            <th  data-field="difficulty" data-filter-control="select" data-sortable="true">Difficulty</th>
+            <th  data-field="category" data-filter-control="select" data-sortable="true">Category</th>
+            <th  data-field="healthy" data-filter-control="select" data-sortable="true">Healthy</th>
+            <th  data-field="calories" data-filter-control="input" data-sortable="true">Calories</th>
+            <th  data-field="rating" data-filter-control="input" data-sortable="true">Rating</th>
+            <th  data-field="nbraters" data-filter-control="input" data-sortable="true">Number of Raters</th>
+            <th></th>
+            <th></th>
+		</tr>
+	</thead>
+	<tbody>
+    <?php 
+        $cntr=new AdminRecipeController();
+        $recipes=$cntr->recipesOnHold();
+        foreach($recipes as $r){
+            ?><tr>
+                <td><?php echo $r['id'] ;?></td>
+                <td><?php echo $r['name'] ;?></td>
+                <td><?php echo $r['description'] ;?></td>
+                <td><?php echo $r['preparation_time'] ;?></td>
+                <td><?php echo $r['cooking_time'] ;?></td>
+                <td><?php echo $r['rest_time'] ;?></td>
+                <td><?php $d=$r['difficulty'] ;if($d==1){echo "Easy";}elseif($d==2){echo "Intermediate";}elseif($d==3){echo "Advanced";}?></td>
+                <td><?php $d=$r['category_id'] ;if($d==1){echo "Desserts";}elseif($d==2){echo "Appetizers";}elseif($d==3){echo "Mains";}elseif($d==4){echo "Beverages";}?></td>
+                <td><?php $d=$r['is_healthy'] ;if($d==1){echo "Yes";}elseif($d==0){echo "No";}?></td>
+                <td><?php echo $r['calories'] ;?></td>
+                <td><?php echo $r['rating'] ;?></td>
+                <td><?php echo $r['nb_raters'] ;?></td>
+                <td><form action="./app/controllers/apiroute.php" method="post"><input name="validaterecipe" value="<?php echo $r['id'] ?>" hidden ><input name="validaterecipeu" value="<?php echo $r['user_id'] ?>" hidden ><button onclick="this.form.submit()">Accept Recipe</button></form></td>
+                <td><form action="./app/controllers/apiroute.php" method="post"><input name="invalidaterecipe" value="<?php echo $r['id'] ?>" hidden ><button onclick="this.form.submit()">Delete Recipe</button></form></td>
+            </tr><?php
+        }
+        ?>
+
+	</tbody>
+</table>
+</div>
+    <?php
+   
+
+}    
 }
 

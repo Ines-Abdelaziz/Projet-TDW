@@ -56,8 +56,8 @@ public function user(){
      <?php if(isset($_SESSION['role'])){
         if ($_SESSION['role']=='user'  ) {
             ?>
+              <div class="logoutwrap" ><button onclick="location.href='/AddRecipe'" class="logout" style="width: 200px !important;"  >Add Recipe <i class="fa-solid fa-circle-plus"></i></button> </div>
       <div class="logoutwrap" ><form method="post"><button class="logout" name="logout">Log Out <i class="fa-solid fa-right-from-bracket"></i></button></form> </div>
-
             <?php
         }
      }  ?>

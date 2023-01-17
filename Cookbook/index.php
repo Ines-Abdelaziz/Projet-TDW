@@ -29,10 +29,13 @@ if (str_starts_with($action,'/recipe/')){
  $action='/recipe';
 }
 if (($action=='/AdminHome') and($role!='admin')){
-    $action='/404Error';
+    $action='/SignIn';
 }
 if (($action=='/AdminUsers') and($role!='admin')){
-    $action='/404Error';
+    $action='/SignIn';
+}
+if (($action=='/AdminRecipes') and($role!='admin')){
+    $action='/SignIn';
 }
 
 if (str_starts_with($action,'/news/article/')){

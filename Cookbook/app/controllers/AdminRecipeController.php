@@ -16,6 +16,12 @@ Class AdminRecipeController{
         $r=$model->recipes();
         return $r;
     }
+    public function recipesOnHold()
+    {
+        $model=new AdminRecipeModel();
+        $r=$model->recipesOnHold();
+        return $r;
+    }
     
   
     

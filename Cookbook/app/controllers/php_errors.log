@@ -521,3 +521,42 @@ Stack trace:
 #3 {main}
   thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
 [17-Jan-2023 12:21:29 UTC] PHP Warning:  Undefined variable $image in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 187
+[17-Jan-2023 15:42:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`cookbook`.`recipemedia_temp`, CONSTRAINT `recipemedia_temp_ibfk_1` FOREIGN KEY (`recipe_id`) REFERENCES `recipe_temp` (`id`) ON DELETE CASCADE) in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php:112
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(112): PDOStatement->execute()
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(337): addRecipeImageTemp(30, Resource id #4)
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 112
+[17-Jan-2023 15:47:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`cookbook`.`recipemedia_temp`, CONSTRAINT `recipemedia_temp_ibfk_1` FOREIGN KEY (`recipe_id`) REFERENCES `recipe_temp` (`id`) ON DELETE CASCADE) in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php:112
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(112): PDOStatement->execute()
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(337): addRecipeImageTemp(0, Resource id #4)
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 112
+[17-Jan-2023 15:50:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0-1' for key 'PRIMARY' in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO rec...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(70): Model->requete(Object(PDO), 'INSERT INTO rec...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(334): addRecipeingrTemp(false, 1, '3')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[17-Jan-2023 16:02:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`cookbook`.`recipe_step_temp`, CONSTRAINT `recipe_step_temp_ibfk_1` FOREIGN KEY (`recipe_id`) REFERENCES `recipe_temp` (`id`) ON DELETE CASCADE) in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO rec...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(88): Model->requete(Object(PDO), 'INSERT INTO rec...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(326): addRecipestepTemp(false, 1, 'step1')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[17-Jan-2023 16:06:48 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cookbook.recipe_user' doesn't exist in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO rec...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(9): Model->requete(Object(PDO), 'INSERT INTO rec...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(179): addRecipeUser('18', 31)
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(251): validateRecipe('33', '18')
+#4 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[17-Jan-2023 16:08:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on array in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php:183
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(251): validateRecipe('33', '18')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 183
