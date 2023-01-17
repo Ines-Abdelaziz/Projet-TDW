@@ -9,7 +9,7 @@ class RecipeModel extends Model{
   public function getRecipe($recipetitle){
    
     $conn=$this->connexion("cookbook","localhost:3307","root","");
-    $q= "SELECT * FROM `recipe` WHERE name='$recipetitle'";
+    $q= "SELECT * FROM `recipe` WHERE name='$recipetitle' LIMIT 1";
     $r= $this->requete($conn,$q);
     $this->deconnexion($conn);
     return $r;

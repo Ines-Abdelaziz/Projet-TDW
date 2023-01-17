@@ -292,3 +292,232 @@ Stack trace:
 #0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(70): validate('20')
 #1 {main}
   thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 26
+[17-Jan-2023 01:21:11 UTC] PHP Warning:  Array to string conversion in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 81
+[17-Jan-2023 01:24:20 UTC] PHP Warning:  Undefined variable $helllllll in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 80
+[17-Jan-2023 01:24:20 UTC] PHP Warning:  Array to string conversion in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 83
+[17-Jan-2023 01:24:53 UTC] PHP Warning:  Undefined variable $helllllll in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 80
+[17-Jan-2023 01:24:53 UTC] PHP Warning:  Array to string conversion in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 83
+[17-Jan-2023 01:25:48 UTC] PHP Warning:  Undefined variable $helllllll in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 80
+[17-Jan-2023 01:25:48 UTC] PHP Warning:  Array to string conversion in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 83
+[17-Jan-2023 01:29:21 UTC] PHP Warning:  Array to string conversion in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 81
+[17-Jan-2023 01:37:14 UTC] PHP Warning:  Undefined array key "recipe[title]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 80
+[17-Jan-2023 01:37:14 UTC] PHP Warning:  Undefined array key "recipe[desc]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 81
+[17-Jan-2023 01:37:14 UTC] PHP Warning:  Undefined array key "recipe[image]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 01:37:14 UTC] PHP Warning:  Undefined array key "recipe[preparation_time]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 83
+[17-Jan-2023 01:37:14 UTC] PHP Warning:  Undefined array key "recipe[cooking_time]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 84
+[17-Jan-2023 01:37:14 UTC] PHP Warning:  Undefined array key "recipe[rest_time]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 85
+[17-Jan-2023 01:37:14 UTC] PHP Warning:  Undefined array key "recipe[diff]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 86
+[17-Jan-2023 01:37:14 UTC] PHP Warning:  Undefined array key "recipe[category]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 87
+[17-Jan-2023 01:37:14 UTC] PHP Warning:  Undefined array key "recipe[calories]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 88
+[17-Jan-2023 01:37:14 UTC] PHP Warning:  Undefined array key "recipe[healthy]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 89
+[17-Jan-2023 01:37:14 UTC] PHP Warning:  Undefined array key "recipe[ingr0]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 90
+[17-Jan-2023 01:37:14 UTC] PHP Warning:  Undefined array key "recipe[qua0]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 91
+[17-Jan-2023 01:37:14 UTC] PHP Warning:  Undefined array key "recipe[step0]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 92
+[17-Jan-2023 01:38:46 UTC] PHP Warning:  Undefined array key "recipe[title]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 80
+[17-Jan-2023 01:38:46 UTC] PHP Warning:  Undefined array key "recipe[desc]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 81
+[17-Jan-2023 01:38:46 UTC] PHP Warning:  Undefined array key "recipe[image]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 01:38:46 UTC] PHP Warning:  Undefined array key "recipe[preparation_time]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 83
+[17-Jan-2023 01:38:46 UTC] PHP Warning:  Undefined array key "recipe[cooking_time]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 84
+[17-Jan-2023 01:38:46 UTC] PHP Warning:  Undefined array key "recipe[rest_time]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 85
+[17-Jan-2023 01:38:46 UTC] PHP Warning:  Undefined array key "recipe[diff]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 86
+[17-Jan-2023 01:38:46 UTC] PHP Warning:  Undefined array key "recipe[category]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 87
+[17-Jan-2023 01:38:46 UTC] PHP Warning:  Undefined array key "recipe[calories]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 88
+[17-Jan-2023 01:38:46 UTC] PHP Warning:  Undefined array key "recipe[healthy]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 89
+[17-Jan-2023 01:38:46 UTC] PHP Warning:  Undefined array key "recipe[ingr0]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 90
+[17-Jan-2023 01:38:46 UTC] PHP Warning:  Undefined array key "recipe[qua0]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 91
+[17-Jan-2023 01:38:46 UTC] PHP Warning:  Undefined array key "recipe[step0]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 92
+[17-Jan-2023 01:42:54 UTC] PHP Warning:  Undefined array key "recipe[preparation_time]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 83
+[17-Jan-2023 01:42:54 UTC] PHP Warning:  Undefined array key "recipe[cooking_time]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 84
+[17-Jan-2023 01:42:54 UTC] PHP Warning:  Undefined array key "recipe[rest_time]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 85
+[17-Jan-2023 01:42:54 UTC] PHP Warning:  Undefined array key "recipe[diff]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 86
+[17-Jan-2023 01:42:54 UTC] PHP Warning:  Undefined array key "recipe[category]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 87
+[17-Jan-2023 01:42:54 UTC] PHP Warning:  Undefined array key "recipe[calories]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 88
+[17-Jan-2023 01:42:54 UTC] PHP Warning:  Undefined array key "recipe[healthy]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 89
+[17-Jan-2023 01:42:54 UTC] PHP Warning:  Undefined array key "recipe[ingr0]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 90
+[17-Jan-2023 01:42:54 UTC] PHP Warning:  Undefined array key "recipe[qua0]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 91
+[17-Jan-2023 01:42:54 UTC] PHP Warning:  Undefined array key "recipe[step0]" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 92
+[17-Jan-2023 01:42:54 UTC] PHP Warning:  Undefined variable $title in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 93
+[17-Jan-2023 01:42:54 UTC] PHP Warning:  Undefined variable $desc in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 93
+[17-Jan-2023 01:42:54 UTC] PHP Warning:  Undefined variable $image in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 93
+[17-Jan-2023 01:47:54 UTC] PHP Warning:  Undefined array key "preparation_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 83
+[17-Jan-2023 01:47:54 UTC] PHP Warning:  Undefined array key "cooking_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 84
+[17-Jan-2023 01:47:54 UTC] PHP Warning:  Undefined array key "rest_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 85
+[17-Jan-2023 01:47:54 UTC] PHP Warning:  Undefined array key "diff" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 86
+[17-Jan-2023 01:47:54 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 87
+[17-Jan-2023 01:47:54 UTC] PHP Warning:  Undefined array key "calories" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 88
+[17-Jan-2023 01:47:54 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 89
+[17-Jan-2023 01:47:54 UTC] PHP Warning:  Undefined array key "ingr0" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 90
+[17-Jan-2023 01:47:54 UTC] PHP Warning:  Undefined array key "qua0" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 91
+[17-Jan-2023 01:47:54 UTC] PHP Warning:  Undefined array key "step0" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 92
+[17-Jan-2023 01:47:54 UTC] PHP Warning:  Undefined variable $title in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 93
+[17-Jan-2023 01:47:54 UTC] PHP Warning:  Undefined variable $desc in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 93
+[17-Jan-2023 01:47:54 UTC] PHP Warning:  Undefined variable $image in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 93
+[17-Jan-2023 01:48:49 UTC] PHP Warning:  Undefined array key "preparation_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 83
+[17-Jan-2023 01:48:49 UTC] PHP Warning:  Undefined array key "cooking_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 84
+[17-Jan-2023 01:48:49 UTC] PHP Warning:  Undefined array key "rest_time" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 85
+[17-Jan-2023 01:48:49 UTC] PHP Warning:  Undefined array key "diff" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 86
+[17-Jan-2023 01:48:49 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 87
+[17-Jan-2023 01:48:49 UTC] PHP Warning:  Undefined array key "calories" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 88
+[17-Jan-2023 01:48:49 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 89
+[17-Jan-2023 01:48:49 UTC] PHP Warning:  Undefined array key "ingr0" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 90
+[17-Jan-2023 01:48:49 UTC] PHP Warning:  Undefined array key "qua0" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 91
+[17-Jan-2023 01:48:49 UTC] PHP Warning:  Undefined array key "step0" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 92
+[17-Jan-2023 01:48:49 UTC] PHP Warning:  Undefined variable $title in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 93
+[17-Jan-2023 01:48:49 UTC] PHP Warning:  Undefined variable $desc in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 93
+[17-Jan-2023 01:48:49 UTC] PHP Warning:  Undefined variable $image in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 93
+[17-Jan-2023 09:11:35 UTC] PHP Warning:  Undefined array key "ingr0" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 90
+[17-Jan-2023 09:23:53 UTC] PHP Warning:  Undefined array key "14-11-2017-R3-chefs-var2-Tunisian-Brik-e1534248004535.jpg" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 83
+[17-Jan-2023 09:23:53 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 83
+[17-Jan-2023 09:23:53 UTC] PHP Deprecated:  fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 83
+[17-Jan-2023 09:23:53 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php:83
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(83): fopen('', 'rb')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 83
+[17-Jan-2023 09:24:25 UTC] PHP Warning:  Undefined array key "14-11-2017-R3-chefs-var2-Tunisian-Brik-e1534248004535.jpg" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:24:25 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:24:25 UTC] PHP Deprecated:  fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:24:25 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php:82
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(82): fopen('', 'rb')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:24:28 UTC] PHP Warning:  Undefined array key "14-11-2017-R3-chefs-var2-Tunisian-Brik-e1534248004535.jpg" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:24:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:24:28 UTC] PHP Deprecated:  fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:24:28 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php:82
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(82): fopen('', 'rb')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:25:00 UTC] PHP Warning:  Undefined array key "choclate-fondue.jpg" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:25:00 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:25:00 UTC] PHP Deprecated:  fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:25:00 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php:82
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(82): fopen('', 'rb')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:26:17 UTC] PHP Warning:  Undefined array key "image" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:26:17 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:26:17 UTC] PHP Deprecated:  fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:26:17 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php:82
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(82): fopen('', 'rb')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:30:21 UTC] PHP Warning:  Undefined array key "image" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:30:21 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:30:21 UTC] PHP Deprecated:  fopen(): Passing null to parameter #1 ($filename) of type string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:30:21 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php:82
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(82): fopen('', 'rb')
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 82
+[17-Jan-2023 09:33:24 UTC] PHP Warning:  Undefined array key "ingr0" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 90
+[17-Jan-2023 09:33:24 UTC] PHP Warning:  Undefined variable $ingr0 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 93
+[17-Jan-2023 09:34:15 UTC] PHP Warning:  Undefined array key "ingr0" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 90
+[17-Jan-2023 09:51:49 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "," or ";" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 97
+[17-Jan-2023 09:52:00 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "," or ";" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 97
+[17-Jan-2023 09:52:03 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "," or ";" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 97
+[17-Jan-2023 10:11:18 UTC] PHP Warning:  Undefined array key "count" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 93
+[17-Jan-2023 10:11:18 UTC] PHP Warning:  Undefined array key "count1" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 94
+[17-Jan-2023 10:11:57 UTC] PHP Warning:  Undefined array key "count" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 93
+[17-Jan-2023 10:11:57 UTC] PHP Warning:  Undefined array key "count1" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 94
+[17-Jan-2023 10:17:19 UTC] PHP Warning:  Undefined array key "count" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 93
+[17-Jan-2023 10:17:19 UTC] PHP Warning:  Undefined array key "count1" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 94
+[17-Jan-2023 11:05:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'where clause' in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('SELECT * FROM r...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(25): Model->requete(Object(PDO), 'SELECT * FROM r...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(173): getRecipe('test')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[17-Jan-2023 11:06:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'prepartion_time' in 'field list' in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO rec...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(9): Model->requete(Object(PDO), 'INSERT INTO rec...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(174): addRecipe('test', 'testesttest', '10', '11', '12', 1, 2, '', '118')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[17-Jan-2023 11:07:35 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cookbook.recipe_steps' doesn't exist in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO rec...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(44): Model->requete(Object(PDO), 'INSERT INTO rec...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(177): addRecipestep(false, 1, 'step1')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[17-Jan-2023 11:08:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ingredient_id' in 'field list' in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO rec...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(44): Model->requete(Object(PDO), 'INSERT INTO rec...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(177): addRecipestep(17, 1, 'step1')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[17-Jan-2023 11:10:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php:56
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(56): PDOStatement->execute()
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(190): addRecipeImage(17, Resource id #4)
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 56
+[17-Jan-2023 11:59:28 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`cookbook`.`recipe_step`, CONSTRAINT `recipe_step_ibfk_1` FOREIGN KEY (`recipe_id`) REFERENCES `recipe` (`id`)) in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO rec...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(44): Model->requete(Object(PDO), 'INSERT INTO rec...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(175): addRecipestep(false, 1, 'stap1')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[17-Jan-2023 12:03:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '/9j/4AAQSkZJRgABAQEAYABgAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgS...' at line 2 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO rec...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(53): Model->requete(Object(PDO), 'INSERT INTO rec...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(185): addRecipeImage(20, '/9j/4AAQSkZJRgA...')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[17-Jan-2023 12:14:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '20-1' for key 'PRIMARY' in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO rec...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(35): Model->requete(Object(PDO), 'INSERT INTO rec...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(183): addRecipeingr(20, 1, '5')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[17-Jan-2023 12:14:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`cookbook`.`recipe_step`, CONSTRAINT `recipe_step_ibfk_1` FOREIGN KEY (`recipe_id`) REFERENCES `recipe` (`id`)) in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO rec...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(44): Model->requete(Object(PDO), 'INSERT INTO rec...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(175): addRecipestep(false, 1, 'dsfdsfdjksjlkjl...')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[17-Jan-2023 12:15:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '????\0JFIF\0\0`\0`\0\0??\0;CREATOR: gd-jpeg v1.0 (using IJG JPEG v62), qu...' at line 2 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO rec...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(53): Model->requete(Object(PDO), 'INSERT INTO rec...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(185): addRecipeImage(23, '\xFF\xD8\xFF\xE0\\0\x10JFIF\\0\x01\x01...')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[17-Jan-2023 12:16:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '23-4' for key 'PRIMARY' in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO rec...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(35): Model->requete(Object(PDO), 'INSERT INTO rec...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(183): addRecipeingr(23, 4, '0')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[17-Jan-2023 12:16:57 UTC] PHP Warning:  Undefined array key "step0" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 174
+[17-Jan-2023 12:16:57 UTC] PHP Warning:  Undefined array key "ing0" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 179
+[17-Jan-2023 12:16:57 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 180
+[17-Jan-2023 12:16:57 UTC] PHP Warning:  Undefined array key "qua0" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 182
+[17-Jan-2023 12:16:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`cookbook`.`recipe_ingredients`, CONSTRAINT `recipe_ingredients_ibfk_2` FOREIGN KEY (`ingredient_id`) REFERENCES `ingredient` (`id`)) in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO rec...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(35): Model->requete(Object(PDO), 'INSERT INTO rec...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(183): addRecipeingr(26, false, NULL)
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[17-Jan-2023 12:17:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '/9j/4AAQSkZJRgABAQEAYABgAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgS...' at line 2 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO rec...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(53): Model->requete(Object(PDO), 'INSERT INTO rec...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(185): addRecipeImage(27, '/9j/4AAQSkZJRgA...')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[17-Jan-2023 12:21:29 UTC] PHP Warning:  Undefined variable $image in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 187

@@ -1,0 +1,32 @@
+
+form {
+    color: #fff !important;
+    width: 1200px;
+    background-color: #0d0d0d !important;
+    padding-left: 250px;
+    font-size: 18px;
+    font-family: 'Inter' !important;
+}
+form label {
+    color: #FF9F0D !important;
+}
+.form-group{
+    padding: 10px !important;
+}
+.row{
+    padding: 10px !important;
+}
+.form-control{
+    color: #fff !important;
+    background-color: #0d0d0d !important;
+}
+.form-control::placeholder{
+    color: #c4c4c4 !important;
+}
+
+#submit{
+    background-color: #FF9F0D !important;
+    border: none !important;
+    margin-top: 50px;
+ 
+}

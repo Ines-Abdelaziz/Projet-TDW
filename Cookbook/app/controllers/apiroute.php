@@ -1,10 +1,74 @@
 <?php
 session_start();
 require_once ("../models/Model.php");
+ function addRecipe($title,$desc,$ptime,$ctime,$rtime,$diff,$cat,$healthy,$calories){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "INSERT INTO recipe (name,description,preparation_time,cooking_time,rest_time,difficulty,category_id,is_healthy,calories )
+    VALUES ('$title','$desc',$ptime,'$ctime','$rtime','$diff','$cat','$healthy','$calories');";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+ }
+ function getIng($name){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "SELECT * FROM ingredient where name='$name'";
+    $r= ($model->requete($conn,$q))->fetchColumn();
+    $model->deconnexion($conn);
+    return $r; 
+ }
+ function getRecipe($name){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "SELECT * FROM recipe where name='$name'";
+    $r= ($model->requete($conn,$q))->fetchColumn();
+    $model->deconnexion($conn);
+    return $r; 
+ }
+
+ function addRecipeingr($recipeId,$ingredientId,$quantity){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "INSERT INTO recipe_ingredients (recipe_id,ingredient_id,quantity )
+    VALUES ('$recipeId','$ingredientId','$quantity');";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+ }
+ function addRecipestep($recipeId,$step,$instruction){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "INSERT INTO recipe_step (recipe_id,step_number,instructions)
+    VALUES ('$recipeId','$step','$instruction');";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+ }
+ function addRecipeImage($recipeId,$image){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "INSERT INTO recipemedia (recipe_id,imageurl )
+    VALUES (:recipeId,:image);";
+    $step=$conn->prepare($q);
+    $step->bindParam(':recipeId',$recipeId,PDO::PARAM_INT);
+    $step->bindParam(':image',$image,PDO::PARAM_LOB);
+    $step->execute();
+    $model->deconnexion($conn);
+    return true; 
+ }
  function deleteUser($userId){
     $model=new Model();
     $conn=$model->connexion("cookbook","localhost:3307","root","");
     $q= "DELETE FROM `user` WHERE id=$userId ";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+}
+function deleteRecipe($recipeId){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "DELETE FROM `recipe` WHERE id=$recipeId ";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
     return $r; 
@@ -52,6 +116,12 @@ if (isset($_POST['delete'])){
     deleteUser($userid);
     header("location:/AdminUsers");
 }
+if (isset($_POST['deleterecipe'])){
+    $recipeid=$_POST['deleterecipe'];
+    unset($_POST['deleterecipe']);
+    deleterecipe($recipeid);
+    header("location:/AdminRecipes");
+}
 if (isset($_POST['makeadmin'])){
     $userid=$_POST['makeadmin'];
     unset($_POST['makeadmin']);
@@ -76,6 +146,59 @@ if (isset($_POST['invalidate'])){
     invalidate($userid);
     header("location:/AdminUsers");
 }
-
-
+if (isset($_POST['title'])) {
+    $title= $_POST['title'];
+    $desc = $_POST['desc'];
+    $photo= fopen($_FILES['image']["tmp_name"], 'rb');
+    $ptime = $_POST['preparation_time'];
+    $ctime = $_POST['cooking_time'];
+    $rtime = $_POST['rest_time'];
+    $diff = $_POST['diff'];
+    switch($diff) {
+        case 'Easy':
+            $diff = 1;
+            break;
+        case 'Intermediate':
+            $diff = 2;
+            break;
+        case 'Advanced':
+            $diff = 3;
+            break;
+     }
+    $category = $_POST['category'];
+    switch($category) {
+        case 'Appetizers':
+            $category = 2;
+            break;
+        case 'Mains':
+            $category = 3;
+            break;
+        case 'Desserts': 
+            $category = 1;
+            break;
+        case 'Beverages':
+            $category = 4;
+            break;
+     }
+    $calories = $_POST['calories'];
+    $healthy = $_POST['healthy'];
+    $count=$_COOKIE['count'];
+    $count1=$_COOKIE['count1'];
+    addRecipe($title,$desc,$ptime,$ctime,$rtime,$diff,$category,$healthy,$calories);
+    $recipeId=getRecipe($title);
+    for ($x = 0; $x < $count; $x++) {
+        $step=$_POST["step$x"];
+        addRecipestep($recipeId,$x+1,$step);
+    }
+    
+    for ($x1 = 0; $x1 < $count1; $x1++) {
+        $ing=$_POST["ing$x1"];
+        $ing=preg_replace("/\([^)]+\)/","",$ing);
+        $ing=rtrim($ing);
+        $quantity=$_POST["qua$x1"];
+        addRecipeingr($recipeId,getIng($ing),$quantity);
+    }
+    addRecipeImage($recipeId,$photo);
+    header("location: /home");
+}
 ?>

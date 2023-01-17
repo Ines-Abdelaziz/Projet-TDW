@@ -12,6 +12,9 @@ require_once './app/controllers/ProfileController.php';
 require_once './app/controllers/E404Controller.php';
 require_once './app/controllers/AdminHomeController.php';
 require_once './app/controllers/AdminUserController.php';
+require_once './app/controllers/AdminRecipeController.php';
+require_once './app/controllers/AddRecipeController.php';
+
 
 session_start();  
 if (isset($_SESSION['role'])){
@@ -109,6 +112,14 @@ route('/AdminHome', function () {
 });
 route('/AdminUsers', function () {
     $c = new AdminUserController();
+    $c->index();
+});
+route('/AdminRecipes', function () {
+    $c = new AdminRecipeController();
+    $c->index();
+});
+route('/AddRecipe', function () {
+    $c = new AddRecipeController();
     $c->index();
 });
 dispatch($action);

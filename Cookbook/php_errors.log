@@ -1031,3 +1031,140 @@ Stack trace:
 [16-Jan-2023 16:45:29 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
 [16-Jan-2023 16:45:43 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
 [16-Jan-2023 16:46:50 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[16-Jan-2023 16:53:08 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[16-Jan-2023 16:54:55 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[16-Jan-2023 16:56:02 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[17-Jan-2023 00:53:52 UTC] PHP Fatal error:  Uncaught Error: Class "AddRecipeModel" not found in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AddRecipeController.php:14
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AddRecipeView.php(49): AddRecipeController->getIngredients()
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AddRecipeView.php(24): AddRecipeView->Recipe()
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AddRecipeView.php(10): AddRecipeView->corps_page()
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AddRecipeController.php(10): AddRecipeView->index()
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(120): AddRecipeController->index()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(36): {closure}()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(122): dispatch('AddRecipe')
+#7 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AddRecipeController.php on line 14
+[17-Jan-2023 11:11:04 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[17-Jan-2023 11:11:20 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[17-Jan-2023 12:21:29 UTC] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 213
+[17-Jan-2023 12:21:30 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[17-Jan-2023 12:22:17 UTC] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 213
+[17-Jan-2023 12:22:17 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[17-Jan-2023 12:22:20 UTC] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\CategoryView.php on line 84
+[17-Jan-2023 12:24:02 UTC] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 213
+[17-Jan-2023 12:24:03 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[17-Jan-2023 13:02:51 UTC] PHP Fatal error:  Cannot declare class AdminRecipeView, because the name is already in use in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 6
+[17-Jan-2023 13:06:07 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AdminRecipeController.php on line 8
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:06:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "category" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 93
+[17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
