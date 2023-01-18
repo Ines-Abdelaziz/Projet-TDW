@@ -142,6 +142,9 @@ display: table;
 .category-header img{
  width: 100%;
 }
+.category-header1 img{
+    width: 100%;
+   }
 .category-header{
     position: relative;
     text-align: center;

@@ -53,9 +53,14 @@ public function management(){
         <div class="category1-title1">Users Management</div>  
     </div>
     <div style="height: 100px;"></div>
+    <div class="category-header1" onclick="location.href='/AdminNutrition'">
+        <img src="../../public/images/nutritionmanage.jpg" alt="">
+        <div class="category1-title">Nutrition Management</div>  
+    </div>
+    <div style="height: 100px;"></div>
     <div class="category-header1" onclick="location.href='/Settings'">
         <img src="../../public/images/settings.jpg" alt="">
-        <div class="category1-title">Settings</div>  
+        <div class="category1-title1">Settings</div>  
     </div>
 
 <?php

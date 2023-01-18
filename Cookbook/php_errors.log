@@ -1377,3 +1377,28 @@ Stack trace:
 #1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(19): require_once('C:\\Users\\TRETEC...')
 #2 {main}
   thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AddNewsView.php on line 2
+[18-Jan-2023 21:19:09 UTC] PHP Warning:  require(./app/models/AdmiNutritionModel.php): Failed to open stream: No such file or directory in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AdminNutritionController.php on line 2
+[18-Jan-2023 21:19:09 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './app/models/AdmiNutritionModel.php' (include_path='.;C:\php\pear') in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AdminNutritionController.php:2
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(21): require_once()
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AdminNutritionController.php on line 2
+[18-Jan-2023 21:19:28 UTC] PHP Warning:  require(./app/models/AdminNutritionModel.php): Failed to open stream: No such file or directory in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AdminNutritionController.php on line 2
+[18-Jan-2023 21:19:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './app/models/AdminNutritionModel.php' (include_path='.;C:\php\pear') in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AdminNutritionController.php:2
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(21): require_once()
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AdminNutritionController.php on line 2
+[18-Jan-2023 21:19:32 UTC] PHP Warning:  require(./app/models/AdminNutritionModel.php): Failed to open stream: No such file or directory in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AdminNutritionController.php on line 2
+[18-Jan-2023 21:19:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './app/models/AdminNutritionModel.php' (include_path='.;C:\php\pear') in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AdminNutritionController.php:2
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(21): require_once()
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AdminNutritionController.php on line 2
+[18-Jan-2023 21:20:02 UTC] PHP Warning:  require(./app/models/AdminNutritionModel.php): Failed to open stream: No such file or directory in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AdminNutritionController.php on line 2
+[18-Jan-2023 21:20:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required './app/models/AdminNutritionModel.php' (include_path='.;C:\php\pear') in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AdminNutritionController.php:2
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(21): require_once()
+#1 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\AdminNutritionController.php on line 2
+[18-Jan-2023 21:34:40 UTC] PHP Parse error:  Unclosed '{' on line 6 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminNutritionView.php on line 107

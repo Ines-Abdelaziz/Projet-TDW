@@ -697,3 +697,38 @@ Stack trace:
 #3 {main}
   thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
 [18-Jan-2023 16:26:08 UTC] PHP Warning:  Array to string conversion in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 593
+[18-Jan-2023 22:21:16 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 677
+[18-Jan-2023 22:21:16 UTC] PHP Warning:  Undefined array key "content" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 682
+[18-Jan-2023 22:21:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cookbook.ingredint' doesn't exist in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO ing...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(81): Model->requete(Object(PDO), 'INSERT INTO ing...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(686): AddIngredient(NULL, '1', '1', '1', '1', '1', '0', '7')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[18-Jan-2023 22:22:29 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 677
+[18-Jan-2023 22:22:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cookbook.ingredint' doesn't exist in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO ing...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(81): Model->requete(Object(PDO), 'INSERT INTO ing...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(685): AddIngredient(NULL, '1', '1', '1', '1', '1', '0', '7')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[18-Jan-2023 22:22:47 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 677
+[18-Jan-2023 22:22:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cookbook.ingredint' doesn't exist in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO ing...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(81): Model->requete(Object(PDO), 'INSERT INTO ing...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(685): AddIngredient(NULL, '1', '1', '1', '1', '1', '0', '7')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[18-Jan-2023 22:27:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cookbook.ingredint' doesn't exist in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO ing...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(81): Model->requete(Object(PDO), 'INSERT INTO ing...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(685): AddIngredient('test', '1', '1', '1', '1', '1', 0.5, '7')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[18-Jan-2023 23:26:36 UTC] PHP Warning:  Undefined variable $protein in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 719
+[18-Jan-2023 23:27:58 UTC] PHP Warning:  Undefined variable $protein in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 719
+[18-Jan-2023 23:46:20 UTC] PHP Warning:  Undefined variable $protein in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 720

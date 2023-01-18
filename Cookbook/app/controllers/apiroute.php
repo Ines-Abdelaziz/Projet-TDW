@@ -73,6 +73,15 @@ function addNewspageRecipe($recipeId){
     $model->deconnexion($conn);
     return $r; 
  }
+ function AddIngredient($name,$calories,$protein,$fat,$carbs,$unitId,$healthy,$seasonId){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "INSERT INTO ingredient (name,calories,fat,protein,carbohydrates,unit_id,season_id,healthy )
+    VALUES ('$name','$calories',$fat,'$protein','$carbs','$unitId','$seasonId','$healthy');";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+ }
  function addNews($title,$desc,$content){
     $model=new Model();
     $conn=$model->connexion("cookbook","localhost:3307","root","");
@@ -85,6 +94,14 @@ function addNewspageRecipe($recipeId){
     $model=new Model();
     $conn=$model->connexion("cookbook","localhost:3307","root","");
     $q= "UPDATE news SET title='$title',description='$desc',content='$content' where id='$newsId';";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+ }
+ function updateIng($ingId,$name,$calories,$fat,$protein,$carbs,$unit,$season,$healthy){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "UPDATE ingredient SET name='$name',calories='$calories',fat='$fat',protein='$protein',carbohydrates='$carbs',unit_id='$unit',season_id='$season',healthy='$healthy' where id='$ingId';";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
     return $r; 
@@ -119,6 +136,14 @@ function addNewspageRecipe($recipeId){
     $conn=$model->connexion("cookbook","localhost:3307","root","");
     $q= "SELECT * FROM recipe where name='$name'";
     $r= ($model->requete($conn,$q))->fetchColumn();
+    $model->deconnexion($conn);
+    return $r; 
+ }
+ function getIngr($id){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "SELECT * FROM ingredient where id='$id'";
+    $r= ($model->requete($conn,$q))->fetch(PDO::FETCH_ASSOC);
     $model->deconnexion($conn);
     return $r; 
  }
@@ -314,6 +339,14 @@ function deleteRecipe($recipeId){
     $model->deconnexion($conn);
     return $r; 
 }
+function deleteIng($ingId){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "DELETE FROM `ingredient` WHERE id=$ingId ";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+}
 function deleteNews($newsId){
     $model=new Model();
     $conn=$model->connexion("cookbook","localhost:3307","root","");
@@ -422,6 +455,11 @@ if (isset($_POST['deletenews'])){
     $newsid=$_POST['deletenews'];
     deleteNews($newsid);
     header("location:/AdminNews");
+}
+if (isset($_POST['deleteing'])){
+    $ingid=$_POST['deleteing'];
+    deleteIng($ingid);
+    header("location:/AdminNutrition");
 }
 if (isset($_POST['makeadmin'])){
     $userid=$_POST['makeadmin'];
@@ -662,9 +700,41 @@ if(isset($_POST['newspage_news'])){
     for ($i=0 ;$i<$len;$i++){
         addNewspageNews($news[$i]);
     }
-    echo "<script>window.location.href='/AdminNews'</script>";
-
-    
+    echo "<script>window.location.href='/AdminNews'</script>"; 
+}
+if (isset($_POST['ingsubmit'])) {
+    $name= $_POST['name'];
+    $calories = $_POST['calories'];
+    $fat = $_POST['fat'];
+    $carbs = $_POST['carbs'];
+    $protien = $_POST['protein'];
+    $unit = $_POST['unit'];
+    $season = $_POST['season'];
+    $healthy =( $_POST['healthy'])/100;
+    AddIngredient($name,$calories,$protien,$fat,$carbs,$unit,$healthy,$season);
+    header("location: /AdminNutrition");    
+}
+if (isset($_POST['modifying'])){
+    $_SESSION['ing']=$_POST['modifying'];
+    header("location:/ModifyIngredient");
+}
+if (isset($_POST['modifyingsubmit'])){
+    $id=$_POST['modifyingsubmit'];
+    $i=getIngr($id);
+    $name= $_POST['name'];
+    $calories = $_POST['calories'];
+    $fat = $_POST['fat'];
+    $carbs = $_POST['carbs'];
+    $protien = $_POST['protein'];
+    $unit = $_POST['unit'];
+    $season = $_POST['season'];
+    $healthy =( $_POST['healthy']/100);
+   
+    if(($name!=$i['name'])or ($calories!=$i['calories']) or ($fat!=$i['fat'])or($carbs!=$i['carbohydrates']) or(($protien!=$i['protein']))or($unit!=$i['unit_id'])or(($season!=$i['season_id']))or($healthy!=$i['healthy'])){
+        updateIng($id,$name,$calories,$fat,$protien,$carbs,$unit,$season,$healthy);
+    }
+   
+    header("location: /AdminNutrition");  
 }
 
 ?>
