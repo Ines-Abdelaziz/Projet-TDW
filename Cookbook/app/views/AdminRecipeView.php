@@ -17,6 +17,8 @@ public function corps_page(){
   <body style="background: #0D0D0D !important;">
   <link rel="stylesheet" href="../../public/css/category.css">
   <link rel="stylesheet" href="../../public/css/adminuser.css">
+  <link rel="stylesheet" href="../../public/css/profile.css">
+
   <link rel="stylesheet" type="text/css" href="extensions/filter-control/bootstrap-table-filter-control.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
@@ -43,6 +45,7 @@ public  function header()
   <img src="../../public/images/news.jpg" alt="">
   <div class="category-title">Recipe Management</div>  
 </div>
+<div style="padding-left: 1050px;" class="logoutwrap" ><button onclick="location.href='/AddRecipe'" class="logout" style="width: 200px !important;"  >Add Recipe <i class="fa-solid fa-circle-plus"></i></button> </div>
 <?php    
 }
 public function recipes(){

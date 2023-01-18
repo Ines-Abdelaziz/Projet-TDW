@@ -14,6 +14,8 @@ require_once './app/controllers/AdminHomeController.php';
 require_once './app/controllers/AdminUserController.php';
 require_once './app/controllers/AdminRecipeController.php';
 require_once './app/controllers/AddRecipeController.php';
+require_once './app/controllers/ModifyRecipeController.php';
+
 
 
 session_start();  
@@ -35,6 +37,9 @@ if (($action=='/AdminUsers') and($role!='admin')){
     $action='/SignIn';
 }
 if (($action=='/AdminRecipes') and($role!='admin')){
+    $action='/SignIn';
+}
+if (($action=='/ModifyRecipe') and($role!='admin')){
     $action='/SignIn';
 }
 
@@ -123,6 +128,10 @@ route('/AdminRecipes', function () {
 });
 route('/AddRecipe', function () {
     $c = new AddRecipeController();
+    $c->index();
+});
+route('/ModifyRecipe', function () {
+    $c = new ModifyRecipeController();
     $c->index();
 });
 dispatch($action);

@@ -38,7 +38,7 @@ public  function header()
 public function management(){
     ?>
     <div style="height: 100px;"></div>
-    <div class="category-header1" onclick="location.href='/AdminRecipe'">
+    <div class="category-header1" onclick="location.href='/AdminRecipes'">
         <img src="../../public/images/gestionrecipe.jpg" alt="">
         <div class="category1-title1">Recipe Management</div>  
     </div>

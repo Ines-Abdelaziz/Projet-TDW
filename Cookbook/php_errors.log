@@ -1170,3 +1170,7 @@ Stack trace:
 [17-Jan-2023 13:07:57 UTC] PHP Warning:  Undefined array key "healthy" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\AdminRecipeView.php on line 94
 [17-Jan-2023 15:40:06 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
 [17-Jan-2023 16:05:46 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[18-Jan-2023 09:56:59 UTC] PHP Fatal error:  Cannot declare class AddRecipeModel, because the name is already in use in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\AddRecipeModel.php on line 5
+[18-Jan-2023 09:57:48 UTC] PHP Fatal error:  Cannot declare class AddRecipeModel, because the name is already in use in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\AddRecipeModel.php on line 5
+[18-Jan-2023 09:57:49 UTC] PHP Fatal error:  Cannot declare class AddRecipeModel, because the name is already in use in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\AddRecipeModel.php on line 5
+[18-Jan-2023 09:57:59 UTC] PHP Fatal error:  Cannot declare class AddRecipeModel, because the name is already in use in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\AddRecipeModel.php on line 5

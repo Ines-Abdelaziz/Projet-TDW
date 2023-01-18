@@ -55,9 +55,11 @@ public  function Recipe()
     }?>
      <script>
         var ingredients="<?php echo $ingrs ?>";
+        var count=0;
+        var count1=0;
    </script>
 <div class="category-slogan">New Recipe</div>
- <form method="post" action="./app/controllers/apiroute.php" enctype="multipart/form-data" >
+ <form id ="form2" method="post" action="./app/controllers/apiroute.php" enctype="multipart/form-data" >
   <div class="form-group">
     <label for="r-title">Title</label>
     <input required type="text" class="form-control" id="r-title" name="title" placeholder="Recipe title">
@@ -107,7 +109,7 @@ public  function Recipe()
     </div>
     <div class="col">
         <div class="form-check">
-            <input required  name="healthy" class="form-check-input" type="checkbox" value="" id="healthy">
+            <input   name="healthy" class="form-check-input" type="checkbox" value="" id="healthy">
             <label class="form-check-label" for="healthy">
                 Healthy
             </label>

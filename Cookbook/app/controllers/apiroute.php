@@ -19,6 +19,14 @@ require_once ("../models/Model.php");
     $model->deconnexion($conn);
     return $r; 
  }
+ function updateRecipe($recipeId,$title,$desc,$ptime,$ctime,$rtime,$diff,$cat,$healthy,$calories){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "UPDATE recipe SET name='$title',description='$desc',preparation_time='$ptime',cooking_time='$ctime',rest_time='$rtime',difficulty='$diff',category_id='$cat',is_healthy='$healthy',calories='$calories' where id='$recipeId';";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+ }
  function addRecipeTemp($title,$desc,$ptime,$ctime,$rtime,$diff,$cat,$healthy,$calories,$user){
     $model=new Model();
     $conn=$model->connexion("cookbook","localhost:3307","root","");
@@ -44,6 +52,14 @@ require_once ("../models/Model.php");
     $model->deconnexion($conn);
     return $r; 
  }
+ function getRecipeById($recipeId){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "SELECT * FROM recipe where id='$recipeId' LIMIT 1";
+    $r= ($model->requete($conn,$q))->fetch(PDO::FETCH_ASSOC);
+    $model->deconnexion($conn);
+    return $r; 
+ }
  function getRecipeTemp($name){
     $model=new Model();
     $conn=$model->connexion("cookbook","localhost:3307","root","");
@@ -59,6 +75,32 @@ require_once ("../models/Model.php");
     $q= "INSERT INTO recipe_ingredients (recipe_id,ingredient_id,quantity )
     VALUES ('$recipeId','$ingredientId','$quantity');";
     $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+ }
+ function updateRecipeingr($recipeId,$ingredientId,$quantity){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "UPDATE recipe_ingredients SET quantity='$quantity' WHERE recipe_id='$recipeId' and ingredient_id='$ingredientId';";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+ }
+ function ifRecipeingr($recipeId,$ingredientId){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "SELECT count(*)FROM recipe_ingredients  WHERE recipe_id='$recipeId' and ingredient_id='$ingredientId';";
+    $r= ($model->requete($conn,$q))->fetchColumn();
+    $model->deconnexion($conn);
+    if($r>0){return true;}else{
+        return false;
+    }
+ }
+ function getRecipeIngrQua($recipeId,$ingredientId){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "SELECT * FROM recipe_ingredients where recipe_id='$recipeId' and ingredient_id='$ingredientId' ";
+    $r= ($model->requete($conn,$q))->fetchColumn(2);
     $model->deconnexion($conn);
     return $r; 
  }
@@ -80,6 +122,30 @@ require_once ("../models/Model.php");
     $model->deconnexion($conn);
     return $r; 
  }
+ function updateRecipestep($recipeId,$step,$instruction){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "UPDATE recipe_step SET instructions='$instruction' where recipe_id='$recipeId' and step_number='$step';";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+ }
+ function ifRecipeStep($recipeId,$nbStep){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "SELECT count(*) FROM recipe_step WHERE recipe_id='$recipeId' and step_number='$nbStep' ";
+    $r= ($model->requete($conn,$q))->fetchColumn();
+    $model->deconnexion($conn);
+    if ($r>0) {return true;}else {return false;}
+ }
+ function getRecipeStep($recipeId,$nbStep){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "SELECT * FROM recipe_step WHERE recipe_id='$recipeId' and step_number='$nbStep' ";
+    $r= ($model->requete($conn,$q))->fetch(PDO::FETCH_ASSOC);
+    $model->deconnexion($conn);
+    return $r;
+ }
  function addRecipestepTemp($recipeId,$step,$instruction){
     $model=new Model();
     $conn=$model->connexion("cookbook","localhost:3307","root","");
@@ -94,6 +160,17 @@ require_once ("../models/Model.php");
     $conn=$model->connexion("cookbook","localhost:3307","root","");
     $q= "INSERT INTO recipemedia (recipe_id,imageurl )
     VALUES (:recipeId,:image);";
+    $step=$conn->prepare($q);
+    $step->bindParam(':recipeId',$recipeId,PDO::PARAM_INT);
+    $step->bindParam(':image',$image,PDO::PARAM_LOB);
+    $step->execute();
+    $model->deconnexion($conn);
+    return true; 
+ }
+ function updateRecipeImage($recipeId,$image){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "UPDATE  recipemedia  SET imageurl=:image where recipe_id=:recipeId ;";
     $step=$conn->prepare($q);
     $step->bindParam(':recipeId',$recipeId,PDO::PARAM_INT);
     $step->bindParam(':image',$image,PDO::PARAM_LOB);
@@ -336,4 +413,84 @@ if (isset($_POST['recipesubmit'])) {
     header("location: /home");
     }
 }
+if (isset($_POST['modifyrecipe'])){
+    $_SESSION['recipe']=$_POST['modifyrecipe'];
+    header("location:/ModifyRecipe");
+}
+if (isset($_POST['modifyrecipesubmit'])) {
+    $id=$_POST['modifyrecipesubmit'];
+    $orecipe=getRecipeById($id);
+    $title= $_POST['title'];
+    $desc = $_POST['desc'];
+    $ptime = $_POST['preparation_time'];
+    $ctime = $_POST['cooking_time'];
+    $rtime = $_POST['rest_time'];
+    $diff = $_POST['diff'];
+    switch($diff) {
+        case 'Easy':
+            $diff = 1;
+            break;
+        case 'Intermediate':
+            $diff = 2;
+            break;
+        case 'Advanced':
+            $diff = 3;
+            break;
+     }
+    $category = $_POST['category'];
+    switch($category) {
+        case 'Appetizers':
+            $category = 2;
+            break;
+        case 'Mains':
+            $category = 3;
+            break;
+        case 'Desserts': 
+            $category = 1;
+            break;
+        case 'Beverages':
+            $category = 4;
+            break;
+     }
+    $calories = $_POST['calories'];
+    $healthy = $_POST['healthy'];
+    $count=$_COOKIE['count'];
+    $count1=$_COOKIE['count1'];
+    if(($title!=$orecipe['name']) or ($desc!=$orecipe['description']) or($ptime!=$orecipe['preparation_time']) or($ctime!=$orecipe['cooking_time']) or($rtime!=$orecipe['rest_time'])or ($diff!=$orecipe['difficulty']) or($category!=$orecipe['category_id']) or ($healthy!=$orecipe['is_healthy']) or($calories!=$orecipe['calories']) )
+    {updateRecipe($id,$title,$desc,$ptime,$ctime,$rtime,$diff,$category,$healthy,$calories);}
+    for ($x = 0; $x < $count; $x++) {
+        $step=$_POST["step$x"];
+        if(ifRecipeStep($id,$x+1)){
+        $ostep=getRecipeStep($id,$x+1);
+        if ($step!=$ostep['instructions']){
+            updateRecipestep($id,$x+1,$step);
+        }
+        }else{
+        addRecipestep($id,$x+1,$step);}
+    }
+    
+    for ($x1 = 0; $x1 < $count1; $x1++) {
+        if(isset($_POST["ing$x1"])){
+        $ing=$_POST["ing$x1"];
+        $ing=preg_replace("/\([^)]+\)/","",$ing);
+        $ing=rtrim($ing);
+        $quantity=$_POST["qua$x1"];
+        $ingId=getIng($ing);
+        if(ifRecipeingr($id,$ingId)){
+            if ($quantity !=getRecipeIngrQua($id,$ingId)){
+                updateRecipeingr($id,$ingId,$quantity);
+            }
+        }else{
+            addRecipeingr($id,$ingId,$quantity);
+        }}else{$x1++;}
+    }
+    if(isset($_FILES['image'])){
+        $photo= fopen($_FILES['image']["tmp_name"], 'rb');
+        updateRecipeImage($id,$photo);
+    }
+    
+    header("location: /AdminRecipes");}
+    
+
+
 ?>

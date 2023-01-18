@@ -2,7 +2,7 @@
 
 require_once './app/models/Model.php';   
 
-class AddRecipeModel extends Model{
+class ModifyRecipeModel extends Model{
  
    
     public function getIngredients(){

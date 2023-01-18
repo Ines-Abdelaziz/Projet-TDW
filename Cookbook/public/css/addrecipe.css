@@ -1,9 +1,7 @@
 
 form {
     color: #fff !important;
-    width: 1200px;
     background-color: #0d0d0d !important;
-    padding-left: 250px;
     font-size: 18px;
     font-family: 'Inter' !important;
 }
@@ -28,5 +26,10 @@ form label {
     background-color: #FF9F0D !important;
     border: none !important;
     margin-top: 50px;
- 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#form2{
+    width:800px;
+    margin-left: 250px;
 }

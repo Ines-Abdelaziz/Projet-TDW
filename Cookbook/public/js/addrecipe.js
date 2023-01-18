@@ -14,14 +14,13 @@ function appendIngRow(id, user) {
     "            <div class=\"col-3\">\n" +
     "                <select required  class=\"selectpicker\" data-live-search=\"true\" id=\"ing" + id + "\" name=\"ing" + id + "\" >" + ingredients + "</select>\n" +
     "            </div>\n" +
-    "            <div class=\"col-2\">\n" +
+    "            <div class=\"col-2\" style=\"padding-left:50px\">\n" +
     "                <input required type=\"number\" class=\"form-control\" id=\"qua" + id + "\" name=\"qua" + id + "\" placeholder=\"quantity\" value=\"" + user.no + "\">\n" +
     "            </div>\n" +
     "            <div class=\"col-2\">\n" +
     "             <button type=\"button\" onclick=\"delRow1(" + id + ")\" class=\"btn btn-danger\">Delete</button>\n" +
     "            </div>\n" +
     "        </div>";
-        console.log(html);
     $("#form-placeholder1").append(html);
     $('.selectpicker').selectpicker();
 
@@ -37,8 +36,8 @@ function delRow1(id) {
     element.parentNode.removeChild(element);
 }
 $(document).ready(function () {
-    var count = 0;
-    var count1= 0;
+    // var count = 0;
+    // var count1= 0;
 $("#btn-add").click(function () {
         appendUserRow(count++, {
             type: "",
