@@ -75,6 +75,7 @@ public function recipes(){
             <th  data-field="nbraters" data-filter-control="input" data-sortable="true">Number of Raters</th>
             <th></th>
             <th></th>
+            <th></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -95,6 +96,7 @@ public function recipes(){
                 <td><?php echo $r['calories'] ;?></td>
                 <td><?php echo $r['rating'] ;?></td>
                 <td><?php echo $r['nb_raters'] ;?></td>
+                <td><a href="/recipe/<?php $title = str_replace(' ', '_', $r['name']); echo $title ;?>">View</a></td>
                 <td><form action="./app/controllers/apiroute.php" method="post"><input name="deleterecipe" value="<?php echo $r['id'] ?>" hidden ><button onclick="this.form.submit()">Delete Recipe</button></form></td>
                 <td><form action="./app/controllers/apiroute.php" method="post"><input name="modifyrecipe" value="<?php echo $r['id'] ?>" hidden ><button onclick="this.form.submit()">Modify</button></form></td>
             </tr><?php

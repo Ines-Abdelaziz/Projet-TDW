@@ -12,12 +12,58 @@ class AdminNewsModel extends Model{
         $this->deconnexion($conn);
         return $r;
     }
-    public function recipesOnHold(){
+    public function recipe(){
         $conn=$this->connexion("cookbook","localhost:3307","root","");
-        $q= "SELECT * FROM `recipe_temp` ";
+        $q= "SELECT * FROM `recipe` ";
         $r= $this->requete($conn,$q);
         $this->deconnexion($conn);
         return $r;
+    }
+    public function newsPageRecipes(){
+        $conn=$this->connexion("cookbook","localhost:3307","root","");
+        $q= "SELECT * FROM `news_page` where type='recipe' ";
+        $r= $this->requete($conn,$q);
+        $this->deconnexion($conn);
+        return $r;
+    }
+    public function newsPageNews(){
+        $conn=$this->connexion("cookbook","localhost:3307","root","");
+        $q= "SELECT * FROM `news_page` where type='news' ";
+        $r= $this->requete($conn,$q);
+        $this->deconnexion($conn);
+        return $r;
+    }
+    public function isDisplayedRecipe($id){
+        $conn=$this->connexion("cookbook","localhost:3307","root","");
+        $q= "SELECT count(*) FROM `news_page` where recipe_id='$id'  ";
+        $r= ($this->requete($conn,$q))->fetchColumn();
+        $this->deconnexion($conn);
+        if($r>0){return true;}else{return false;}
+
+    }
+    public function isDisplayedNews($id){
+        $conn=$this->connexion("cookbook","localhost:3307","root","");
+        $q= "SELECT count(*) FROM `news_page` where  news_id='$id' ";
+        $r= ($this->requete($conn,$q))->fetchColumn();
+        $this->deconnexion($conn);
+        if($r>0){return true;}else{return false;}
+
+    }
+    public function getRecipeById($id){
+        $conn=$this->connexion("cookbook","localhost:3307","root","");
+        $q= "SELECT * FROM `recipe` where id='$id' LIMIT 1 ";
+        $r= $this->requete($conn,$q);
+        $this->deconnexion($conn);
+        return $r;
+
+    }
+    public function getNewsById($id){
+        $conn=$this->connexion("cookbook","localhost:3307","root","");
+        $q= "SELECT * FROM `news` where id='$id' LIMIT 1 ";
+        $r= $this->requete($conn,$q);
+        $this->deconnexion($conn);
+        return $r;
+
     }
  
  

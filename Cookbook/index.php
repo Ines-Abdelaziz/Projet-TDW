@@ -15,6 +15,11 @@ require_once './app/controllers/AdminUserController.php';
 require_once './app/controllers/AdminRecipeController.php';
 require_once './app/controllers/AddRecipeController.php';
 require_once './app/controllers/ModifyRecipeController.php';
+require_once './app/controllers/AdminNewsController.php';
+require_once './app/controllers/AddNewsController.php';
+require_once './app/controllers/ModifyNewsController.php';
+
+
 
 
 
@@ -40,6 +45,9 @@ if (($action=='/AdminRecipes') and($role!='admin')){
     $action='/SignIn';
 }
 if (($action=='/ModifyRecipe') and($role!='admin')){
+    $action='/SignIn';
+}
+if (($action=='/AddNews') and($role!='admin')){
     $action='/SignIn';
 }
 
@@ -132,6 +140,18 @@ route('/AddRecipe', function () {
 });
 route('/ModifyRecipe', function () {
     $c = new ModifyRecipeController();
+    $c->index();
+});
+route('/AdminNews', function () {
+    $c = new AdminNewsController();
+    $c->index();
+});
+route('/AddNews', function () {
+    $c = new AddNewsController();
+    $c->index();
+});
+route('/ModifyNews', function () {
+    $c = new ModifyNewsController();
     $c->index();
 });
 dispatch($action);

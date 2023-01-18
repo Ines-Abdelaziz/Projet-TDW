@@ -1,6 +1,60 @@
 <?php
 session_start();
 require_once ("../models/Model.php");
+ function isDisplayedRecipe($id){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "SELECT count(*) FROM `news_page` where recipe_id='$id'  ";
+    $r= ($model->requete($conn,$q))->fetchColumn();
+    $model->deconnexion($conn);
+    if($r>0){return true;}else{return false;}
+
+}
+ function isDisplayedNews($id){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "SELECT count(*) FROM `news_page` where  news_id='$id' ";
+    $r= ($model->requete($conn,$q))->fetchColumn();
+    $model->deconnexion($conn);
+    if($r>0){return true;}else{return false;}
+
+}
+function deleteNewspageNews(){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "DELETE FROM `news_page` where  news_id is not NULL ";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r;
+
+}
+function deleteNewspageRecipes(){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "DELETE FROM `news_page` where  recipe_id is not NULL ";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r;
+
+}
+function addNewspageRecipe($recipeId){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "INSERT INTO news_page (recipe_id,type)
+    VALUES ('$recipeId','recipe');";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+ }
+ function addNewspageNews($newsId){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "INSERT INTO news_page (news_id,type)
+    VALUES ('$newsId','news');";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+ }
  function addRecipeUser($userId,$recipeId){
     $model=new Model();
     $conn=$model->connexion("cookbook","localhost:3307","root","");
@@ -15,6 +69,22 @@ require_once ("../models/Model.php");
     $conn=$model->connexion("cookbook","localhost:3307","root","");
     $q= "INSERT INTO recipe (name,description,preparation_time,cooking_time,rest_time,difficulty,category_id,is_healthy,calories )
     VALUES ('$title','$desc',$ptime,'$ctime','$rtime','$diff','$cat','$healthy','$calories');";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+ }
+ function addNews($title,$desc,$content){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "INSERT INTO news (title,description,content) VALUES ('$title','$desc','$content');";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+ }
+ function updateNews($newsId,$title,$desc,$content){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "UPDATE news SET title='$title',description='$desc',content='$content' where id='$newsId';";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
     return $r; 
@@ -49,6 +119,22 @@ require_once ("../models/Model.php");
     $conn=$model->connexion("cookbook","localhost:3307","root","");
     $q= "SELECT * FROM recipe where name='$name'";
     $r= ($model->requete($conn,$q))->fetchColumn();
+    $model->deconnexion($conn);
+    return $r; 
+ }
+ function getNews($name){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "SELECT * FROM news where title='$name'";
+    $r= ($model->requete($conn,$q))->fetchColumn();
+    $model->deconnexion($conn);
+    return $r; 
+ }
+ function getNewsById($id){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "SELECT * FROM news where id='$id'";
+    $r= ($model->requete($conn,$q))->fetch(PDO::FETCH_ASSOC);
     $model->deconnexion($conn);
     return $r; 
  }
@@ -167,6 +253,28 @@ require_once ("../models/Model.php");
     $model->deconnexion($conn);
     return true; 
  }
+ function addNewsImage($newsId,$image){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "UPDATE news SET img=:image  where id=:newsId ;";
+    $step=$conn->prepare($q);
+    $step->bindParam(':newsId',$newsId,PDO::PARAM_INT);
+    $step->bindParam(':image',$image,PDO::PARAM_LOB);
+    $step->execute();
+    $model->deconnexion($conn);
+    return true; 
+ }
+ function updateNewsImage($newsId,$image){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "UPDATE  news  SET img=:image where id=:newsId ;";
+    $step=$conn->prepare($q);
+    $step->bindParam(':newsId',$newsId,PDO::PARAM_INT);
+    $step->bindParam(':image',$image,PDO::PARAM_LOB);
+    $step->execute();
+    $model->deconnexion($conn);
+    return true; 
+ }
  function updateRecipeImage($recipeId,$image){
     $model=new Model();
     $conn=$model->connexion("cookbook","localhost:3307","root","");
@@ -202,6 +310,14 @@ function deleteRecipe($recipeId){
     $model=new Model();
     $conn=$model->connexion("cookbook","localhost:3307","root","");
     $q= "DELETE FROM `recipe` WHERE id=$recipeId ";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+}
+function deleteNews($newsId){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "DELETE FROM `news` WHERE id=$newsId ";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
     return $r; 
@@ -301,6 +417,11 @@ if (isset($_POST['deleterecipe'])){
     unset($_POST['deleterecipe']);
     deleterecipe($recipeid);
     header("location:/AdminRecipes");
+}
+if (isset($_POST['deletenews'])){
+    $newsid=$_POST['deletenews'];
+    deleteNews($newsid);
+    header("location:/AdminNews");
 }
 if (isset($_POST['makeadmin'])){
     $userid=$_POST['makeadmin'];
@@ -417,6 +538,10 @@ if (isset($_POST['modifyrecipe'])){
     $_SESSION['recipe']=$_POST['modifyrecipe'];
     header("location:/ModifyRecipe");
 }
+if (isset($_POST['modifynews'])){
+    $_SESSION['news']=$_POST['modifynews'];
+    header("location:/ModifyNews");
+}
 if (isset($_POST['modifyrecipesubmit'])) {
     $id=$_POST['modifyrecipesubmit'];
     $orecipe=getRecipeById($id);
@@ -489,8 +614,57 @@ if (isset($_POST['modifyrecipesubmit'])) {
         updateRecipeImage($id,$photo);
     }
     
-    header("location: /AdminRecipes");}
-    
+    header("location: /AdminRecipes");
+}
 
+if (isset($_POST['newssubmit'])) {
+    $title= $_POST['title'];
+    $desc = $_POST['desc'];
+    $photo= fopen($_FILES['image']["tmp_name"], 'rb');
+    $content = $_POST['content'];
+   
+    addNews($title,$desc,$content);
+    addNewsImage(getNews($title),$photo);
+    header("location: /AdminNews");    
+}
+if (isset($_POST['modifynewssubmit'])){
+    $id=$_POST['modifynewssubmit'];
+    $title= $_POST['title'];
+    $desc = $_POST['desc'];
+    if (isset($_FILES['image'])){
+    $photo= fopen($_FILES['image']["tmp_name"], 'rb');
+    updateNewsImage($id,$photo);
+    }
+    $content = $_POST['content'];
+    $news=getNewsById($id);
+    if(($title!=$news['title'])or ($desc!=$news['description']) or ($content!=$news['content'])){
+        updateNews($id,$title,$desc,$content);
+    }
+   
+    header("location: /AdminNews");  
+}
+if(isset($_POST['newspage_recipes'])){
+    deleteNewspageRecipes();
+    $recipes=$_POST['newspage_recipes'];
+    $len= count( $recipes);
+    for ($i=0 ;$i<$len;$i++){
+        addNewspageRecipe($recipes[$i]);
+    }
+    echo "<script>window.location.href='/AdminNews'</script>";
+
+
+    
+}
+if(isset($_POST['newspage_news'])){
+    deleteNewspageNews();
+    $news=$_POST['newspage_news'];
+    $len= count( $news);
+    for ($i=0 ;$i<$len;$i++){
+        addNewspageNews($news[$i]);
+    }
+    echo "<script>window.location.href='/AdminNews'</script>";
+
+    
+}
 
 ?>

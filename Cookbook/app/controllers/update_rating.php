@@ -13,7 +13,6 @@
     $r00=$model->requete($conn,$q0);
     $globalrating=$r0->fetchColumn(10);
     $nbraters=$r00->fetchColumn(11);
-    // echo "<script>console.log($globalrating)</script>";
     echo "<script>console.log($nbraters)</script>";
     $q1="SELECT count(*) FROM user_rating WHERE user_id='$user' AND recipe_id='$recipeId'";
     $r1= $model->requete($conn,$q1);

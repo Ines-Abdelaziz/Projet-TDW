@@ -644,3 +644,56 @@ Stack trace:
 #1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(489): updateRecipeImage('34', Resource id #14)
 #2 {main}
   thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 177
+[18-Jan-2023 15:07:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'dssssssssssssssfdsf
+sfdfdsfdsdfsd
+sdfdsfsd)' at line 3 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT INTO new...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(27): Model->requete(Object(PDO), 'INSERT INTO new...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(561): addNews('test news', 'dedsdjfskfjsf', 'sdddddddddddddd...')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[18-Jan-2023 15:09:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where id=3' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php:201
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(201): PDOStatement->execute()
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(561): addNewsImage(3, Resource id #4)
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 201
+[18-Jan-2023 16:01:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'set  SET img='?PNG\r\n\Z\n\0\0\0\rIHDR\0\0n\0\0?\0\0\0ݴH?\0\0\0	pHYs\0\0...' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php:220
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(220): PDOStatement->execute()
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(582): updateNewsImage('$id', Resource id #4)
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 220
+[18-Jan-2023 16:02:39 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 586
+[18-Jan-2023 16:02:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '$id'' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('UPDATE news SET...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(34): Model->requete(Object(PDO), 'UPDATE news SET...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(587): updateNews('$id', 'test news modif...', 'ab', 'a')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[18-Jan-2023 16:04:33 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 586
+[18-Jan-2023 16:04:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '$id'' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('UPDATE news SET...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(34): Model->requete(Object(PDO), 'UPDATE news SET...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(587): updateNews('$id', 'test news modif...', 'ab', 'a')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[18-Jan-2023 16:04:44 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 586
+[18-Jan-2023 16:04:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '$id'' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('UPDATE news SET...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(34): Model->requete(Object(PDO), 'UPDATE news SET...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(587): updateNews('$id', 'test news modif...', 'ab', 'a')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[18-Jan-2023 16:04:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '3'' at line 1 in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('UPDATE news SET...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(34): Model->requete(Object(PDO), 'UPDATE news SET...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php(587): updateNews('3', 'test news modif...', 'ab', 'a')
+#3 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[18-Jan-2023 16:26:08 UTC] PHP Warning:  Array to string conversion in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\apiroute.php on line 593
