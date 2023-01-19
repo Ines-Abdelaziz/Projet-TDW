@@ -7,7 +7,7 @@ class FestivalsModel extends Model{
  
     public function filterBy($filter){
         $conn=$this->connexion("cookbook","localhost:3307","root","");
-        $q= "SELECT * FROM `festival_recipe` WHERE $filter";
+        $q= "SELECT * FROM `festival_recipe` WHERE $filter GROUP By recipe_id ";
         $r= $this->requete($conn,$q);
         $this->deconnexion($conn);
         return $r;

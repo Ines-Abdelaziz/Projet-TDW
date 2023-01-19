@@ -73,7 +73,7 @@ public  function diaporama()
     <div class="description"><?php echo $n['description'] ?></div>
     
     
-    <button class="readmore">Read More</button>
+    <button class="readmore" onclick="location.href='/news/article/<?php $title = str_replace(' ', '_', $n['title']);echo $title ;?>';" >Read More</button>
     </div>
     <div class="img1">
     <?php 
@@ -102,7 +102,9 @@ public  function diaporama()
     echo "Advanced";}?>
   </div>
     </div>
-    <button class="readmore">Read More</button>
+    <button class="readmore" onclick="location.href='/recipe/<?php 
+    $title = str_replace(' ', '_', $r['name']);
+    echo $title ;?>';">Read More</button>
     </div>
     <div class="img">
     <?php 
@@ -167,6 +169,14 @@ public  function diaporama()
     <div class="pagination">
         <div class="pagination-item"></div>
         <div class="pagination-item"></div>
+        <div class="pagination-item"></div>
+        <div class="pagination-item"></div>
+        <div class="pagination-item"></div>
+        <div class="pagination-item"></div>
+        <div class="pagination-item"></div>
+        <div class="pagination-item"></div>
+        <div class="pagination-item"></div>
+        <div class="pagination-item"></div>
       </div>
     </div>
     
@@ -217,6 +227,14 @@ public function Mains()
     </div>
     <div onclick="plusSlides1(1)" class="button-wrap-next"><div class="next-button"><i class="fa-solid fa-chevron-right"></i></div></div> 
     <div class="pagination">
+        <div class="pagination1-item"></div>
+        <div class="pagination1-item"></div>
+        <div class="pagination1-item"></div>
+        <div class="pagination1-item"></div>
+        <div class="pagination1-item"></div>
+        <div class="pagination1-item"></div>
+        <div class="pagination1-item"></div>
+        <div class="pagination1-item"></div>
         <div class="pagination1-item"></div>
         <div class="pagination1-item"></div>
       </div>
@@ -270,6 +288,14 @@ public function Desserts()
     <div class="pagination">
         <div class="pagination2-item"></div>
         <div class="pagination2-item"></div>
+        <div class="pagination2-item"></div>
+        <div class="pagination2-item"></div>
+        <div class="pagination2-item"></div>
+        <div class="pagination2-item"></div>
+        <div class="pagination2-item"></div>
+        <div class="pagination2-item"></div>
+        <div class="pagination2-item"></div>
+        <div class="pagination2-item"></div>
       </div>
     </div>
     <?php
@@ -319,6 +345,14 @@ public function Drinks()
     </div>
     <div onclick="plusSlides3(1)" class="button-wrap-next"><div class="next-button"><i class="fa-solid fa-chevron-right"></i></div></div> 
     <div class="pagination">
+        <div class="pagination3-item"></div>
+        <div class="pagination3-item"></div>
+        <div class="pagination3-item"></div>
+        <div class="pagination3-item"></div>
+        <div class="pagination3-item"></div>
+        <div class="pagination3-item"></div>
+        <div class="pagination3-item"></div>
+        <div class="pagination3-item"></div>
         <div class="pagination3-item"></div>
         <div class="pagination3-item"></div>
       </div>

@@ -34,7 +34,7 @@ public  function menu(){
       <div class="menu-titles">
        <a id="home-menu" href="/home">Home</a>
        <a id="news-menu" href="/news">News</a>
-       <a id="recipes-menu" href="#">Recipes</a>
+       <a id="recipes-menu" href="/RecipeIdeas">Recipes</a>
        <a id="healthy-menu"href="/Healthy">Healthy</a>
        <a id="seasons-menu" href="/Seasons">Seasons</a>
        <a id="festivals-menu" href="/Festivals">Festivals</a>
@@ -87,7 +87,7 @@ public  function footer(){
               <ul>
                 <li><a href="/home"><i  class="fa-solid fa-chevron-right fa-xs"></i> Home</a></li>
                 <li><a href="/news"><i  class="fa-solid fa-chevron-right fa-xs"></i> News</a></li>
-                <li><a href="#"><i  class="fa-solid fa-chevron-right fa-xs"></i> Recipes</a></li>
+                <li><a href="/RecipeIdeas"><i  class="fa-solid fa-chevron-right fa-xs"></i> Recipes</a></li>
 
                 <li><a href="/Healthy"><i  class="fa-solid fa-chevron-right fa-xs"></i> Healthy</a></li>
                 <li><a href="/Seasons"><i  class="fa-solid fa-chevron-right fa-xs"></i> Seasons</a></li>
