@@ -28,10 +28,28 @@ function deleteNewspageNews(){
     return $r;
 
 }
+function deleteDiapoNews(){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "DELETE FROM `diaporama` where  news_id is not NULL ";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r;
+
+}
 function deleteNewspageRecipes(){
     $model=new Model();
     $conn=$model->connexion("cookbook","localhost:3307","root","");
     $q= "DELETE FROM `news_page` where  recipe_id is not NULL ";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r;
+
+}
+function deleteDiapoRecipes(){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "DELETE FROM `diaporama` where  recipe_id is not NULL ";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
     return $r;
@@ -46,10 +64,28 @@ function addNewspageRecipe($recipeId){
     $model->deconnexion($conn);
     return $r; 
  }
+ function addDiapoRecipe($recipeId){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "INSERT INTO diaporama (recipe_id,type)
+    VALUES ('$recipeId','recipe');";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+ }
  function addNewspageNews($newsId){
     $model=new Model();
     $conn=$model->connexion("cookbook","localhost:3307","root","");
     $q= "INSERT INTO news_page (news_id,type)
+    VALUES ('$newsId','news');";
+    $r= $model->requete($conn,$q);
+    $model->deconnexion($conn);
+    return $r; 
+ }
+ function addDiapoNews($newsId){
+    $model=new Model();
+    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $q= "INSERT INTO diaporama (news_id,type)
     VALUES ('$newsId','news');";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
@@ -689,9 +725,24 @@ if(isset($_POST['newspage_recipes'])){
         addNewspageRecipe($recipes[$i]);
     }
     echo "<script>window.location.href='/AdminNews'</script>";
-
-
-    
+}
+if(isset($_POST['diapo_recipes'])){
+    deleteDiapoRecipes();
+    $recipes=$_POST['diapo_recipes'];
+    $len= count( $recipes);
+    for ($i=0 ;$i<$len;$i++){
+        addDiapoRecipe($recipes[$i]);
+    }
+    echo "<script>window.location.href='/Settings'</script>";
+}
+if(isset($_POST['diapo_news'])){
+    deleteDiapoNews();
+    $news=$_POST['diapo_news'];
+    $len= count( $news);
+    for ($i=0 ;$i<$len;$i++){
+        addDiapoNews($news[$i]);
+    }
+    echo "<script>window.location.href='/Settings'</script>"; 
 }
 if(isset($_POST['newspage_news'])){
     deleteNewspageNews();

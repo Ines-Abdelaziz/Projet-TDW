@@ -1,9 +1,9 @@
 <?php
-require_once ('./app/controllers/AdminNewsController.php');
+require_once ('./app/controllers/SettingsController.php');
 require_once ('./app/views/template.php');
 
 
-Class AdminNewsView extends template{
+Class SettingsView extends template{
 
 public function index(){
     $this->main();
@@ -26,8 +26,7 @@ public function corps_page(){
   <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.2/dist/bootstrap-table.min.css">
     <?php
       $this->header();
-      $this->news();
-      $this->newsPage();
+      $this->diaporama();
       $this->footer();
     ?>
   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
@@ -46,73 +45,20 @@ public  function header()
     ?>
 <div class="category-header">
   <img src="../../public/images/news.jpg" alt="">
-  <div class="category-title">News Management</div>  
+  <div class="category-title">Settings</div>  
 </div>
-<div style="padding-left: 1050px;" class="logoutwrap" ><button onclick="location.href='/AddNews'" class="logout" style="width: 200px !important;"  >Add News <i class="fa-solid fa-circle-plus"></i></button> </div>
 <?php    
 }
-public function news(){
-    ?>
-    <div class="category-slogan">News</div>
-    <div class="container">
-    <table id="table" 
-			 data-toggle="table"
-			 data-search="true"
-			 data-filter-control="true" 
-			 data-click-to-select="true"
-			 data-toolbar="#toolbar"
-       class="table-responsive">
-	<thead>
-		<tr>
-        <th data-field="id" data-filter-control="input" data-sortable="true">Id</th>
-			<th   data-field="title" data-filter-control="input" data-sortable="true">Title </th>
-            <th  data-field="desc" data-filter-control="input" data-sortable="true">Description</th>
-            <th  data-field="article" data-filter-control="input" data-sortable="true">Article</th>
-            <th  data-field="image">Image</th>
-            <th></th>
-            <th></th>
-            <th></th>
-		</tr>
-	</thead>
-	<tbody>
-    <?php 
-        $cntr=new AdminNewsController();
-        $recipes=$cntr->news();
-        foreach($recipes as $r){
-            ?><tr>
-                <td><?php echo $r['id'] ;?></td>
-                <td><?php echo $r['title'] ;?></td>
-                <td><?php echo $r['description'] ;?></td>
-                <td><?php $c= $r['content'] ;
-                $out = strlen($c) > 50 ? substr($c,0,200)."..." : $c;
-                echo $out;
-                ?></td>
-                <td><?php echo '<img style="height: 300px;
-    width: 300px; 
-    object-fit: contain;" src="data:image/jpeg;base64,'.base64_encode($r['img']).'"/>' ;?></td>
-                <td><a href="/news/article/<?php $title = str_replace(' ', '_', $r['title']); echo $title ;?>">View</a></td>
-                <td><form action="./app/controllers/apiroute.php" method="post"><input name="deletenews" value="<?php echo $r['id'] ?>" hidden ><button onclick="this.form.submit()">Delete News</button></form></td>
-                <td><form action="./app/controllers/apiroute.php" method="post"><input name="modifynews" value="<?php echo $r['id'] ?>" hidden ><button onclick="this.form.submit()">Modify</button></form></td>
-            </tr><?php
-        }
-        ?>
 
-	</tbody>
-</table>
-</div>
-    <?php
-   
-
-}
-public function newsPage(){
-    ?>  <div class="category-slogan">News Page Display</div>
+public function diaporama(){
+    ?>  <div class="category-slogan">Diaporama Display</div>
     <form method="post" action="./app/controllers/apiroute.php" >
         <div class="form-group" style="padding-left: 120px !important;">
-        <label for="recipeselect">Recipes to be displayed in News Page</label>
-        <select name='newspage_recipes[]' id="recipeselect" class="selectpicker" multiple data-live-search="true" onchange="this.form.submit()">
+        <label for="recipeselect">Recipes to be displayed in diaporama</label>
+        <select name='diapo_recipes[]' id="recipeselect" class="selectpicker" multiple data-live-search="true" onchange="this.form.submit()">
        
             <?php
-             $cntr=new AdminNewsController();
+             $cntr=new SettingsController();
              $q=$cntr->recipes();
              while($fetch=$q->fetch(PDO::FETCH_ASSOC)){
                 ?>
@@ -151,8 +97,8 @@ public function newsPage(){
             </thead>
             <tbody>
             <?php 
-                $cntr=new AdminNewsController();
-                $recipes=$cntr->newsPageRecipes();
+                $cntr=new SettingsController();
+                $recipes=$cntr->diapoRecipes();
                 foreach($recipes as $r){
                     $r=($cntr->getRecipeById($r['recipe_id']))->fetch(PDO::FETCH_ASSOC);
                     ?><tr>
@@ -176,14 +122,13 @@ public function newsPage(){
             </tbody>
             </table>
         </div>
-
         <form method="post" action="./app/controllers/apiroute.php">
         <div style="padding-left: 120px !important;" class="form-group">
-        <label for="recipeselect">News to be displayed in News Page</label>
-        <select name='newspage_news[]' id="recipeselect" class="selectpicker " multiple data-live-search="true"  onchange="this.form.submit()">
+        <label for="recipeselect">News to be displayed in Diaporama</label>
+        <select name='diapo_news[]' id="recipeselect" class="selectpicker " multiple data-live-search="true"  onchange="this.form.submit()">
         
         <?php
-             $cntr=new AdminNewsController();
+             $cntr=new SettingsController();
              $q=$cntr->news();
              while($fetch=$q->fetch(PDO::FETCH_ASSOC)){
                 ?>
@@ -215,8 +160,8 @@ public function newsPage(){
                 </thead>
                 <tbody>
                 <?php 
-                    $cntr=new AdminNewsController();
-                    $recipes=$cntr->newsPageNews();
+                    $cntr=new SettingsController();
+                    $recipes=$cntr->diapoNews();
                     foreach($recipes as $r){
                         $r=($cntr->getNewsById($r['news_id']))->fetch(PDO::FETCH_ASSOC);
                         ?><tr>

@@ -21,6 +21,7 @@ require_once './app/controllers/ModifyNewsController.php';
 require_once './app/controllers/AdminNutritionController.php';
 require_once './app/controllers/AddIngredientController.php';
 require_once './app/controllers/ModifyIngredientController.php';
+require_once './app/controllers/SettingsController.php';
 
 
 
@@ -62,6 +63,9 @@ if (($action=='/AddIngredient') and($role!='admin')){
     $action='/SignIn';
 }
 if (($action=='/ModifyIngredient') and($role!='admin')){
+    $action='/SignIn';
+}
+if (($action=='/Settings') and($role!='admin')){
     $action='/SignIn';
 }
 
@@ -178,6 +182,10 @@ route('/AddIngredient', function () {
 });
 route('/ModifyIngredient', function () {
     $c = new ModifyIngredientController();
+    $c->index();
+});
+route('/Settings', function () {
+    $c = new SettingsController();
     $c->index();
 });
 
