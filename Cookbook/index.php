@@ -25,6 +25,7 @@ require_once './app/controllers/SettingsController.php';
 require_once './app/controllers/NutritionController.php';
 require_once './app/controllers/SeasonsController.php';
 require_once './app/controllers/SeasonController.php';
+require_once './app/controllers/HealthyController.php';
 
 
 
@@ -218,6 +219,10 @@ route('/Spring', function () {
 route('/Autumn', function () {
     $c = new SeasonController();
     $c->index(4);
+});
+route('/Healthy', function () {
+    $c = new HealthyController();
+    $c->index();
 });
 
 dispatch($action);

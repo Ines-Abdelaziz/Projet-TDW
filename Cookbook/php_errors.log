@@ -1587,3 +1587,21 @@ Stack trace:
 [19-Jan-2023 02:53:51 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SeasonController.php on line 46
 [19-Jan-2023 02:53:51 UTC] PHP Warning:  Undefined array key "name" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SeasonController.php on line 46
 [19-Jan-2023 03:26:56 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting "," or ";" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\SeasonController.php on line 50
+[19-Jan-2023 09:32:34 UTC] PHP Fatal error:  Uncaught Error: Class "HealthyController" not found in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php:223
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(36): {closure}()
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(227): dispatch('Healthy')
+#2 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php on line 223
+[19-Jan-2023 09:34:39 UTC] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\HealthyController.php:43
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\HealthyController.php(43): array_push(NULL, Array)
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HealthyView.php(42): HealthyController->recipes()
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HealthyView.php(21): HealthyView->recipes()
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HealthyView.php(10): HealthyView->corps_page()
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\HealthyController.php(11): HealthyView->index()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(225): HealthyController->index()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(36): {closure}()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(228): dispatch('Healthy')
+#8 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\HealthyController.php on line 43
