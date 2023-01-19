@@ -22,6 +22,9 @@ require_once './app/controllers/AdminNutritionController.php';
 require_once './app/controllers/AddIngredientController.php';
 require_once './app/controllers/ModifyIngredientController.php';
 require_once './app/controllers/SettingsController.php';
+require_once './app/controllers/NutritionController.php';
+require_once './app/controllers/SeasonsController.php';
+require_once './app/controllers/SeasonController.php';
 
 
 
@@ -187,6 +190,34 @@ route('/ModifyIngredient', function () {
 route('/Settings', function () {
     $c = new SettingsController();
     $c->index();
+});
+route('/Nutrition', function () {
+    $c = new NutritionController();
+    $c->index();
+});
+route('/Seasons', function () {
+    $c = new SeasonsController();
+    $c->index();
+});
+//season winter
+route('/Winter', function () {
+    $c = new SeasonController();
+    $c->index(1);
+});
+//season summer
+route('/Summer', function () {
+    $c = new SeasonController();
+    $c->index(2);
+});
+//season spring
+route('/Spring', function () {
+    $c = new SeasonController();
+    $c->index(3);
+});
+//season autumn
+route('/Autumn', function () {
+    $c = new SeasonController();
+    $c->index(4);
 });
 
 dispatch($action);

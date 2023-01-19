@@ -36,15 +36,16 @@ public  function menu(){
        <a id="news-menu" href="/news">News</a>
        <a id="recipes-menu" href="#">Recipes</a>
        <a id="healthy-menu"href="#">Healthy</a>
-       <a id="seasons-menu" href="#">Seasons</a>
+       <a id="seasons-menu" href="/Seasons">Seasons</a>
        <a id="festivals-menu" href="/Festivals">Festivals</a>
-       <a id="nutrition-menu" href="#">Nutrition</a>
+       <a id="nutrition-menu" href="/Nutrition">Nutrition</a>
        <a id="contact-menu" href="#">Contact</a>
       </div>
       <?php if (isset($_SESSION['loggedIn'])){if ($_SESSION['loggedIn']==true){
         if ($_SESSION['role']=='admin'){
         ?>
         <form method="post"><button name="logout">Log Out <i class="fa-solid fa-right-from-bracket"></i></button></form> 
+        <button onclick="location.href='/AdminHome'" style="padding-left: 130px !important; padding-bottom:10px;">Admin Center <i class="fa-solid fa-screwdriver-wrench"></i></button>
         <?php
           if (isset($_POST['logout'])){
             $cntr= new SignInController();
@@ -89,9 +90,9 @@ public  function footer(){
                 <li><a href="#"><i  class="fa-solid fa-chevron-right fa-xs"></i> Recipes</a></li>
 
                 <li><a href="#"><i  class="fa-solid fa-chevron-right fa-xs"></i> Healthy</a></li>
-                <li><a href="#"><i  class="fa-solid fa-chevron-right fa-xs"></i> Seasons</a></li>
+                <li><a href="/Seasons"><i  class="fa-solid fa-chevron-right fa-xs"></i> Seasons</a></li>
                 <li><a href="/Festivals"><i  class="fa-solid fa-chevron-right fa-xs"></i> Festivals</a></li>
-                <li><a href="#"><i  class="fa-solid fa-chevron-right fa-xs"></i> Nutrition</a></li>
+                <li><a href="/Nutrition"><i  class="fa-solid fa-chevron-right fa-xs"></i> Nutrition</a></li>
               </ul>
            
             </div>             
