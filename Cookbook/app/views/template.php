@@ -39,7 +39,7 @@ public  function menu(){
        <a id="seasons-menu" href="/Seasons">Seasons</a>
        <a id="festivals-menu" href="/Festivals">Festivals</a>
        <a id="nutrition-menu" href="/Nutrition">Nutrition</a>
-       <a id="contact-menu" href="#">Contact</a>
+       <a id="contact-menu" href="/Contact">Contact</a>
       </div>
       <?php if (isset($_SESSION['loggedIn'])){if ($_SESSION['loggedIn']==true){
         if ($_SESSION['role']=='admin'){

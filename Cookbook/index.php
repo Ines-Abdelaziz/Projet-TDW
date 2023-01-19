@@ -27,6 +27,7 @@ require_once './app/controllers/SeasonsController.php';
 require_once './app/controllers/SeasonController.php';
 require_once './app/controllers/HealthyController.php';
 require_once './app/controllers/RecipeIdeasController.php';
+require_once './app/controllers/ContactController.php';
 
 
 
@@ -71,6 +72,9 @@ if (($action=='/ModifyIngredient') and($role!='admin')){
     $action='/SignIn';
 }
 if (($action=='/Settings') and($role!='admin')){
+    $action='/SignIn';
+}
+if (($action=='/Contact') and($role!='user')){
     $action='/SignIn';
 }
 
@@ -227,6 +231,10 @@ route('/Healthy', function () {
 });
 route('/RecipeIdeas', function () {
     $c = new RecipeIdeasController();
+    $c->index();
+});
+route('/Contact', function () {
+    $c = new ContactController();
     $c->index();
 });
 dispatch($action);

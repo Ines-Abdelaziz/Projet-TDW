@@ -1661,3 +1661,33 @@ Stack trace:
 [19-Jan-2023 12:54:28 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
 [19-Jan-2023 12:54:44 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
 [19-Jan-2023 12:54:55 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[19-Jan-2023 13:36:51 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\HomeView.php on line 38
+[19-Jan-2023 13:36:55 UTC] PHP Warning:  Undefined array key "user" in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\ContactView.php on line 46
+[19-Jan-2023 13:38:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fdfdf' in 'field list' in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT into  fe...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\ContactModel.php(12): Model->requete(Object(PDO), 'INSERT into  fe...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\ContactController.php(15): ContactModel->sendFeedback('18', 'fdfdf')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\ContactView.php(54): ContactController->sendFeedback('18', 'fdfdf')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\ContactView.php(21): ContactView->error()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\ContactView.php(10): ContactView->corps_page()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\ContactController.php(10): ContactView->index()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(238): ContactController->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(36): {closure}()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(240): dispatch('Contact')
+#10 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
+[19-Jan-2023 13:41:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '18' for key 'PRIMARY' in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php:29
+Stack trace:
+#0 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php(29): PDO->query('INSERT into  fe...')
+#1 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\ContactModel.php(12): Model->requete(Object(PDO), 'INSERT into  fe...')
+#2 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\ContactController.php(15): ContactModel->sendFeedback('18', 'fdfdf')
+#3 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\ContactView.php(59): ContactController->sendFeedback('18', 'fdfdf')
+#4 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\ContactView.php(26): ContactView->error()
+#5 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\views\ContactView.php(10): ContactView->corps_page()
+#6 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\controllers\ContactController.php(10): ContactView->index()
+#7 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(238): ContactController->index()
+#8 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\route.php(36): {closure}()
+#9 C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\index.php(240): dispatch('Contact')
+#10 {main}
+  thrown in C:\Users\TRETEC\Documents\Projet-TDW\Cookbook\app\models\Model.php on line 29
