@@ -1,0 +1,2 @@
+en raison de la contrainte de l'email dans le formulaire de connexion, 
+le login de l'administrateur est : admin@admin, mot de passe :admin

@@ -50,11 +50,7 @@ public  function header()
 public function waitingList(){
     ?>
     <div class="category-slogan">Users on Hold</div>
-    <div class="container">
-
-
-
-
+    <div class="container" style="max-height:300px  ;">
 <table id="table" 
 			 data-toggle="table"
 			 data-search="true"
