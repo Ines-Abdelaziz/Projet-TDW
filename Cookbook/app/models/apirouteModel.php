@@ -3,7 +3,7 @@ session_start();
 require_once ("../models/Model.php");
  function isDisplayedRecipe($id){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT count(*) FROM `news_page` where recipe_id='$id'  ";
     $r= ($model->requete($conn,$q))->fetchColumn();
     $model->deconnexion($conn);
@@ -12,7 +12,7 @@ require_once ("../models/Model.php");
 }
  function isDisplayedNews($id){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT count(*) FROM `news_page` where  news_id='$id' ";
     $r= ($model->requete($conn,$q))->fetchColumn();
     $model->deconnexion($conn);
@@ -21,7 +21,7 @@ require_once ("../models/Model.php");
 }
 function deleteNewspageNews(){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "DELETE FROM `news_page` where  news_id is not NULL ";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
@@ -30,7 +30,7 @@ function deleteNewspageNews(){
 }
 function deleteDiapoNews(){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "DELETE FROM `diaporama` where  news_id is not NULL ";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
@@ -39,7 +39,7 @@ function deleteDiapoNews(){
 }
 function deleteNewspageRecipes(){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "DELETE FROM `news_page` where  recipe_id is not NULL ";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
@@ -48,7 +48,7 @@ function deleteNewspageRecipes(){
 }
 function deleteDiapoRecipes(){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "DELETE FROM `diaporama` where  recipe_id is not NULL ";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
@@ -57,7 +57,7 @@ function deleteDiapoRecipes(){
 }
 function addNewspageRecipe($recipeId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "INSERT INTO news_page (recipe_id,type)
     VALUES ('$recipeId','recipe');";
     $r= $model->requete($conn,$q);
@@ -66,7 +66,7 @@ function addNewspageRecipe($recipeId){
  }
  function addDiapoRecipe($recipeId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "INSERT INTO diaporama (recipe_id,type)
     VALUES ('$recipeId','recipe');";
     $r= $model->requete($conn,$q);
@@ -75,7 +75,7 @@ function addNewspageRecipe($recipeId){
  }
  function addNewspageNews($newsId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "INSERT INTO news_page (news_id,type)
     VALUES ('$newsId','news');";
     $r= $model->requete($conn,$q);
@@ -84,7 +84,7 @@ function addNewspageRecipe($recipeId){
  }
  function addDiapoNews($newsId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "INSERT INTO diaporama (news_id,type)
     VALUES ('$newsId','news');";
     $r= $model->requete($conn,$q);
@@ -93,7 +93,7 @@ function addNewspageRecipe($recipeId){
  }
  function addRecipeUser($userId,$recipeId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "INSERT INTO user_recipe (recipe_id,user_id)
     VALUES ('$recipeId','$userId');";
     $r= $model->requete($conn,$q);
@@ -102,7 +102,7 @@ function addNewspageRecipe($recipeId){
  }
  function addRecipe($title,$desc,$ptime,$ctime,$rtime,$diff,$cat,$healthy,$calories){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "INSERT INTO recipe (name,description,preparation_time,cooking_time,rest_time,difficulty,category_id,is_healthy,calories )
     VALUES ('$title','$desc',$ptime,'$ctime','$rtime','$diff','$cat','$healthy','$calories');";
     $r= $model->requete($conn,$q);
@@ -111,7 +111,7 @@ function addNewspageRecipe($recipeId){
  }
  function AddIngredient($name,$calories,$protein,$fat,$carbs,$unitId,$healthy,$seasonId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "INSERT INTO ingredient (name,calories,fat,protein,carbohydrates,unit_id,season_id,healthy )
     VALUES ('$name','$calories',$fat,'$protein','$carbs','$unitId','$seasonId','$healthy');";
     $r= $model->requete($conn,$q);
@@ -120,7 +120,7 @@ function addNewspageRecipe($recipeId){
  }
  function addNews($title,$desc,$content){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "INSERT INTO news (title,description,content) VALUES ('$title','$desc','$content');";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
@@ -128,7 +128,7 @@ function addNewspageRecipe($recipeId){
  }
  function updateNews($newsId,$title,$desc,$content){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "UPDATE news SET title='$title',description='$desc',content='$content' where id='$newsId';";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
@@ -136,7 +136,7 @@ function addNewspageRecipe($recipeId){
  }
  function updateIng($ingId,$name,$calories,$fat,$protein,$carbs,$unit,$season,$healthy){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "UPDATE ingredient SET name='$name',calories='$calories',fat='$fat',protein='$protein',carbohydrates='$carbs',unit_id='$unit',season_id='$season',healthy='$healthy' where id='$ingId';";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
@@ -144,7 +144,7 @@ function addNewspageRecipe($recipeId){
  }
  function updateRecipe($recipeId,$title,$desc,$ptime,$ctime,$rtime,$diff,$cat,$healthy,$calories){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "UPDATE recipe SET name='$title',description='$desc',preparation_time='$ptime',cooking_time='$ctime',rest_time='$rtime',difficulty='$diff',category_id='$cat',is_healthy='$healthy',calories='$calories' where id='$recipeId';";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
@@ -152,7 +152,7 @@ function addNewspageRecipe($recipeId){
  }
  function addRecipeTemp($title,$desc,$ptime,$ctime,$rtime,$diff,$cat,$healthy,$calories,$user){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "INSERT INTO recipe_temp (name,description,preparation_time,cooking_time,rest_time,difficulty,category_id,is_healthy,calories,user_id )
     VALUES ('$title','$desc',$ptime,'$ctime','$rtime','$diff','$cat','$healthy','$calories','$user');";
     $r= $model->requete($conn,$q);
@@ -161,7 +161,7 @@ function addNewspageRecipe($recipeId){
  }
  function getIng($name){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT * FROM ingredient where name='$name'";
     $r= ($model->requete($conn,$q))->fetchColumn();
     $model->deconnexion($conn);
@@ -169,7 +169,7 @@ function addNewspageRecipe($recipeId){
  }
  function getRecipe($name){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT * FROM recipe where name='$name'";
     $r= ($model->requete($conn,$q))->fetchColumn();
     $model->deconnexion($conn);
@@ -177,7 +177,7 @@ function addNewspageRecipe($recipeId){
  }
  function getIngr($id){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT * FROM ingredient where id='$id'";
     $r= ($model->requete($conn,$q))->fetch(PDO::FETCH_ASSOC);
     $model->deconnexion($conn);
@@ -185,7 +185,7 @@ function addNewspageRecipe($recipeId){
  }
  function getNews($name){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT * FROM news where title='$name'";
     $r= ($model->requete($conn,$q))->fetchColumn();
     $model->deconnexion($conn);
@@ -193,7 +193,7 @@ function addNewspageRecipe($recipeId){
  }
  function getNewsById($id){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT * FROM news where id='$id'";
     $r= ($model->requete($conn,$q))->fetch(PDO::FETCH_ASSOC);
     $model->deconnexion($conn);
@@ -201,7 +201,7 @@ function addNewspageRecipe($recipeId){
  }
  function getRecipeById($recipeId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT * FROM recipe where id='$recipeId' LIMIT 1";
     $r= ($model->requete($conn,$q))->fetch(PDO::FETCH_ASSOC);
     $model->deconnexion($conn);
@@ -209,7 +209,7 @@ function addNewspageRecipe($recipeId){
  }
  function getRecipeTemp($name){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT * FROM recipe_temp where name='$name'";
     $r= ($model->requete($conn,$q))->fetchColumn();
     $model->deconnexion($conn);
@@ -218,7 +218,7 @@ function addNewspageRecipe($recipeId){
 
  function addRecipeingr($recipeId,$ingredientId,$quantity){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "INSERT INTO recipe_ingredients (recipe_id,ingredient_id,quantity )
     VALUES ('$recipeId','$ingredientId','$quantity');";
     $r= $model->requete($conn,$q);
@@ -227,7 +227,7 @@ function addNewspageRecipe($recipeId){
  }
  function updateRecipeingr($recipeId,$ingredientId,$quantity){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "UPDATE recipe_ingredients SET quantity='$quantity' WHERE recipe_id='$recipeId' and ingredient_id='$ingredientId';";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
@@ -235,7 +235,7 @@ function addNewspageRecipe($recipeId){
  }
  function ifRecipeingr($recipeId,$ingredientId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT count(*)FROM recipe_ingredients  WHERE recipe_id='$recipeId' and ingredient_id='$ingredientId';";
     $r= ($model->requete($conn,$q))->fetchColumn();
     $model->deconnexion($conn);
@@ -245,7 +245,7 @@ function addNewspageRecipe($recipeId){
  }
  function getRecipeIngrQua($recipeId,$ingredientId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT * FROM recipe_ingredients where recipe_id='$recipeId' and ingredient_id='$ingredientId' ";
     $r= ($model->requete($conn,$q))->fetchColumn(2);
     $model->deconnexion($conn);
@@ -253,7 +253,7 @@ function addNewspageRecipe($recipeId){
  }
  function addRecipeingrTemp($recipeId,$ingredientId,$quantity){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "INSERT INTO recipe_ingredients_temp (recipe_id,ingredient_id,quantity )
     VALUES ('$recipeId','$ingredientId','$quantity');";
     $r= $model->requete($conn,$q);
@@ -262,7 +262,7 @@ function addNewspageRecipe($recipeId){
  }
  function addRecipestep($recipeId,$step,$instruction){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "INSERT INTO recipe_step (recipe_id,step_number,instructions)
     VALUES ('$recipeId','$step','$instruction');";
     $r= $model->requete($conn,$q);
@@ -271,7 +271,7 @@ function addNewspageRecipe($recipeId){
  }
  function updateRecipestep($recipeId,$step,$instruction){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "UPDATE recipe_step SET instructions='$instruction' where recipe_id='$recipeId' and step_number='$step';";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
@@ -279,7 +279,7 @@ function addNewspageRecipe($recipeId){
  }
  function ifRecipeStep($recipeId,$nbStep){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT count(*) FROM recipe_step WHERE recipe_id='$recipeId' and step_number='$nbStep' ";
     $r= ($model->requete($conn,$q))->fetchColumn();
     $model->deconnexion($conn);
@@ -287,7 +287,7 @@ function addNewspageRecipe($recipeId){
  }
  function getRecipeStep($recipeId,$nbStep){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT * FROM recipe_step WHERE recipe_id='$recipeId' and step_number='$nbStep' ";
     $r= ($model->requete($conn,$q))->fetch(PDO::FETCH_ASSOC);
     $model->deconnexion($conn);
@@ -295,7 +295,7 @@ function addNewspageRecipe($recipeId){
  }
  function addRecipestepTemp($recipeId,$step,$instruction){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "INSERT INTO recipe_step_temp (recipe_id,step_number,instructions)
     VALUES ('$recipeId','$step','$instruction');";
     $r= $model->requete($conn,$q);
@@ -304,7 +304,7 @@ function addNewspageRecipe($recipeId){
  }
  function addRecipeImage($recipeId,$image){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "INSERT INTO recipemedia (recipe_id,imageurl )
     VALUES (:recipeId,:image);";
     $step=$conn->prepare($q);
@@ -316,7 +316,7 @@ function addNewspageRecipe($recipeId){
  }
  function addNewsImage($newsId,$image){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "UPDATE news SET img=:image  where id=:newsId ;";
     $step=$conn->prepare($q);
     $step->bindParam(':newsId',$newsId,PDO::PARAM_INT);
@@ -327,7 +327,7 @@ function addNewspageRecipe($recipeId){
  }
  function updateNewsImage($newsId,$image){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "UPDATE  news  SET img=:image where id=:newsId ;";
     $step=$conn->prepare($q);
     $step->bindParam(':newsId',$newsId,PDO::PARAM_INT);
@@ -338,7 +338,7 @@ function addNewspageRecipe($recipeId){
  }
  function updateRecipeImage($recipeId,$image){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "UPDATE  recipemedia  SET imageurl=:image where recipe_id=:recipeId ;";
     $step=$conn->prepare($q);
     $step->bindParam(':recipeId',$recipeId,PDO::PARAM_INT);
@@ -349,7 +349,7 @@ function addNewspageRecipe($recipeId){
  }
  function addRecipeImageTemp($recipeId,$image){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "INSERT INTO recipemedia_temp (recipe_id,imageurl )
     VALUES (:recipeId,:image);";
     $step=$conn->prepare($q);
@@ -361,7 +361,7 @@ function addNewspageRecipe($recipeId){
  }
  function deleteUser($userId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "DELETE FROM `user` WHERE id=$userId ";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
@@ -369,7 +369,7 @@ function addNewspageRecipe($recipeId){
 }
 function deleteRecipe($recipeId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "DELETE FROM `recipe` WHERE id=$recipeId ";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
@@ -377,7 +377,7 @@ function deleteRecipe($recipeId){
 }
 function deleteIng($ingId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "DELETE FROM `ingredient` WHERE id=$ingId ";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
@@ -385,7 +385,7 @@ function deleteIng($ingId){
 }
 function deleteNews($newsId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "DELETE FROM `news` WHERE id=$newsId ";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
@@ -393,7 +393,7 @@ function deleteNews($newsId){
 }
  function makeAdmin($userId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "UPDATE `user` SET is_admin=1 WHERE id=$userId ";
     $r= $model->requete($conn,$q);
     $model->deconnexion($conn);
@@ -401,7 +401,7 @@ function deleteNews($newsId){
 }
 function validate($userId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q0="SELECT * FROM user_temp where id='$userId' LIMIT 1";
     $r0= $model->requete($conn,$q0);
     $fetch=$r0->fetch(PDO::FETCH_ASSOC);
@@ -421,7 +421,7 @@ function validate($userId){
 }
 function validateRecipe($recipeId,$userId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q0="SELECT * FROM recipe_temp where id='$recipeId' LIMIT 1";
     $r0= $model->requete($conn,$q0);
     $fetch=$r0->fetch(PDO::FETCH_ASSOC);
@@ -460,7 +460,7 @@ function validateRecipe($recipeId,$userId){
 }
 function invalidate($userId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q1="DELETE FROM user_temp WHERE id='$userId'";
     $r1= $model->requete($conn,$q1);
     $model->deconnexion($conn);
@@ -468,7 +468,7 @@ function invalidate($userId){
 }
 function invalidateRecipe($recipeId){
     $model=new Model();
-    $conn=$model->connexion("cookbook","localhost:3307","root","");
+    $conn=$model->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q1="DELETE FROM recipe_temp WHERE id='$recipeId'";
     $r1= $model->requete($conn,$q1);
     $model->deconnexion($conn);

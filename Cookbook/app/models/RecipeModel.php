@@ -8,7 +8,7 @@ class RecipeModel extends Model{
   //get recipe
   public function getRecipe($recipetitle){
    
-    $conn=$this->connexion("cookbook","localhost:3307","root","");
+    $conn=$this->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT * FROM `recipe` WHERE name='$recipetitle' LIMIT 1";
     $r= $this->requete($conn,$q);
     $this->deconnexion($conn);
@@ -17,7 +17,7 @@ class RecipeModel extends Model{
  
 // get recipe media            
 public function getMedia($recipeId){
-  $conn=$this->connexion("cookbook","localhost:3307","root","");
+  $conn=$this->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
   $q= "SELECT * FROM `recipemedia` WHERE recipe_id='$recipeId'";
   $r= $this->requete($conn,$q);
   $this->deconnexion($conn);
@@ -26,7 +26,7 @@ public function getMedia($recipeId){
 
 //get recipe steps
 public function getRecipeSteps($recipeId){
-    $conn=$this->connexion("cookbook","localhost:3307","root","");
+    $conn=$this->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT * FROM `recipe_step` WHERE recipe_id='$recipeId' ORDER BY step_number ";
     $r= $this->requete($conn,$q);
     $this->deconnexion($conn);
@@ -35,7 +35,7 @@ public function getRecipeSteps($recipeId){
 
   //get recipe ingredients
 public function getRecipeIngredients($recipeId){
-    $conn=$this->connexion("cookbook","localhost:3307","root","");
+    $conn=$this->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT * FROM `recipe_ingredients` WHERE recipe_id='$recipeId'";
     $r= $this->requete($conn,$q);
     $this->deconnexion($conn);
@@ -44,14 +44,14 @@ public function getRecipeIngredients($recipeId){
 
     //get  ingredient unit
 public function getIngredient($ingredientId){
-    $conn=$this->connexion("cookbook","localhost:3307","root","");
+    $conn=$this->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT * FROM `ingredient` WHERE id='$ingredientId'";
     $r= $this->requete($conn,$q);
     $this->deconnexion($conn);
     return $r;
   }
 public function getUnit($unitId){
-    $conn=$this->connexion("cookbook","localhost:3307","root","");
+    $conn=$this->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT * FROM `unit` WHERE id='$unitId'";
     $r= $this->requete($conn,$q);
     $this->deconnexion($conn);
@@ -60,7 +60,7 @@ public function getUnit($unitId){
 
 public  function ifFavorite($user,$recipeId)
 {
-    $conn=$this->connexion("cookbook","localhost:3307","root","");
+    $conn=$this->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT count(*) FROM user_favorite WHERE user_id='$user' AND recipe_id='$recipeId'";
     $r= $this->requete($conn,$q);
     $this->deconnexion($conn);
@@ -68,7 +68,7 @@ public  function ifFavorite($user,$recipeId)
 }
   //get recipe rating
   public function getRating($recipeId){
-    $conn=$this->connexion("cookbook","localhost:3307","root","");
+    $conn=$this->connexion("adcollector_cookbook", "mysql-adcollector.alwaysdata.net", "348202", "cook_book");
     $q= "SELECT rating FROM `recipe` WHERE id='$recipeId'";
     $r= $this->requete($conn,$q);
     $this->deconnexion($conn);

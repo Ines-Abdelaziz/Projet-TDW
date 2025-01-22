@@ -3,10 +3,10 @@
 
 class Model {
 
-  protected $database = "cookbook";  
-  protected $host = "localhost:3307";  
-  protected $username  = "root";  
-  protected $password = ""; 
+  protected $database = "addcollector_cookbook";  
+  protected $host = "mysql-adcollector.alwaysdata.nett:3306";  
+  protected $username  = "348202";  
+  protected $password = "cook_book"; 
 
   //Se connecter à la bdd
   public function connexion($database, $host,$username,$password){ 
