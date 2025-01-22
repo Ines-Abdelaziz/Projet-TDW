@@ -1,7 +1,7 @@
 <?php
 
-    require_once '../models/HomeModel.php'; 
-    require '../views/HomeView.php';   
+    require  __DIR__.'/../models/HomeModel.php'; 
+    require __DIR__.'/../views/HomeView.php';   
 
 Class HomeController{
     

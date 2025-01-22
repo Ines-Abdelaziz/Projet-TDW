@@ -1,7 +1,7 @@
 <?php
 
-    require_once '../models/ProfileModel.php'; 
-    require '../views/ProfileView.php';   
+    require_once __DIR__.'/../models/ProfileModel.php'; 
+    require __DIR__.'/../views/ProfileView.php';   
 
 Class ProfileController{
   

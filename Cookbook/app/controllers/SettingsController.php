@@ -1,6 +1,6 @@
 <?php
-    require '../models/SettingsModel.php';   
-    require '../views/SettingsView.php';   
+    require __DIR__.'/../models/SettingsModel.php';   
+    require __DIR__.'/../views/SettingsView.php';   
 
 
 Class SettingsController{

@@ -1,6 +1,6 @@
 <?php
 
-    require '../views/AdminHomeView.php';   
+    require __DIR__.'/../views/AdminHomeView.php';   
 
 Class AdminHomeController{
   

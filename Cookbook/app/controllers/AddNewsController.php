@@ -1,6 +1,6 @@
 <?php
-    require '../models/AddNewsModel.php'; 
-    require '../views/AddNewsView.php';  
+    require __DIR__.'/../models/AddNewsModel.php'; 
+    require __DIR__.'/../views/AddNewsView.php';  
 
 Class AddNewsController{
   

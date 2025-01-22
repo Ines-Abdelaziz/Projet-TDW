@@ -1,6 +1,6 @@
 <?php
-    require '../models/AdminNewsModel.php';   
-    require '../views/AdminNewsView.php';   
+    require __DIR__.'/../models/AdminNewsModel.php';   
+    require __DIR__.'/../views/AdminNewsView.php';   
 
 
 Class AdminNewsController{

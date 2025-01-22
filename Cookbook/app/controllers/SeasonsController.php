@@ -1,6 +1,6 @@
 <?php
 
-    require '../views/SeasonsView.php';   
+    require __DIR__.'/../views/SeasonsView.php';   
 
 Class SeasonsController{
   

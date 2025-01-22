@@ -1,5 +1,5 @@
 <?php
-   require '../models/Model.php'; 
+   require __DIR__.'/../models/Model.php'; 
    $model =new Model();
     $user=$_POST['id'];
     $recipeId=$_POST['recipe'];

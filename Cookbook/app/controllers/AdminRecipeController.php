@@ -1,6 +1,6 @@
 <?php
-    require '../models/AdminRecipeModel.php';   
-    require '../views/AdminRecipeView.php';   
+    require __DIR__.'/../models/AdminRecipeModel.php';   
+    require __DIR__.'/../views/AdminRecipeView.php';   
 
 
 Class AdminRecipeController{

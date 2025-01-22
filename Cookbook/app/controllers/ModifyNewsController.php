@@ -1,6 +1,6 @@
 <?php
-    require '../models/ModifyNewsModel.php'; 
-    require '../views/ModifyNewsView.php';  
+    require __DIR__.'/../models/ModifyNewsModel.php'; 
+    require __DIR__.'/../views/ModifyNewsView.php';  
 
 Class ModifyNewsController{
   

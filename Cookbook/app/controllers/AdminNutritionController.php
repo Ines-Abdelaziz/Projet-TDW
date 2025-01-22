@@ -1,6 +1,6 @@
 <?php
-    require '../models/AdminNutrtionModel.php';   
-    require '../views/AdminNutritionView.php';   
+    require __DIR__.'/../models/AdminNutrtionModel.php';   
+    require __DIR__.'/../views/AdminNutritionView.php';   
 
 
 Class AdminNutritionController{

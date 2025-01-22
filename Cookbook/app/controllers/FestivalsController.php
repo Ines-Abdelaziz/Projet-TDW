@@ -1,7 +1,7 @@
 <?php
 
-    require_once '../models/FestivalsModel.php'; 
-    require '../views/FestivalsView.php';   
+    require_once __DIR__.'/../models/FestivalsModel.php'; 
+    require __DIR__.'/../views/FestivalsView.php';   
 
 Class FestivalsController{
   

@@ -1,6 +1,6 @@
 <?php
 
-    require '../views/E404View.php';   
+    require __DIR__.'/../views/E404View.php';   
 
 Class E404Controller{
   
