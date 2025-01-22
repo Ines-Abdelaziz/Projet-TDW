@@ -1,6 +1,6 @@
 <?php
-    require './app/models/AdminRecipeModel.php';   
-    require './app/views/AdminRecipeView.php';   
+    require '../models/AdminRecipeModel.php';   
+    require '../views/AdminRecipeView.php';   
 
 
 Class AdminRecipeController{

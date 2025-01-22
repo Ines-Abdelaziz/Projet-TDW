@@ -1,7 +1,7 @@
 <?php
 
-    require_once './app/models/NewsModel.php'; 
-    require './app/views/NewsView.php';   
+    require_once '../models/NewsModel.php'; 
+    require '../views/NewsView.php';   
 
 Class NewsController{
   

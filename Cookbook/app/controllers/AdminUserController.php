@@ -1,7 +1,7 @@
 <?php
 
-    require_once './app/models/AdminUserModel.php'; 
-    require './app/views/AdminUserView.php';   
+    require_once '../models/AdminUserModel.php'; 
+    require '../views/AdminUserView.php';   
 
 Class AdminUserController{
   

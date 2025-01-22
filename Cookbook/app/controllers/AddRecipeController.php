@@ -1,7 +1,7 @@
 <?php
 
-    require './app/views/AddRecipeView.php';  
-    require './app/models/AddRecipeModel.php'; 
+    require '../views/AddRecipeView.php';  
+    require '../models/AddRecipeModel.php'; 
 
 Class AddRecipeController{
   

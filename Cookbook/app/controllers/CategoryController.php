@@ -1,7 +1,7 @@
 <?php
 
-    require_once './app/models/CategoryModel.php'; 
-    require './app/views/CategoryView.php';   
+    require_once '../models/CategoryModel.php'; 
+    require '../views/CategoryView.php';   
 
 Class CategoryController{
   

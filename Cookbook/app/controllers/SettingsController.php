@@ -1,6 +1,6 @@
 <?php
-    require './app/models/SettingsModel.php';   
-    require './app/views/SettingsView.php';   
+    require '../models/SettingsModel.php';   
+    require '../views/SettingsView.php';   
 
 
 Class SettingsController{

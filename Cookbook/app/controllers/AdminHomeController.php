@@ -1,6 +1,6 @@
 <?php
 
-    require './app/views/AdminHomeView.php';   
+    require '../views/AdminHomeView.php';   
 
 Class AdminHomeController{
   

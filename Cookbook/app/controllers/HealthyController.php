@@ -1,7 +1,7 @@
 <?php
 
-    require_once './app/models/HealthyModel.php'; 
-    require './app/views/HealthyView.php';   
+    require_once '../models/HealthyModel.php'; 
+    require '../views/HealthyView.php';   
 
 Class HealthyController{
   

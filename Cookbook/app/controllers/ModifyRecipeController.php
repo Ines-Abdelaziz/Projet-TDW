@@ -1,6 +1,6 @@
 <?php
-    require './app/models/ModifyRecipeModel.php'; 
-    require './app/views/ModifyRecipeView.php';  
+    require '../models/ModifyRecipeModel.php'; 
+    require '../views/ModifyRecipeView.php';  
 
 Class ModifyRecipeController{
   

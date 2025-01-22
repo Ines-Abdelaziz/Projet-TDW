@@ -1,6 +1,6 @@
 <?php
-    require './app/models/NutritionModel.php';   
-    require './app/views/NutritionView.php';   
+    require '../models/NutritionModel.php';   
+    require '../views/NutritionView.php';   
 
 
 Class NutritionController{

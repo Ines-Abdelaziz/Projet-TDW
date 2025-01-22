@@ -1,7 +1,7 @@
 <?php
 
-    require_once './app/views/AddIngredientView.php';  
-    require_once './app/models/AddIngredientModel.php'; 
+    require_once '../views/AddIngredientView.php';  
+    require_once '../models/AddIngredientModel.php'; 
 
 Class AddIngredientController{
   

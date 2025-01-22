@@ -1,7 +1,7 @@
 <?php
 
-    require_once './app/models/SignUpModel.php'; 
-    require './app/views/SignUpView.php';   
+    require_once '../models/SignUpModel.php'; 
+    require '../views/SignUpView.php';   
 
 Class SignUpController{
   

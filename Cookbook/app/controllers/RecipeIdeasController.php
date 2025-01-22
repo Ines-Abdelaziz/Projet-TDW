@@ -1,6 +1,6 @@
 <?php
-    require './app/models/RecipeideasModel.php';   
-    require './app/views/RecipesIdeasView.php';   
+    require '../models/RecipeideasModel.php';   
+    require '../views/RecipesIdeasView.php';   
 
 
 Class RecipeIdeasController{

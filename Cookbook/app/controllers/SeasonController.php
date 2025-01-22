@@ -1,7 +1,7 @@
 <?php
 
-    require_once './app/models/SeasonModel.php'; 
-    require './app/views/SeasonView.php';   
+    require_once '../models/SeasonModel.php'; 
+    require '../views/SeasonView.php';   
 
 Class SeasonController{
   

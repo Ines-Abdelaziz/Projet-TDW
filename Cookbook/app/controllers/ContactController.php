@@ -1,6 +1,6 @@
 <?php
-    require './app/models/ContactModel.php';   
-    require './app/views/ContactView.php';   
+    require '../models/ContactModel.php';   
+    require '../views/ContactView.php';   
 
 Class ContactController{
   

@@ -1,6 +1,6 @@
 <?php
 
-    require './app/views/SeasonsView.php';   
+    require '../views/SeasonsView.php';   
 
 Class SeasonsController{
   

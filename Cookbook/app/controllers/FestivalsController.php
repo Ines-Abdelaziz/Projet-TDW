@@ -1,7 +1,7 @@
 <?php
 
-    require_once './app/models/FestivalsModel.php'; 
-    require './app/views/FestivalsView.php';   
+    require_once '../models/FestivalsModel.php'; 
+    require '../views/FestivalsView.php';   
 
 Class FestivalsController{
   
