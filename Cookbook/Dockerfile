@@ -2,10 +2,10 @@
 FROM php:8.1-cli
 
 # Set the working directory inside the container
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/myproject
 
 # Copy the contents of the current directory to the working directory inside the container
-COPY . .
+COPY . /usr/src/app/myproject
 
 # Expose the port the app will run on
 EXPOSE 3000
