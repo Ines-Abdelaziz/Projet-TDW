@@ -1,5 +1,5 @@
 <?php
-    require __DIR__.'/../models/RecipeideasModel.php';   
+    require __DIR__.'/../models/RecipeIdeasModel.php';   
     require __DIR__.'/../views/RecipesIdeasView.php';   
 
 
