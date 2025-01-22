@@ -1,4 +1,6 @@
 <?php
+session_start();  
+
 require_once "route.php";
 require_once './app/controllers/HomeController.php';
 require_once './app/controllers/CategoryController.php';
@@ -35,7 +37,6 @@ require_once './app/controllers/ContactController.php';
 
 
 
-session_start();  
 if (isset($_SESSION['role'])){
     $role=$_SESSION['role'];
 }else{
