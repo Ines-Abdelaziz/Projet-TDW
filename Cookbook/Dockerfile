@@ -1,6 +1,9 @@
 # Use the official PHP image from Docker Hub
 FROM php:8.1-cli
 
+# Install necessary PHP extensions for MySQL
+RUN docker-php-ext-install pdo pdo_mysql
+
 # Set the working directory inside the container
 WORKDIR /usr/src/app/myproject
 
