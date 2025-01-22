@@ -1,0 +1,16 @@
+# Use the official PHP image from Docker Hub
+FROM php:8.1-cli
+
+# Set the working directory inside the container
+WORKDIR /usr/src/app
+
+# Copy the contents of the current directory to the working directory inside the container
+COPY . .
+
+# Expose the port the app will run on
+EXPOSE 3000
+
+# Start the PHP built-in server
+CMD ["php", "-S", "0.0.0.0:3000"]
+
+#update
